@@ -1,0 +1,645 @@
+# Copyright (C) 2015 Bishal Napit
+# This file is distributed under the GNU General Public License v3 or later.
+msgid ""
+msgstr ""
+"Project-Id-Version: Creative Blog\n"
+"POT-Creation-Date: 2015-12-06 09:50+0545\n"
+"PO-Revision-Date: 2015-12-06 09:51+0545\n"
+"Last-Translator: \n"
+"Language-Team: Bishal Napit <mebishalnapit@gmail.com>\n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.7\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
+"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: 404.php:22 404.php:30
+msgid "404 Error!"
+msgstr ""
+
+#: 404.php:34
+msgid ""
+"It looks like nothing was found at this location. Maybe try a search instead?"
+msgstr ""
+
+#: comments.php:30
+#, php-format
+msgctxt "comments title"
+msgid "One thought on &ldquo;%2$s&rdquo;"
+msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
+msgstr[0] ""
+msgstr[1] ""
+
+#: comments.php:37 comments.php:59
+msgid "Comment navigation"
+msgstr ""
+
+#: comments.php:40 comments.php:62
+msgid "Older Comments"
+msgstr ""
+
+#: comments.php:41 comments.php:63
+msgid "Newer Comments"
+msgstr ""
+
+#: comments.php:75
+msgid "Comments disabled."
+msgstr ""
+
+#: functions.php:51
+msgid "Primary Menu"
+msgstr ""
+
+#: functions.php:52
+msgid "Social Menu"
+msgstr ""
+
+#: functions.php:114 inc/meta-boxes.php:32
+msgid "Right Sidebar"
+msgstr ""
+
+#: functions.php:116
+msgid "Display your widgets in the Right Sidebar Area"
+msgstr ""
+
+#: functions.php:124 inc/meta-boxes.php:37
+msgid "Left Sidebar"
+msgstr ""
+
+#: functions.php:126
+msgid "Display your widgets in the Left Sidebar Area"
+msgstr ""
+
+#: functions.php:134
+msgid "Header Sidebar"
+msgstr ""
+
+#: functions.php:136
+msgid "Display your widgets in the Header Sidebar Area"
+msgstr ""
+
+#: functions.php:144
+msgid "404 Sidebar"
+msgstr ""
+
+#: functions.php:146
+msgid "Display your widgets in the 404 Error Page Sidebar Area"
+msgstr ""
+
+#: functions.php:154
+msgid "Contact Sidebar"
+msgstr ""
+
+#: functions.php:156
+msgid "Display your widgets in the Contact Page Sidebar Area"
+msgstr ""
+
+#: functions.php:164
+msgid "Footer Sidebar One"
+msgstr ""
+
+#: functions.php:166
+msgid "Display your widgets in the footer sidebar area one."
+msgstr ""
+
+#: functions.php:174
+msgid "Footer Sidebar Two"
+msgstr ""
+
+#: functions.php:176
+msgid "Display your widgets in the footer sidebar area two."
+msgstr ""
+
+#: functions.php:184
+msgid "Footer Sidebar Three"
+msgstr ""
+
+#: functions.php:186
+msgid "Display your widgets in the footer sidebar area three."
+msgstr ""
+
+#: functions.php:194
+msgid "Footer Sidebar Four"
+msgstr ""
+
+#: functions.php:196
+msgid "Display your widgets in the footer sidebar area four."
+msgstr ""
+
+#: functions.php:224
+msgctxt "Open Sans font: on or off"
+msgid "on"
+msgstr ""
+
+#: functions.php:232
+msgctxt "Add new subset ( cyrillic, greek, vietnamese )"
+msgid "no-subset"
+msgstr ""
+
+#: header.php:26
+msgid "Skip to content"
+msgstr ""
+
+#: inc/customizer.php:26
+msgid "If you like our work. Buy us a beer."
+msgstr ""
+
+#: inc/customizer.php:42
+msgid "Donate Now"
+msgstr ""
+
+#: inc/customizer.php:60
+msgid ""
+"Change the Header Settings from here as you want to best suit your need."
+msgstr ""
+
+#: inc/customizer.php:62
+msgid "Header Options"
+msgstr ""
+
+#: inc/customizer.php:68
+msgid "Header Logo"
+msgstr ""
+
+#: inc/customizer.php:79
+msgid "Upload logo for your header here."
+msgstr ""
+
+#: inc/customizer.php:92
+msgid "Choose the option that you want for your site for Header Logo."
+msgstr ""
+
+#: inc/customizer.php:95
+msgid "Header Logo Only"
+msgstr ""
+
+#: inc/customizer.php:96
+msgid "Header Text Only"
+msgstr ""
+
+#: inc/customizer.php:97
+msgid "Show Both"
+msgstr ""
+
+#: inc/customizer.php:98
+msgid "Disable"
+msgstr ""
+
+#: inc/customizer.php:105
+msgid "Show Date"
+msgstr ""
+
+#: inc/customizer.php:117
+msgid "Check to show the date in header area."
+msgstr ""
+
+#: inc/customizer.php:125
+msgid "Breaking News"
+msgstr ""
+
+#: inc/customizer.php:137
+msgid "Check to enable the breaking news section."
+msgstr ""
+
+#: inc/customizer.php:145 inc/extras.php:231
+msgid "Random Post"
+msgstr ""
+
+#: inc/customizer.php:157
+msgid ""
+"Check to display the random post icon in the primary menu. Note: Only works "
+"when you have set the primary menu manually."
+msgstr ""
+
+#: inc/customizer.php:165
+msgid "Search Icon"
+msgstr ""
+
+#: inc/customizer.php:177
+msgid ""
+"Check to display the search icon in the primary menu. Note: Only works when "
+"you have set the primary menu manually."
+msgstr ""
+
+#: inc/customizer.php:185
+msgid "Header Top Bar"
+msgstr ""
+
+#: inc/customizer.php:197
+msgid ""
+"Check to enable the header top bar for your site. It includes current server "
+"date, latest posts and social menus."
+msgstr ""
+
+#: inc/customizer.php:205
+msgid "Header Image Link"
+msgstr ""
+
+#: inc/customizer.php:217
+msgid "Check to enable the header image to link back to the home page."
+msgstr ""
+
+#: inc/customizer.php:225
+msgid ""
+"Change the Design Settings from here as you want to best suit your need."
+msgstr ""
+
+#: inc/customizer.php:227
+msgid "Design Options"
+msgstr ""
+
+#: inc/customizer.php:233
+msgid "Site Layout"
+msgstr ""
+
+#: inc/customizer.php:245
+msgid "Choose your site layout. The change is reflected in the whole site."
+msgstr ""
+
+#: inc/customizer.php:247
+msgid "Boxed Layout"
+msgstr ""
+
+#: inc/customizer.php:248
+msgid "Wide Layout"
+msgstr ""
+
+#: inc/customizer.php:322
+msgid "Default layout"
+msgstr ""
+
+#: inc/customizer.php:334
+msgid ""
+"Select default layout. This layout will be reflected in whole site archives, "
+"categories, search page etc. The layout for a single post and page can be "
+"controlled from the other options available in this theme."
+msgstr ""
+
+#: inc/customizer.php:348
+msgid "Default layout for pages only"
+msgstr ""
+
+#: inc/customizer.php:360
+msgid ""
+"Select default layout for pages. This layout will be reflected in all pages "
+"unless unique layout is set for the specific page."
+msgstr ""
+
+#: inc/customizer.php:374
+msgid "Default layout for single posts only"
+msgstr ""
+
+#: inc/customizer.php:386
+msgid ""
+"Select default layout for single posts. This layout will be reflected in all "
+"single posts unless unique layout is set for the specific post."
+msgstr ""
+
+#: inc/customizer.php:401
+msgid "Primary Color"
+msgstr ""
+
+#: inc/customizer.php:412
+msgid ""
+"This will reflect in links, buttons and many others. Choose the color to "
+"match best suit your site need."
+msgstr ""
+
+#: inc/customizer.php:420
+msgid "Custom CSS"
+msgstr ""
+
+#: inc/customizer.php:433
+msgid "Write your custom css and design live."
+msgstr ""
+
+#: inc/customizer.php:441
+msgid ""
+"Change the Additional Settings from here as you want to best suite your site."
+msgstr ""
+
+#: inc/customizer.php:443
+msgid "Additional Options"
+msgstr ""
+
+#: inc/customizer.php:449
+msgid "Related Posts"
+msgstr ""
+
+#: inc/customizer.php:461
+msgid "Check to activate the related posts."
+msgstr ""
+
+#: inc/customizer.php:474
+msgid "Related Posts To Be Shown As:"
+msgstr ""
+
+#: inc/customizer.php:478
+msgid "Related Posts By Categories"
+msgstr ""
+
+#: inc/customizer.php:479
+msgid "Related Posts By Tags"
+msgstr ""
+
+#: inc/customizer.php:486
+msgid "Image Lightbox"
+msgstr ""
+
+#: inc/customizer.php:498
+msgid ""
+"Check to enable the lightbox feature for the featured images in single post "
+"page. Note: the post should be of image post format to support this feature, "
+"ie, we have supported the featured image in single post page only when image "
+"post format is choosen."
+msgstr ""
+
+#: inc/customizer.php:506
+msgid "Category Color Options"
+msgstr ""
+
+#: inc/customizer.php:508
+msgid ""
+"Change the color of each category items as you want to best suit your "
+"requirement."
+msgstr ""
+
+#: inc/customizer.php:513
+msgid "Category Color Settings"
+msgstr ""
+
+#: inc/customizer.php:537
+#, php-format
+msgid "%s"
+msgstr ""
+
+#: inc/extras.php:67
+msgid "Latest:"
+msgstr ""
+
+#: inc/extras.php:285
+msgid "WordPress"
+msgstr ""
+
+#: inc/extras.php:287
+msgid "Bishal Napit"
+msgstr ""
+
+#: inc/extras.php:289
+#, php-format
+msgid "Copyright &copy; %1$s %2$s."
+msgstr ""
+
+#: inc/extras.php:289
+#, php-format
+msgid "Theme: %1$s by %2$s."
+msgstr ""
+
+#: inc/extras.php:289
+#, php-format
+msgid "Powered by %s."
+msgstr ""
+
+#: inc/extras.php:410
+msgid "Post navigation"
+msgstr ""
+
+#: inc/extras.php:413
+msgctxt "Previous post link"
+msgid ""
+"<span class=\"meta-nav\"><i class=\"fa fa-arrow-circle-o-left\"></i></span>"
+"%title"
+msgstr ""
+
+#: inc/extras.php:414
+msgctxt "Next post link"
+msgid ""
+"%title<span class=\"meta-nav\"><i class=\"fa fa-arrow-circle-o-right\"></i></"
+"span>"
+msgstr ""
+
+#: inc/extras.php:428
+msgid "Video URL"
+msgstr ""
+
+#: inc/extras.php:429
+msgid "Audio URL"
+msgstr ""
+
+#: inc/extras.php:430
+msgid "Status"
+msgstr ""
+
+#: inc/extras.php:431
+msgid "Chat"
+msgstr ""
+
+#: inc/extras.php:433
+msgid "Link Text"
+msgstr ""
+
+#: inc/extras.php:434
+msgid "Link URL"
+msgstr ""
+
+#: inc/extras.php:436
+msgid "Quote Text"
+msgstr ""
+
+#: inc/extras.php:437
+msgid "Quote Author"
+msgstr ""
+
+#: inc/meta-boxes.php:14 inc/meta-boxes.php:16
+msgid "Select Layout"
+msgstr ""
+
+#: inc/meta-boxes.php:27
+msgid "Default Layout"
+msgstr ""
+
+#: inc/meta-boxes.php:42
+msgid "No Sidebar Full Width"
+msgstr ""
+
+#: inc/meta-boxes.php:47
+msgid "No Sidebar Content Centered"
+msgstr ""
+
+#: inc/related-posts.php:12
+msgid "You May Also Like"
+msgstr ""
+
+#: inc/related-posts.php:44 inc/template-tags.php:25
+#, php-format
+msgctxt "post date"
+msgid "%s"
+msgstr ""
+
+#: inc/related-posts.php:48 inc/template-tags.php:29
+#, php-format
+msgctxt "post author"
+msgid "%s"
+msgstr ""
+
+#: inc/related-posts.php:54 inc/template-tags.php:36
+msgid "<i class=\"fa fa-comment\"></i>Leave a reply"
+msgstr ""
+
+#: inc/related-posts.php:54 inc/template-tags.php:36
+msgid "<i class=\"fa fa-comment\"></i>1 Comment"
+msgstr ""
+
+#: inc/related-posts.php:54 inc/template-tags.php:36
+msgid "<i class=\"fa fa-comment\"></i>% Comments"
+msgstr ""
+
+#: inc/related-posts.php:54 inc/template-tags.php:36
+msgid "<i class=\"fa fa-comment\"></i>Comments Disabled"
+msgstr ""
+
+#. translators: %s: Name of current post
+#: inc/template-tags.php:43 template-parts/content-page.php:33
+#, php-format
+msgid "<i class=\"fa fa-edit\"></i>Edit %s"
+msgstr ""
+
+#: inc/wp_bootstrap_navwalker.php:196
+msgid "Add a menu"
+msgstr ""
+
+#: inc/wp_bootstrap_pagination.php:11
+msgid "<i class=\"glyphicon glyphicon-chevron-left\"></i>"
+msgstr ""
+
+#: inc/wp_bootstrap_pagination.php:12
+msgid "<i class=\"glyphicon glyphicon-chevron-right\"></i>"
+msgstr ""
+
+#: inc/wp_bootstrap_pagination.php:56
+msgid "First"
+msgstr ""
+
+#: inc/wp_bootstrap_pagination.php:59
+msgid "previous"
+msgstr ""
+
+#: inc/wp_bootstrap_pagination.php:74
+msgid "next"
+msgstr ""
+
+#: inc/wp_bootstrap_pagination.php:78
+msgid "Last"
+msgstr ""
+
+#: search.php:22
+#, php-format
+msgid "Search Results for: %s"
+msgstr ""
+
+#: searchform.php:10 searchform.php:11
+msgid "Search for:"
+msgstr ""
+
+#: searchform.php:11
+msgid "Search for&hellip;"
+msgstr ""
+
+#: sidebar-left.php:24 sidebar.php:24
+msgid "Contact Page"
+msgstr ""
+
+#: sidebar-left.php:26
+msgid "Left"
+msgstr ""
+
+#: sidebar-left.php:32 sidebar.php:32
+msgid "Example Widget"
+msgstr ""
+
+#: sidebar-left.php:33 sidebar.php:33
+#, php-format
+msgid ""
+"This is an example widget to show how the %s Sidebar looks by default. You "
+"can add custom widgets from the %swidgets screen%s in the admin area. If the "
+"custom widget is added in this sidebar, then, this will be replaced by those "
+"widgets."
+msgstr ""
+
+#: sidebar.php:26
+msgid "Right"
+msgstr ""
+
+#: template-parts/content-aside.php:37 template-parts/content-audio.php:55
+#: template-parts/content-chat.php:52 template-parts/content-gallery.php:79
+#: template-parts/content-image.php:64 template-parts/content-link.php:53
+#: template-parts/content-page.php:22 template-parts/content-quote.php:54
+#: template-parts/content-status.php:57 template-parts/content-video.php:55
+#: template-parts/content.php:63
+msgid "Pages:"
+msgstr ""
+
+#. translators: used between list items, there is a space after the comma
+#: template-parts/content-aside.php:46 template-parts/content-audio.php:64
+#: template-parts/content-chat.php:61 template-parts/content-gallery.php:88
+#: template-parts/content-image.php:73 template-parts/content-link.php:62
+#: template-parts/content-quote.php:63 template-parts/content-status.php:66
+#: template-parts/content-video.php:64 template-parts/content.php:72
+msgid ", "
+msgstr ""
+
+#: template-parts/content-aside.php:48 template-parts/content-audio.php:66
+#: template-parts/content-chat.php:63 template-parts/content-gallery.php:90
+#: template-parts/content-image.php:75 template-parts/content-link.php:64
+#: template-parts/content-quote.php:65 template-parts/content-status.php:68
+#: template-parts/content-video.php:66 template-parts/content.php:74
+#, php-format
+msgid "%1$s"
+msgstr ""
+
+#: template-parts/content-gallery.php:37
+msgid "Previous"
+msgstr ""
+
+#: template-parts/content-gallery.php:41
+msgid "Next"
+msgstr ""
+
+#: template-parts/content-none.php:13
+msgid "Nothing Found"
+msgstr ""
+
+#: template-parts/content-none.php:19
+#, php-format
+msgid ""
+"Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr ""
+
+#: template-parts/content-none.php:23
+msgid ""
+"Sorry, but nothing matched your search terms. Please try again with some "
+"different keywords."
+msgstr ""
+
+#: template-parts/content-none.php:28
+msgid ""
+"It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
+"searching can help."
+msgstr ""
+
+#. translators: %s: Name of current post.
+#: template-parts/content.php:53
+msgid "Read More <i class=\"fa fa-arrow-circle-o-right\"></i>"
+msgstr ""
+
+#. translators: %s: Name of current post.
+#: template-parts/content.php:53
+msgid "<button type=\"button\" class=\"btn btn-primary continue-more-link\">"
+msgstr ""
