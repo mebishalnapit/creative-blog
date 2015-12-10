@@ -1,5 +1,4 @@
 === CREATIVE BLOG ===
-
 Description: Creative Blog is an extremely creative WordPress theme to create your own personal blog site very easily. This theme totally focuses on the features which you may require for blogging sites. Some of the features of this theme are as logo upload option, custom header and custom background(in boxed layout) can be kept as requirement. Also, this theme features custom social menu and also you have the ability to display the five latest post in the header top section as well as you can have the layout option for each of the different pages/posts individually. This theme also supports 10 post formats so that you can show the contents uniquely according to the post formats used in your site.
 
 == COPYRIGHT AND LICENSE ==
@@ -19,10 +18,20 @@ Resources packed within the theme.
 
 All other resources and theme elements are licensed under the [GNU GPL](http://www.gnu.org/licenses/gpl-3.0.txt), version 3 or later.
 
-Creative Blog WordPress Theme, Copyright 2015 Bishal Napit
+Creative Blog WordPress Theme, Copyright 2015/16 Bishal Napit
 Creative Blog is distributed under the terms of the GNU GPL
 
+== THEME USAGE ==
+= Theme Features Usage =
+All the available options of this theme can be used from Appearance->Customize.
+
+== TRANSLATIONS ==
+If you've translated this theme into your native language, then, feel free to send the translation file to mebishalnapit@gmail.com and we will include it within the theme from next version update.
+
 == CHANGELOG ==
+= VERSION 0.2 =
+* Bootstrap Framework updated to version 3.3.6
+* Font Awesome icons updated to version 4.5.0
 
 = VERSION 0.1 =
 * Initial release
