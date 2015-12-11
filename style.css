@@ -38,6 +38,9 @@ tr, td, th {
     padding: 5px;
     text-align: center;
 }
+embed, iframe, object {
+    max-width: 100%;
+}
 
 /* site-wide setting */
 #primary img, #secondary img {
@@ -47,6 +50,17 @@ tr, td, th {
 #content {
     padding-top: 40px;
     padding-bottom: 40px;
+}
+
+/* infinite scroll support CSS */
+/* Globally hidden elements when Infinite Scroll is supported and in use. */
+.infinite-scroll .post-nav, /* Older / Newer Posts Navigation (always hidden) */
+.infinite-scroll.neverending .site-footer { /* Theme Footer (when set to scrolling) */
+    display: none;
+}
+/* When Infinite Scroll has reached its end we need to re-display elements that were hidden (via .neverending) before */
+.infinity-end.neverending .site-footer {
+    display: block;
 }
 
 /* setting background color for page */
@@ -365,10 +379,6 @@ ul#menu-social {
 .avatar {
     border-radius: 50%;
 }
-#main iframe {
-    width: 100%;
-    height: auto;
-}
 .not-found.sidebar-404 {
     display: none;
 }
@@ -451,6 +461,44 @@ ul#menu-social {
     color: #0099ff;
 }
 
+/* input types styling and textarea setting */
+input[type="text"], input[type="email"], input[type="url"], input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+input[type="tel"], input[type="number"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+input[type="submit"] {
+    background-color: #0099ff;
+    border: 1px solid #0099ff;
+    color: #fff;
+    max-width: 100%;
+    padding: 8px 10px;
+    border-radius: 5px;
+}
+input[type="checkbox"], input[type="radio"] {
+    vertical-align: top;
+}
+input[type="file"] {
+    display: block;
+    background-color: #0099ff;
+    padding: 10px;
+    color: #fff;
+}
+select {
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+textarea {
+    padding: 10px;
+    max-width: 100%;
+    min-width: 100%;
+    border: 1px solid #ccc;
+}
+
 /* hiding updated date */
 .entry-meta .updated {
     display: none;
@@ -465,10 +513,9 @@ ul#menu-social {
 }
 .comment-respond input, .comment-respond textarea {
     padding: 10px;
-    width: 100%;
 }
 .comment-respond .form-submit {
-    max-width: 20%;
+    max-width: 100%;
 }
 .comment-respond textarea {
     min-width: 100%;
@@ -819,16 +866,19 @@ footer select {
 
 /* WordPress default classess */
 .alignleft {
+    display: inline;
     float: left;
     margin-right: 20px;
     margin-bottom: 10px;
 }
 .alignright {
+    display: inline;
     float: right;
     margin-left: 20px;
     margin-bottom: 10px;
 }
 .aligncenter {
+    clear: both;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 10px;

@@ -304,7 +304,7 @@ function creative_blog_custom_css() {
     $creative_blog_custom_options_color = '';
     $primary_color = get_theme_mod('creative_blog_primary_color', '#0099ff');
     if ($primary_color != '#0099ff') {
-        $creative_blog_custom_options_color .= 'a,a:focus,a:hover{color:' . $primary_color . '}td,th,tr{border:2px solid ' . $primary_color . '}.date-in-header{background-color:' . $primary_color . '}.navigation .nav-next:after,.navigation .nav-previous:before,.newsticker a{color:' . $primary_color . '}.search-field{border:1px solid ' . $primary_color . '}.searchsubmit{background-color:' . $primary_color . '}#menu-social li a::before{color:' . $primary_color . '}.post,.search .page{border-bottom:1px solid ' . $primary_color . '}.related-posts-main-title,.related-posts-main-title .fa{color:' . $primary_color . '}.custom-page-header .page-title{border-bottom:2px solid ' . $primary_color . '}.custom-page-header .page-title span{background:' . $primary_color . '}.sticky .entry-title:after{color:' . $primary_color . '}.continue-more-link,.continue-more-link:hover,.sticky .continue-more-link,.sticky .continue-more-link:hover{background:' . $primary_color . '}.entry-meta{border-bottom:1px dotted ' . $primary_color . ';border-top:1px dotted ' . $primary_color . '}.category-links a{background-color:' . $primary_color . '}.comments-link,.tags-links .fa{color:' . $primary_color . '}.comment-respond .form-submit input[type=submit]{background:' . $primary_color . '}.bypostauthor>.comment-body .fn:before{color:' . $primary_color . '}.comment-author,.comments-area .comment-meta .edit-link:before{color:' . $primary_color . '}.author-box{border:1px dotted ' . $primary_color . '}.featured-image img{border:1px solid ' . $primary_color . '}.format-status .status-details{border-top:1px solid ' . $primary_color . ';border-bottom:1px solid ' . $primary_color . '}a#scroll-up i{color:' . $primary_color . '}.widget-title span{background-color:' . $primary_color . ';border-bottom:1px solid ' . $primary_color . '}.widget-title{border-bottom:2px solid ' . $primary_color . '}.widget_nav_menu a,.widget_pages a,.widget_recent_comments li,.widget_recent_entries li{border-bottom:2px dotted ' . $primary_color . '}.widget_archive li:before,.widget_categories li:before,.widget_nav_menu li:before,.widget_pages li:before,.widget_recent_comments li:before,.widget_recent_entries li:before,.widget_rss li:before{color:' . $primary_color . '}.wp-caption{border:1px solid ' . $primary_color . '}';
+        $creative_blog_custom_options_color .= 'a,a:focus,a:hover{color:' . $primary_color . '}td,th,tr{border:2px solid ' . $primary_color . '}.date-in-header{background-color:' . $primary_color . '}.navigation .nav-next:after,.navigation .nav-previous:before,.newsticker a{color:' . $primary_color . '}.search-field{border:1px solid ' . $primary_color . '}.searchsubmit{background-color:' . $primary_color . '}#menu-social li a::before{color:' . $primary_color . '}.post,.search .page{border-bottom:1px solid ' . $primary_color . '}.related-posts-main-title,.related-posts-main-title .fa{color:' . $primary_color . '}.custom-page-header .page-title{border-bottom:2px solid ' . $primary_color . '}.custom-page-header .page-title span{background:' . $primary_color . '}.sticky .entry-title:after{color:' . $primary_color . '}.continue-more-link,.continue-more-link:hover,.sticky .continue-more-link,.sticky .continue-more-link:hover{background:' . $primary_color . '}.entry-meta{border-bottom:1px dotted ' . $primary_color . ';border-top:1px dotted ' . $primary_color . '}.category-links a{background-color:' . $primary_color . '}.comments-link,.tags-links .fa{color:' . $primary_color . '}.comment-respond .form-submit input[type=submit]{background:' . $primary_color . '}.bypostauthor>.comment-body .fn:before{color:' . $primary_color . '}.comment-author,.comments-area .comment-meta .edit-link:before{color:' . $primary_color . '}.author-box{border:1px dotted ' . $primary_color . '}.featured-image img{border:1px solid ' . $primary_color . '}.format-status .status-details{border-top:1px solid ' . $primary_color . ';border-bottom:1px solid ' . $primary_color . '}a#scroll-up i{color:' . $primary_color . '}.widget-title span{background-color:' . $primary_color . ';border-bottom:1px solid ' . $primary_color . '}.widget-title{border-bottom:2px solid ' . $primary_color . '}.widget_nav_menu a,.widget_pages a,.widget_recent_comments li,.widget_recent_entries li{border-bottom:2px dotted ' . $primary_color . '}.widget_archive li:before,.widget_categories li:before,.widget_nav_menu li:before,.widget_pages li:before,.widget_recent_comments li:before,.widget_recent_entries li:before,.widget_rss li:before{color:' . $primary_color . '}.wp-caption{border:1px solid ' . $primary_color . '}input[type="submit"]{background-color:' . $primary_color . ';border:1px solid ' . $primary_color . '}input[type="file"]{background-color:' . $primary_color . '}';
     }
 
     // color change options code
@@ -712,7 +712,7 @@ if (!function_exists('creative_blog_layout_class')) :
         if (empty($creative_blog_layout_meta) || is_archive() || is_search() || is_404()) {
             $creative_blog_layout_meta = 'default_layout';
         }
-        
+
         $creative_blog_default_layout = get_theme_mod('creative_blog_default_layout', 'right_sidebar');
         $creative_blog_default_page_layout = get_theme_mod('creative_blog_default_page_layout', 'right_sidebar');
         $creative_blog_default_post_layout = get_theme_mod('creative_blog_default_single_posts_layout', 'right_sidebar');
@@ -772,7 +772,7 @@ if (!function_exists('creative_blog_right_sidebar_select')) :
         if (empty($creative_blog_layout_meta) || is_archive() || is_search() || is_404()) {
             $creative_blog_layout_meta = 'default_layout';
         }
-        
+
         $creative_blog_default_layout = get_theme_mod('creative_blog_default_layout', 'right_sidebar');
         $creative_blog_default_page_layout = get_theme_mod('creative_blog_pages_default_layout', 'right_sidebar');
         $creative_blog_default_post_layout = get_theme_mod('creative_blog_single_posts_default_layout', 'right_sidebar');
@@ -817,7 +817,7 @@ if (!function_exists('creative_blog_left_sidebar_select')) :
         if (empty($creative_blog_layout_meta) || is_archive() || is_search() || is_404()) {
             $creative_blog_layout_meta = 'default_layout';
         }
-        
+
         $creative_blog_default_layout = get_theme_mod('creative_blog_default_layout', 'right_sidebar');
         $creative_blog_default_page_layout = get_theme_mod('creative_blog_pages_default_layout', 'right_sidebar');
         $creative_blog_default_post_layout = get_theme_mod('creative_blog_single_posts_default_layout', 'right_sidebar');
