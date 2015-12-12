@@ -3,8 +3,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Creative Blog\n"
-"POT-Creation-Date: 2015-12-06 09:50+0545\n"
-"PO-Revision-Date: 2015-12-06 09:51+0545\n"
+"POT-Creation-Date: 2015-12-11 20:16+0545\n"
+"PO-Revision-Date: 2015-12-11 20:17+0545\n"
 "Last-Translator: \n"
 "Language-Team: Bishal Napit <mebishalnapit@gmail.com>\n"
 "Language: en\n"
@@ -53,92 +53,92 @@ msgstr ""
 msgid "Comments disabled."
 msgstr ""
 
-#: functions.php:51
+#: functions.php:52
 msgid "Primary Menu"
 msgstr ""
 
-#: functions.php:52
+#: functions.php:53
 msgid "Social Menu"
 msgstr ""
 
-#: functions.php:114 inc/meta-boxes.php:32
+#: functions.php:115 inc/meta-boxes.php:32
 msgid "Right Sidebar"
 msgstr ""
 
-#: functions.php:116
+#: functions.php:117
 msgid "Display your widgets in the Right Sidebar Area"
 msgstr ""
 
-#: functions.php:124 inc/meta-boxes.php:37
+#: functions.php:125 inc/meta-boxes.php:37
 msgid "Left Sidebar"
 msgstr ""
 
-#: functions.php:126
+#: functions.php:127
 msgid "Display your widgets in the Left Sidebar Area"
 msgstr ""
 
-#: functions.php:134
+#: functions.php:135
 msgid "Header Sidebar"
 msgstr ""
 
-#: functions.php:136
+#: functions.php:137
 msgid "Display your widgets in the Header Sidebar Area"
 msgstr ""
 
-#: functions.php:144
+#: functions.php:145
 msgid "404 Sidebar"
 msgstr ""
 
-#: functions.php:146
+#: functions.php:147
 msgid "Display your widgets in the 404 Error Page Sidebar Area"
 msgstr ""
 
-#: functions.php:154
+#: functions.php:155
 msgid "Contact Sidebar"
 msgstr ""
 
-#: functions.php:156
+#: functions.php:157
 msgid "Display your widgets in the Contact Page Sidebar Area"
 msgstr ""
 
-#: functions.php:164
+#: functions.php:165
 msgid "Footer Sidebar One"
 msgstr ""
 
-#: functions.php:166
+#: functions.php:167
 msgid "Display your widgets in the footer sidebar area one."
 msgstr ""
 
-#: functions.php:174
+#: functions.php:175
 msgid "Footer Sidebar Two"
 msgstr ""
 
-#: functions.php:176
+#: functions.php:177
 msgid "Display your widgets in the footer sidebar area two."
 msgstr ""
 
-#: functions.php:184
+#: functions.php:185
 msgid "Footer Sidebar Three"
 msgstr ""
 
-#: functions.php:186
+#: functions.php:187
 msgid "Display your widgets in the footer sidebar area three."
 msgstr ""
 
-#: functions.php:194
+#: functions.php:195
 msgid "Footer Sidebar Four"
 msgstr ""
 
-#: functions.php:196
+#: functions.php:197
 msgid "Display your widgets in the footer sidebar area four."
 msgstr ""
 
-#: functions.php:224
+#: functions.php:227
 msgctxt "Open Sans font: on or off"
 msgid "on"
 msgstr ""
 
-#: functions.php:232
+#: functions.php:235
 msgctxt "Add new subset ( cyrillic, greek, vietnamese )"
 msgid "no-subset"
 msgstr ""
@@ -457,6 +457,34 @@ msgstr ""
 msgid "Quote Author"
 msgstr ""
 
+#: inc/extras.php:860 inc/template-tags.php:25
+#, php-format
+msgctxt "post date"
+msgid "%s"
+msgstr ""
+
+#: inc/extras.php:864 inc/template-tags.php:29
+#, php-format
+msgctxt "post author"
+msgid "%s"
+msgstr ""
+
+#: inc/extras.php:870 inc/template-tags.php:36
+msgid "<i class=\"fa fa-comment\"></i>Leave a reply"
+msgstr ""
+
+#: inc/extras.php:870 inc/template-tags.php:36
+msgid "<i class=\"fa fa-comment\"></i>1 Comment"
+msgstr ""
+
+#: inc/extras.php:870 inc/template-tags.php:36
+msgid "<i class=\"fa fa-comment\"></i>% Comments"
+msgstr ""
+
+#: inc/extras.php:870 inc/template-tags.php:36
+msgid "<i class=\"fa fa-comment\"></i>Comments Disabled"
+msgstr ""
+
 #: inc/meta-boxes.php:14 inc/meta-boxes.php:16
 msgid "Select Layout"
 msgstr ""
@@ -477,38 +505,44 @@ msgstr ""
 msgid "You May Also Like"
 msgstr ""
 
-#: inc/related-posts.php:44 inc/template-tags.php:25
-#, php-format
-msgctxt "post date"
-msgid "%s"
-msgstr ""
-
-#: inc/related-posts.php:48 inc/template-tags.php:29
-#, php-format
-msgctxt "post author"
-msgid "%s"
-msgstr ""
-
-#: inc/related-posts.php:54 inc/template-tags.php:36
-msgid "<i class=\"fa fa-comment\"></i>Leave a reply"
-msgstr ""
-
-#: inc/related-posts.php:54 inc/template-tags.php:36
-msgid "<i class=\"fa fa-comment\"></i>1 Comment"
-msgstr ""
-
-#: inc/related-posts.php:54 inc/template-tags.php:36
-msgid "<i class=\"fa fa-comment\"></i>% Comments"
-msgstr ""
-
-#: inc/related-posts.php:54 inc/template-tags.php:36
-msgid "<i class=\"fa fa-comment\"></i>Comments Disabled"
-msgstr ""
-
 #. translators: %s: Name of current post
 #: inc/template-tags.php:43 template-parts/content-page.php:33
 #, php-format
 msgid "<i class=\"fa fa-edit\"></i>Edit %s"
+msgstr ""
+
+#: inc/widgets.php:15
+msgid "CB: Tabbed Widget"
+msgstr ""
+
+#: inc/widgets.php:16
+msgid ""
+"Displays the popular posts, recents posts and the recent comments in the "
+"tabs."
+msgstr ""
+
+#: inc/widgets.php:31
+msgid "Number of popular posts, recent posts and comments to display:"
+msgstr ""
+
+#: inc/widgets.php:69
+msgid "Popular"
+msgstr ""
+
+#: inc/widgets.php:70
+msgid "Recent"
+msgstr ""
+
+#: inc/widgets.php:71
+msgid "Comment"
+msgstr ""
+
+#: inc/widgets.php:151
+msgid "says:"
+msgstr ""
+
+#: inc/widgets.php:155
+msgid "Leave a reply"
 msgstr ""
 
 #: inc/wp_bootstrap_navwalker.php:196

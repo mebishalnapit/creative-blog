@@ -8,7 +8,7 @@
  */
 ?>
 
-<div id="secondary" class="widget-area col-md-4" role="complementary">
+<aside id="secondary" class="widget-area col-md-4" role="complementary">
     <?php do_action('creative_blog_before_sidebar'); ?>
     
     <?php
@@ -43,4 +43,4 @@
     endif; ?>
 
     <?php do_action('creative_blog_after_sidebar'); ?>
-</div><!-- #secondary -->
+</aside><!-- #secondary -->

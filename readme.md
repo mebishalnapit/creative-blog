@@ -10,7 +10,7 @@
 * Bootstrap Framework by Mark Otto and Jacob Thornton http://getbootstrap.com/ | Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
 * Font Awesome by Dave Gandy http://fortawesome.github.io/Font-Awesome/
   SIL OFL 1.1 http://scripts.sil.org/OFL.
-* HTML5 Shiv by Afarkas, Jdalton, Jon Neal and Rem | MIT/GPL2 Licensed
+* HTML5 Shiv by Alexander Farkas, Jonathan Neal | MIT/GPL2 Licensed
 * FitVids by Chris Coyier and Paravel | WTFPL Licensed
 * JQuery Advanced News Ticker 1.0.11 by Valentin Ledrapier(risq) | GPL Licensed
 * Magnific-Popup by Dmitry Semenov | MIT Licensed
@@ -30,6 +30,7 @@ If you've translated this theme into your native language, then, feel free to se
 
 ## CHANGELOG
 #### VERSION 0.2
+* Added CB: Tabbed Widget
 * Bootstrap Framework updated to version 3.3.6
 * Font Awesome icons updated to version 4.5.0
 

@@ -45,6 +45,7 @@ if (!function_exists('creative_blog_setup')) :
         add_image_size('creative-blog-featured', 1000, 600, true);
         add_image_size('creative-blog-featured-thumb', 150, 150, true);
         add_image_size('creative-blog-featured-small', 300, 180, true);
+        add_image_size('creative-blog-featured-widget', 120, 90, true);
 
         // This theme uses wp_nav_menu() in one location.
         register_nav_menus(array(
@@ -114,8 +115,8 @@ function creative_blog_widgets_init() {
         'name' => esc_html__('Right Sidebar', 'creative-blog'),
         'id' => 'creative-blog-right-sidebar',
         'description' => __('Display your widgets in the Right Sidebar Area', 'creative-blog'),
-        'before_widget' => '<aside id="%1$s" class="widget %2$s">',
-        'after_widget' => '</aside>',
+        'before_widget' => '<section id="%1$s" class="widget %2$s">',
+        'after_widget' => '</section>',
         'before_title' => '<h3 class="widget-title"><span>',
         'after_title' => '</span></h3>',
     ));
@@ -124,8 +125,8 @@ function creative_blog_widgets_init() {
         'name' => esc_html__('Left Sidebar', 'creative-blog'),
         'id' => 'creative-blog-left-sidebar',
         'description' => __('Display your widgets in the Left Sidebar Area', 'creative-blog'),
-        'before_widget' => '<aside id="%1$s" class="widget %2$s">',
-        'after_widget' => '</aside>',
+        'before_widget' => '<section id="%1$s" class="widget %2$s">',
+        'after_widget' => '</section>',
         'before_title' => '<h3 class="widget-title"><span>',
         'after_title' => '</span></h3>',
     ));
@@ -134,28 +135,28 @@ function creative_blog_widgets_init() {
         'name' => esc_html__('Header Sidebar', 'creative-blog'),
         'id' => 'creative-blog-header-sidebar',
         'description' => __('Display your widgets in the Header Sidebar Area', 'creative-blog'),
-        'before_widget' => '<aside id="%1$s" class="widget %2$s">',
-        'after_widget' => '</aside>',
+        'before_widget' => '<section id="%1$s" class="widget %2$s">',
+        'after_widget' => '</section>',
         'before_title' => '<h3 class="widget-title"><span>',
         'after_title' => '</span></h3>',
     ));
-    
+
     register_sidebar(array(
         'name' => esc_html__('404 Sidebar', 'creative-blog'),
         'id' => 'creative-blog-404-sidebar',
         'description' => __('Display your widgets in the 404 Error Page Sidebar Area', 'creative-blog'),
-        'before_widget' => '<aside id="%1$s" class="widget %2$s">',
-        'after_widget' => '</aside>',
+        'before_widget' => '<section id="%1$s" class="widget %2$s">',
+        'after_widget' => '</section>',
         'before_title' => '<h3 class="widget-title"><span>',
         'after_title' => '</span></h3>',
     ));
-    
+
     register_sidebar(array(
         'name' => esc_html__('Contact Sidebar', 'creative-blog'),
         'id' => 'creative-blog-contact-sidebar',
         'description' => __('Display your widgets in the Contact Page Sidebar Area', 'creative-blog'),
-        'before_widget' => '<aside id="%1$s" class="widget %2$s">',
-        'after_widget' => '</aside>',
+        'before_widget' => '<section id="%1$s" class="widget %2$s">',
+        'after_widget' => '</section>',
         'before_title' => '<h3 class="widget-title"><span>',
         'after_title' => '</span></h3>',
     ));
@@ -164,8 +165,8 @@ function creative_blog_widgets_init() {
         'name' => esc_html__('Footer Sidebar One', 'creative-blog'),
         'id' => 'creative-blog-footer-sidebar-one',
         'description' => __('Display your widgets in the footer sidebar area one.', 'creative-blog'),
-        'before_widget' => '<aside id="%1$s" class="widget %2$s">',
-        'after_widget' => '</aside>',
+        'before_widget' => '<section id="%1$s" class="widget %2$s">',
+        'after_widget' => '</section>',
         'before_title' => '<h3 class="widget-title"><span>',
         'after_title' => '</span></h3>',
     ));
@@ -174,8 +175,8 @@ function creative_blog_widgets_init() {
         'name' => esc_html__('Footer Sidebar Two', 'creative-blog'),
         'id' => 'creative-blog-footer-sidebar-two',
         'description' => __('Display your widgets in the footer sidebar area two.', 'creative-blog'),
-        'before_widget' => '<aside id="%1$s" class="widget %2$s">',
-        'after_widget' => '</aside>',
+        'before_widget' => '<section id="%1$s" class="widget %2$s">',
+        'after_widget' => '</section>',
         'before_title' => '<h3 class="widget-title"><span>',
         'after_title' => '</span></h3>',
     ));
@@ -184,8 +185,8 @@ function creative_blog_widgets_init() {
         'name' => esc_html__('Footer Sidebar Three', 'creative-blog'),
         'id' => 'creative-blog-footer-sidebar-three',
         'description' => __('Display your widgets in the footer sidebar area three.', 'creative-blog'),
-        'before_widget' => '<aside id="%1$s" class="widget %2$s">',
-        'after_widget' => '</aside>',
+        'before_widget' => '<section id="%1$s" class="widget %2$s">',
+        'after_widget' => '</section>',
         'before_title' => '<h3 class="widget-title"><span>',
         'after_title' => '</span></h3>',
     ));
@@ -194,11 +195,13 @@ function creative_blog_widgets_init() {
         'name' => esc_html__('Footer Sidebar Four', 'creative-blog'),
         'id' => 'creative-blog-footer-sidebar-four',
         'description' => __('Display your widgets in the footer sidebar area four.', 'creative-blog'),
-        'before_widget' => '<aside id="%1$s" class="widget %2$s">',
-        'after_widget' => '</aside>',
+        'before_widget' => '<section id="%1$s" class="widget %2$s">',
+        'after_widget' => '</section>',
         'before_title' => '<h3 class="widget-title"><span>',
         'after_title' => '</span></h3>',
     ));
+
+    register_widget('Creative_Blog_Tabbed_Widget');
 }
 
 add_action('widgets_init', 'creative_blog_widgets_init');
@@ -347,3 +350,8 @@ require get_template_directory() . '/inc/wp_bootstrap_navwalker.php';
  * Add the required bootstrap page navigation
  */
 require get_template_directory() . '/inc/wp_bootstrap_pagination.php';
+
+/**
+ * Add the required custom widgets
+ */
++require get_template_directory() . '/inc/widgets.php';

@@ -841,3 +841,34 @@ if (!function_exists('creative_blog_left_sidebar_select')) :
     }
 
 endif;
+
+/**
+ * functon for dsplaying the custom meta data
+ */
+if (!function_exists('creative_blog_entry_meta_custom')) :
+
+    function creative_blog_entry_meta_custom() {
+        $time_string = '<time class="entry-date published updated" datetime="%1$s">%2$s</time>';
+        if (get_the_time('U') !== get_the_modified_time('U')) {
+            $time_string = '<time class="entry-date published" datetime="%1$s">%2$s</time><time class="updated" datetime="%3$s">%4$s</time>';
+        }
+
+        $time_string = sprintf($time_string, esc_attr(get_the_date('c')), esc_html(get_the_date()), esc_attr(get_the_modified_date('c')), esc_html(get_the_modified_date())
+        );
+
+        $posted_on = sprintf(
+                esc_html_x('%s', 'post date', 'creative-blog'), '<a href="' . esc_url(get_permalink()) . '" rel="bookmark">' . '<i class="fa fa-calendar"></i>' . $time_string . '</a>'
+        );
+
+        $byline = sprintf(
+                esc_html_x('%s', 'post author', 'creative-blog'), '<span class="author vcard"><a class="url fn n" href="' . esc_url(get_author_posts_url(get_the_author_meta('ID'))) . '">' . '<i class="fa fa-user"></i>' . esc_html(get_the_author()) . '</a></span>'
+        );
+
+        echo '<span class="posted-on">' . $posted_on . '</span><span class="byline"> ' . $byline . '</span>'; // WPCS: XSS OK.
+
+        echo '<span class="comments-link">';
+        comments_popup_link(__('<i class="fa fa-comment"></i>Leave a reply', 'creative-blog'), __('<i class="fa fa-comment"></i>1 Comment', 'creative-blog'), __('<i class="fa fa-comment"></i>% Comments', 'creative-blog'), '', __('<i class="fa fa-comment"></i>Comments Disabled', 'creative-blog'));
+        echo '</span>';
+    }
+
+endif;
