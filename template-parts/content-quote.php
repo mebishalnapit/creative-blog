@@ -13,7 +13,7 @@
     <?php $quote_post_author = get_post_meta($post->ID, 'quote_author', true); ?>
     <?php if (!empty($quote_post_text && $quote_post_author)) : ?>
         <div class="quote-details">
-            <blockquote><?php echo wpautop($quote_post_text); ?></blockquote>
+            <blockquote><?php echo wpautop(esc_textarea($quote_post_text)); ?></blockquote>
             <cite><?php echo esc_html($quote_post_author); ?></cite>
         </div>
     <?php endif; ?>

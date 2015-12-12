@@ -871,6 +871,9 @@ li.comments-tab-widget img {
 .single-article {
     clear: both;
 }
+.no-comments-commented-post {
+    padding: 10px 0;
+}
 
 /* Accessibility */
 .screen-reader-text {

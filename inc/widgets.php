@@ -152,7 +152,7 @@ class Creative_Blog_Tabbed_Widget extends WP_Widget {
                         $commented .= '<p class="commented-post">' . strip_tags(substr(apply_filters('get_comment_text', $comment->comment_content), 0, '50')) . '&hellip;</p></li>';
                     endforeach;
                 else :
-                    $commented .= __('Leave a reply', 'creative-blog');
+                    $commented .= '<p class="no-comments-commented-post">' . __('No Comments', 'creative-blog') . '</p>';
                 endif;
                 echo $commented;
                 ?>

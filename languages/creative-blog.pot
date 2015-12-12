@@ -3,8 +3,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Creative Blog\n"
-"POT-Creation-Date: 2015-12-11 20:16+0545\n"
-"PO-Revision-Date: 2015-12-11 20:17+0545\n"
+"POT-Creation-Date: 2015-12-12 16:17+0545\n"
+"PO-Revision-Date: 2015-12-12 16:18+0545\n"
 "Last-Translator: \n"
 "Language-Team: Bishal Napit <mebishalnapit@gmail.com>\n"
 "Language: en\n"
@@ -542,7 +542,7 @@ msgid "says:"
 msgstr ""
 
 #: inc/widgets.php:155
-msgid "Leave a reply"
+msgid "No Comments"
 msgstr ""
 
 #: inc/wp_bootstrap_navwalker.php:196

@@ -12,7 +12,7 @@
     <?php $chat_post_text = get_post_meta($post->ID, 'chat_text', true); ?>
     <?php if (!empty($chat_post_text)) : ?>
         <div class="chat-details">
-            <?php echo wpautop($chat_post_text); ?>
+            <?php echo wpautop(esc_textarea($chat_post_text)); ?>
         </div>
     <?php endif; ?>
 
