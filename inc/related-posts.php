@@ -18,7 +18,7 @@
 
                     <?php if (has_post_thumbnail()): ?>
                         <div class="related-posts-thumbnail">
-                            <a href="<?php the_permalink(); ?>" alt="<?php the_title(); ?>">
+                            <a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>">
                                 <?php the_post_thumbnail('creative-blog-featured-small'); ?>
                             </a>
                         </div>
@@ -27,7 +27,7 @@
                     <div class="related-post-content">
 
                         <h4 class="entry-title">
-                            <a href="<?php the_permalink(); ?>" rel="bookmark" title="<?php the_title(); ?>"><?php the_title(); ?></a>
+                            <a href="<?php the_permalink(); ?>" rel="bookmark" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a>
                         </h4><!-- .entry-title -->
 
                         <div class="entry-meta">

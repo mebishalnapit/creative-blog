@@ -89,10 +89,10 @@ class Creative_Blog_Tabbed_Widget extends WP_Widget {
                 <?php while ($get_popular_posts->have_posts()) : $get_popular_posts->the_post(); ?>
                     <div class="single-article">
                         <?php if (has_post_thumbnail()) { ?>
-                            <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('creative-blog-featured-widget'); ?></a>
+                            <a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>"><?php the_post_thumbnail('creative-blog-featured-widget'); ?></a>
                         <?php } ?>
                         <h3 class="entry-title">
-                            <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
+                            <a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a>
                         </h3>
                         <div class="entry-meta">
                             <?php creative_blog_entry_meta_custom(); ?>
@@ -122,10 +122,10 @@ class Creative_Blog_Tabbed_Widget extends WP_Widget {
                     ?>
                     <div class="single-article">
                         <?php if (has_post_thumbnail()) { ?>
-                            <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('creative-blog-featured-widget'); ?></a>
+                            <a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>"><?php the_post_thumbnail('creative-blog-featured-widget'); ?></a>
                         <?php } ?>
                         <h3 class="entry-title">
-                            <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
+                            <a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a>
                         </h3>
                         <div class="entry-meta">
                             <?php creative_blog_entry_meta_custom(); ?>

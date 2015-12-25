@@ -14,7 +14,7 @@
     <?php if (has_post_thumbnail()) : ?>
         <?php if (!is_single()) : ?>
             <div class="featured-image">
-                <a href="<?php the_permalink(); ?>" alt="<?php the_title(); ?>"><?php the_post_thumbnail('creative-blog-featured-thumb'); ?></a>
+                <a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>"><?php the_post_thumbnail('creative-blog-featured-thumb'); ?></a>
             </div>
         <?php endif; ?>
     <?php endif; ?>

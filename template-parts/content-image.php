@@ -23,7 +23,7 @@
                     <?php the_post_thumbnail('creative-blog-featured'); ?>
                 <?php } ?>
             <?php else : ?>
-                <a href="<?php the_permalink(); ?>" alt="<?php the_title(); ?>"><?php the_post_thumbnail('creative-blog-featured'); ?></a>
+                <a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>"><?php the_post_thumbnail('creative-blog-featured'); ?></a>
             <?php endif; ?>
         </div>
     <?php endif; ?>

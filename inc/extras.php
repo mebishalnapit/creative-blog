@@ -92,9 +92,10 @@ if (!function_exists('creative_blog_social_menu')) :
                     array(
                         'theme_location' => 'social',
                         'container' => 'div',
-                        'container_id' => 'menu-social',
+                        'container_id' => 'main-menu-social',
                         'container_class' => 'creative-blog-social-menu',
                         'depth' => 1,
+                        'menu_id' => 'menu-social',
                         'fallback_cb' => false,
                         'link_before' => '<span class="screen-reader-text">',
                         'link_after' => '</span>',
@@ -258,11 +259,6 @@ if (!function_exists('creative_blog_menu_filter')) :
         // showing the random post icon
         if ((get_theme_mod('creative_blog_search_icon_in_menu', 0) == 1) && $args->theme_location == 'primary') {
             $items .= '<li class="filtered-menu"><a class="search"><i class="fa fa-search search-top"></i></a></li>';
-        }
-
-        // ending custom added ul
-        if (((get_theme_mod('creative_blog_random_post_in_menu', 0) == 1) || (get_theme_mod('creative_blog_search_icon_in_menu', 0) == 1 )) && $args->theme_location == 'primary') {
-            $items .= '</ul>';
         }
 
         return $items;
