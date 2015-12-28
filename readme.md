@@ -30,6 +30,7 @@ If you've translated this theme into your native language, then, feel free to se
 
 ## CHANGELOG
 #### VERSION 0.2
+* Added the feature to display the social links of the user profile in Author Bio section
 * Added CB: Tabbed Widget
 * Bootstrap Framework updated to version 3.3.6
 * Font Awesome icons updated to version 4.5.0

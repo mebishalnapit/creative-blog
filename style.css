@@ -974,6 +974,22 @@ li.comments-tab-widget img {
     width: 11.11%;
 }
 
+/* author bio social links */
+.author-box .fa {
+    font-size: 22px;
+    vertical-align: middle;
+    padding: 5px;
+}
+.author-box .fa-twitter {
+    color: #00aced;
+}
+.author-box .fa-google-plus {
+    color: #dd4b39;
+}
+.author-box .fa-facebook {
+    color: #3b5998;
+}
+
 /* media queries */
 @media screen and (max-width: 992px) {
     #logo-and-title {

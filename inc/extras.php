@@ -868,3 +868,34 @@ if (!function_exists('creative_blog_entry_meta_custom')) :
     }
 
 endif;
+
+/**
+ * function to add the social links in the Author Bio section
+ */
+if (!function_exists('creative_blog_author_bio_links')) :
+
+    function creative_blog_author_bio_links() {
+        $author_name = get_the_author_meta('display_name');
+        
+        // pulling the author social links url which are provided through WordPress SEO and All In One SEO Pack plugin
+        $author_facebook_link = get_the_author_meta('facebook');
+        $author_twitter_link = get_the_author_meta('twitter');
+        $author_googleplus_link = get_the_author_meta('googleplus');
+        
+        if ($author_twitter_link || $author_googleplus_link || $author_facebook_link) {
+            echo '<div class="author-social-links">';
+            printf(__( 'Follow %s on:', 'creative-blog' ), $author_name );
+            if ($author_facebook_link) {
+                echo '<a href="' . esc_url($author_facebook_link) . '" title="' . __('Facebook', 'creative-blog') . '" target="_blank"><i class="fa fa-facebook"></i><span class="screen-reader-text">' . __( 'Facebook', 'creative-blog' ) . '</span></a>';
+            }
+            if ($author_twitter_link) {
+                echo '<a href="https://twitter.com/' . esc_attr($author_twitter_link) . '" title="' . __('Twitter', 'creative-blog') .'" target="_blank"><i class="fa fa-twitter"></i><span class="screen-reader-text">' . __( 'Twitter', 'creative-blog' ) . '</span></a>';
+            }
+            if ($author_googleplus_link) {
+                echo '<a href="' . esc_url($author_googleplus_link) . '" title="' . __('Google Plus', 'creative-blog') . '" rel="author" target="_blank"><i class="fa fa-google-plus"></i><span class="screen-reader-text">' . __( 'Google Plus', 'creative-blog' ) . '</span></a>';
+            }
+            echo '</div>';
+        }
+    }
+
+endif;

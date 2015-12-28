@@ -43,7 +43,7 @@ if (!function_exists('creative_blog_setup')) :
          */
         add_theme_support('post-thumbnails');
         add_image_size('creative-blog-featured', 1000, 600, true);
-        add_image_size('creative-blog-featured-thumb', 150, 150, true);
+        add_image_size('creative-blog-featured-thumb', 200, 200, true);
         add_image_size('creative-blog-featured-small', 300, 180, true);
         add_image_size('creative-blog-featured-widget', 120, 90, true);
 
@@ -354,4 +354,4 @@ require get_template_directory() . '/inc/wp_bootstrap_pagination.php';
 /**
  * Add the required custom widgets
  */
-+require get_template_directory() . '/inc/widgets.php';
+require get_template_directory() . '/inc/widgets.php';

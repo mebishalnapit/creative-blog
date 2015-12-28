@@ -499,6 +499,25 @@ function creative_blog_customize_register($wp_customize) {
         'section' => 'creative_blog_featured_image_popup_setting',
         'settings' => 'creative_blog_featured_image_popup'
     ));
+    
+    $wp_customize->add_section('creative_blog_author_bio_social_links_setting', array(
+        'priority' => 3,
+        'title' => __('Social Links In Author Bio', 'creative-blog'),
+        'panel' => 'creative_blog_additional_options'
+    ));
+
+    $wp_customize->add_setting('creative_blog_author_bio_social_links', array(
+        'default' => 0,
+        'capability' => 'edit_theme_options',
+        'sanitize_callback' => 'creative_blog_checkbox_sanitize'
+    ));
+
+    $wp_customize->add_control('creative_blog_author_bio_social_links', array(
+        'type' => 'checkbox',
+        'label' => __('Check to enable the social links in the Author Bio section. For this to work, you need to add the URL of your social sites in the profile section. This theme supports WordPress SEO and All In One SEO Pack plugin for this feature.', 'creative-blog'),
+        'section' => 'creative_blog_author_bio_social_links_setting',
+        'settings' => 'creative_blog_author_bio_social_links'
+    ));
     // End Of Additional Options
     // Category Color Options
     $wp_customize->add_panel('creative_blog_category_color_panel', array(

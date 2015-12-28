@@ -3,8 +3,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Creative Blog\n"
-"POT-Creation-Date: 2015-12-12 16:17+0545\n"
-"PO-Revision-Date: 2015-12-12 16:18+0545\n"
+"POT-Creation-Date: 2015-12-28 21:35+0545\n"
+"PO-Revision-Date: 2015-12-28 21:36+0545\n"
 "Last-Translator: \n"
 "Language-Team: Bishal Napit <mebishalnapit@gmail.com>\n"
 "Language: en\n"
@@ -208,7 +208,7 @@ msgstr ""
 msgid "Check to enable the breaking news section."
 msgstr ""
 
-#: inc/customizer.php:145 inc/extras.php:231
+#: inc/customizer.php:145 inc/extras.php:232
 msgid "Random Post"
 msgstr ""
 
@@ -361,21 +361,33 @@ msgid ""
 "post format is choosen."
 msgstr ""
 
-#: inc/customizer.php:506
+#: inc/customizer.php:505
+msgid "Social Links In Author Bio"
+msgstr ""
+
+#: inc/customizer.php:517
+msgid ""
+"Check to enable the social links in the Author Bio section. For this to "
+"work, you need to add the URL of your social sites in the profile section. "
+"This theme supports WordPress SEO and All In One SEO Pack plugin for this "
+"feature."
+msgstr ""
+
+#: inc/customizer.php:525
 msgid "Category Color Options"
 msgstr ""
 
-#: inc/customizer.php:508
+#: inc/customizer.php:527
 msgid ""
 "Change the color of each category items as you want to best suit your "
 "requirement."
 msgstr ""
 
-#: inc/customizer.php:513
+#: inc/customizer.php:532
 msgid "Category Color Settings"
 msgstr ""
 
-#: inc/customizer.php:537
+#: inc/customizer.php:556
 #, php-format
 msgid "%s"
 msgstr ""
@@ -384,105 +396,122 @@ msgstr ""
 msgid "Latest:"
 msgstr ""
 
-#: inc/extras.php:285
+#: inc/extras.php:281
 msgid "WordPress"
 msgstr ""
 
-#: inc/extras.php:287
+#: inc/extras.php:283
 msgid "Bishal Napit"
 msgstr ""
 
-#: inc/extras.php:289
+#: inc/extras.php:285
 #, php-format
 msgid "Copyright &copy; %1$s %2$s."
 msgstr ""
 
-#: inc/extras.php:289
+#: inc/extras.php:285
 #, php-format
 msgid "Theme: %1$s by %2$s."
 msgstr ""
 
-#: inc/extras.php:289
+#: inc/extras.php:285
 #, php-format
 msgid "Powered by %s."
 msgstr ""
 
-#: inc/extras.php:410
+#: inc/extras.php:406
 msgid "Post navigation"
 msgstr ""
 
-#: inc/extras.php:413
+#: inc/extras.php:409
 msgctxt "Previous post link"
 msgid ""
 "<span class=\"meta-nav\"><i class=\"fa fa-arrow-circle-o-left\"></i></span>"
 "%title"
 msgstr ""
 
-#: inc/extras.php:414
+#: inc/extras.php:410
 msgctxt "Next post link"
 msgid ""
 "%title<span class=\"meta-nav\"><i class=\"fa fa-arrow-circle-o-right\"></i></"
 "span>"
 msgstr ""
 
-#: inc/extras.php:428
+#: inc/extras.php:424
 msgid "Video URL"
 msgstr ""
 
-#: inc/extras.php:429
+#: inc/extras.php:425
 msgid "Audio URL"
 msgstr ""
 
-#: inc/extras.php:430
+#: inc/extras.php:426
 msgid "Status"
 msgstr ""
 
-#: inc/extras.php:431
+#: inc/extras.php:427
 msgid "Chat"
 msgstr ""
 
-#: inc/extras.php:433
+#: inc/extras.php:429
 msgid "Link Text"
 msgstr ""
 
-#: inc/extras.php:434
+#: inc/extras.php:430
 msgid "Link URL"
 msgstr ""
 
-#: inc/extras.php:436
+#: inc/extras.php:432
 msgid "Quote Text"
 msgstr ""
 
-#: inc/extras.php:437
+#: inc/extras.php:433
 msgid "Quote Author"
 msgstr ""
 
-#: inc/extras.php:860 inc/template-tags.php:25
+#: inc/extras.php:856 inc/template-tags.php:25
 #, php-format
 msgctxt "post date"
 msgid "%s"
 msgstr ""
 
-#: inc/extras.php:864 inc/template-tags.php:29
+#: inc/extras.php:860 inc/template-tags.php:29
 #, php-format
 msgctxt "post author"
 msgid "%s"
 msgstr ""
 
-#: inc/extras.php:870 inc/template-tags.php:36
+#: inc/extras.php:866 inc/template-tags.php:36
 msgid "<i class=\"fa fa-comment\"></i>Leave a reply"
 msgstr ""
 
-#: inc/extras.php:870 inc/template-tags.php:36
+#: inc/extras.php:866 inc/template-tags.php:36
 msgid "<i class=\"fa fa-comment\"></i>1 Comment"
 msgstr ""
 
-#: inc/extras.php:870 inc/template-tags.php:36
+#: inc/extras.php:866 inc/template-tags.php:36
 msgid "<i class=\"fa fa-comment\"></i>% Comments"
 msgstr ""
 
-#: inc/extras.php:870 inc/template-tags.php:36
+#: inc/extras.php:866 inc/template-tags.php:36
 msgid "<i class=\"fa fa-comment\"></i>Comments Disabled"
+msgstr ""
+
+#: inc/extras.php:887
+#, php-format
+msgid "Follow %s on:"
+msgstr ""
+
+#: inc/extras.php:889
+msgid "Facebook"
+msgstr ""
+
+#: inc/extras.php:892
+msgid "Twitter"
+msgstr ""
+
+#: inc/extras.php:895
+msgid "Google Plus"
 msgstr ""
 
 #: inc/meta-boxes.php:14 inc/meta-boxes.php:16
