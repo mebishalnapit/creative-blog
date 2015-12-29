@@ -1,5 +1,4 @@
 <?php
-
 /**
  * Custom template tags for this theme.
  *
@@ -7,6 +6,7 @@
  *
  * @package Creative Blog
  */
+
 if (!function_exists('creative_blog_posted_on')) :
 
     /**

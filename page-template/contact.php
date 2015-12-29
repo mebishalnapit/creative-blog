@@ -9,7 +9,7 @@ get_header();
 
 <?php do_action('creative_blog_before_body_content'); ?>
 
-<?php do_action('creative_blog_before_body_content'); ?>
+<?php creative_blog_left_sidebar_select(); ?>
 
 <div id="primary" class="content-area <?php creative_blog_layout_class(); ?>">
     <main id="main" class="site-main" role="main">

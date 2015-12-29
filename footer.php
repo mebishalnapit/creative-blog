@@ -10,19 +10,19 @@
  */
 ?>
 
-</div><!-- #content -->
+            </div><!-- #content -->
 
-<?php do_action('creative_blog_before_footer'); ?>
-<footer id="colophon" class="site-footer" role="contentinfo">
-    <?php get_sidebar('footer'); ?>
-    <div class="site-info container-fluid">
-        <?php do_action('creative_blog_footer_copyright'); ?>
-    </div><!-- .site-info -->
-</footer><!-- #colophon -->
-<a href="#masthead" id="scroll-up"><i class="fa fa-arrow-up"></i></a>
-</div><!-- #page -->
+            <?php do_action('creative_blog_before_footer'); ?>
+            <footer id="colophon" class="site-footer" role="contentinfo">
+                <?php get_sidebar('footer'); ?>
+                <div class="site-info container-fluid">
+                    <?php do_action('creative_blog_footer_copyright'); ?>
+                </div><!-- .site-info -->
+            </footer><!-- #colophon -->
+            <a href="#masthead" id="scroll-up"><i class="fa fa-arrow-up"></i></a>
+        </div><!-- #page -->
 
-<?php wp_footer(); ?>
+        <?php wp_footer(); ?>
 
-</body>
+    </body>
 </html>

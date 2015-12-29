@@ -125,5 +125,4 @@ if (!function_exists('creative_blog_admin_header_image')) :
         <?php
     }
 
-
 endif; // creative_blog_admin_header_image

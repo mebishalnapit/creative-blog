@@ -1,10 +1,10 @@
 <?php
-
 /**
  * Contains all the widgets parts included in the theme
  *
  * @package Creative Blog
  */
+
 class Creative_Blog_Tabbed_Widget extends WP_Widget {
 
     /**

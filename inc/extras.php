@@ -83,7 +83,6 @@ endif;
 /*
  * Creating Social Menu
  */
-
 if (!function_exists('creative_blog_social_menu')) :
 
     function creative_blog_social_menu() {
@@ -110,7 +109,6 @@ endif;
 /*
  * Adding the header logo options code
  */
-
 if (!function_exists('creative_blog_header_text_logo')) :
 
     function creative_blog_header_text_logo() {
@@ -188,7 +186,6 @@ if (!function_exists('creative_blog_colored_category')) :
 
 endif;
 
-
 /**
  * adding the hooks to filter the single category title to display the colored category title
  */
@@ -205,10 +202,10 @@ if (!function_exists('creative_blog_colored_category_title')) :
     }
 
 endif;
+
 /*
  * Adding the custom function to filter the category title
  */
-
 function creative_blog_category_title_function($category_title) {
     add_filter('single_cat_title', 'creative_blog_colored_category_title');
 }
@@ -266,9 +263,6 @@ if (!function_exists('creative_blog_menu_filter')) :
 
 endif;
 
-/**
- * Adding the copyright information
- */
 add_action('creative_blog_footer_copyright', 'creative_blog_footer_copyright', 10);
 /**
  * function to show the footer info, copyright information
@@ -770,16 +764,15 @@ if (!function_exists('creative_blog_right_sidebar_select')) :
         }
 
         $creative_blog_default_layout = get_theme_mod('creative_blog_default_layout', 'right_sidebar');
-        $creative_blog_default_page_layout = get_theme_mod('creative_blog_pages_default_layout', 'right_sidebar');
-        $creative_blog_default_post_layout = get_theme_mod('creative_blog_single_posts_default_layout', 'right_sidebar');
+        $creative_blog_default_page_layout = get_theme_mod('creative_blog_default_page_layout', 'right_sidebar');
+        $creative_blog_default_post_layout = get_theme_mod('creative_blog_default_single_posts_layout', 'right_sidebar');
 
         if ($creative_blog_layout_meta == 'default_layout') {
             if (is_page()) {
                 if ($creative_blog_default_page_layout == 'right_sidebar') {
                     get_sidebar();
                 }
-            }
-            if (is_single()) {
+            } elseif (is_single()) {
                 if ($creative_blog_default_post_layout == 'right_sidebar') {
                     get_sidebar();
                 }
@@ -815,16 +808,15 @@ if (!function_exists('creative_blog_left_sidebar_select')) :
         }
 
         $creative_blog_default_layout = get_theme_mod('creative_blog_default_layout', 'right_sidebar');
-        $creative_blog_default_page_layout = get_theme_mod('creative_blog_pages_default_layout', 'right_sidebar');
-        $creative_blog_default_post_layout = get_theme_mod('creative_blog_single_posts_default_layout', 'right_sidebar');
+        $creative_blog_default_page_layout = get_theme_mod('creative_blog_default_page_layout', 'right_sidebar');
+        $creative_blog_default_post_layout = get_theme_mod('creative_blog_default_single_posts_layout', 'right_sidebar');
 
         if ($creative_blog_layout_meta == 'default_layout') {
             if (is_page()) {
                 if ($creative_blog_default_page_layout == 'left_sidebar') {
                     get_sidebar('left');
                 }
-            }
-            if (is_single()) {
+            } elseif (is_single()) {
                 if ($creative_blog_default_post_layout == 'left_sidebar') {
                     get_sidebar('left');
                 }

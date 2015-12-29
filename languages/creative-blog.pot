@@ -3,8 +3,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Creative Blog\n"
-"POT-Creation-Date: 2015-12-28 21:35+0545\n"
-"PO-Revision-Date: 2015-12-28 21:36+0545\n"
+"POT-Creation-Date: 2015-12-29 21:03+0545\n"
+"PO-Revision-Date: 2015-12-29 21:03+0545\n"
 "Last-Translator: \n"
 "Language-Team: Bishal Napit <mebishalnapit@gmail.com>\n"
 "Language: en\n"
@@ -29,7 +29,7 @@ msgid ""
 "It looks like nothing was found at this location. Maybe try a search instead?"
 msgstr ""
 
-#: comments.php:30
+#: comments.php:29
 #, php-format
 msgctxt "comments title"
 msgid "One thought on &ldquo;%2$s&rdquo;"
@@ -37,19 +37,19 @@ msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
 msgstr[0] ""
 msgstr[1] ""
 
-#: comments.php:37 comments.php:59
+#: comments.php:36 comments.php:58
 msgid "Comment navigation"
 msgstr ""
 
-#: comments.php:40 comments.php:62
+#: comments.php:39 comments.php:61
 msgid "Older Comments"
 msgstr ""
 
-#: comments.php:41 comments.php:63
+#: comments.php:40 comments.php:62
 msgid "Newer Comments"
 msgstr ""
 
-#: comments.php:75
+#: comments.php:74
 msgid "Comments disabled."
 msgstr ""
 
@@ -208,7 +208,7 @@ msgstr ""
 msgid "Check to enable the breaking news section."
 msgstr ""
 
-#: inc/customizer.php:145 inc/extras.php:232
+#: inc/customizer.php:145 inc/extras.php:229
 msgid "Random Post"
 msgstr ""
 
@@ -396,121 +396,121 @@ msgstr ""
 msgid "Latest:"
 msgstr ""
 
-#: inc/extras.php:281
+#: inc/extras.php:275
 msgid "WordPress"
 msgstr ""
 
-#: inc/extras.php:283
+#: inc/extras.php:277
 msgid "Bishal Napit"
 msgstr ""
 
-#: inc/extras.php:285
+#: inc/extras.php:279
 #, php-format
 msgid "Copyright &copy; %1$s %2$s."
 msgstr ""
 
-#: inc/extras.php:285
+#: inc/extras.php:279
 #, php-format
 msgid "Theme: %1$s by %2$s."
 msgstr ""
 
-#: inc/extras.php:285
+#: inc/extras.php:279
 #, php-format
 msgid "Powered by %s."
 msgstr ""
 
-#: inc/extras.php:406
+#: inc/extras.php:400
 msgid "Post navigation"
 msgstr ""
 
-#: inc/extras.php:409
+#: inc/extras.php:403
 msgctxt "Previous post link"
 msgid ""
 "<span class=\"meta-nav\"><i class=\"fa fa-arrow-circle-o-left\"></i></span>"
 "%title"
 msgstr ""
 
-#: inc/extras.php:410
+#: inc/extras.php:404
 msgctxt "Next post link"
 msgid ""
 "%title<span class=\"meta-nav\"><i class=\"fa fa-arrow-circle-o-right\"></i></"
 "span>"
 msgstr ""
 
-#: inc/extras.php:424
+#: inc/extras.php:418
 msgid "Video URL"
 msgstr ""
 
-#: inc/extras.php:425
+#: inc/extras.php:419
 msgid "Audio URL"
 msgstr ""
 
-#: inc/extras.php:426
+#: inc/extras.php:420
 msgid "Status"
 msgstr ""
 
-#: inc/extras.php:427
+#: inc/extras.php:421
 msgid "Chat"
 msgstr ""
 
-#: inc/extras.php:429
+#: inc/extras.php:423
 msgid "Link Text"
 msgstr ""
 
-#: inc/extras.php:430
+#: inc/extras.php:424
 msgid "Link URL"
 msgstr ""
 
-#: inc/extras.php:432
+#: inc/extras.php:426
 msgid "Quote Text"
 msgstr ""
 
-#: inc/extras.php:433
+#: inc/extras.php:427
 msgid "Quote Author"
 msgstr ""
 
-#: inc/extras.php:856 inc/template-tags.php:25
+#: inc/extras.php:848 inc/template-tags.php:25
 #, php-format
 msgctxt "post date"
 msgid "%s"
 msgstr ""
 
-#: inc/extras.php:860 inc/template-tags.php:29
+#: inc/extras.php:852 inc/template-tags.php:29
 #, php-format
 msgctxt "post author"
 msgid "%s"
 msgstr ""
 
-#: inc/extras.php:866 inc/template-tags.php:36
+#: inc/extras.php:858 inc/template-tags.php:36
 msgid "<i class=\"fa fa-comment\"></i>Leave a reply"
 msgstr ""
 
-#: inc/extras.php:866 inc/template-tags.php:36
+#: inc/extras.php:858 inc/template-tags.php:36
 msgid "<i class=\"fa fa-comment\"></i>1 Comment"
 msgstr ""
 
-#: inc/extras.php:866 inc/template-tags.php:36
+#: inc/extras.php:858 inc/template-tags.php:36
 msgid "<i class=\"fa fa-comment\"></i>% Comments"
 msgstr ""
 
-#: inc/extras.php:866 inc/template-tags.php:36
+#: inc/extras.php:858 inc/template-tags.php:36
 msgid "<i class=\"fa fa-comment\"></i>Comments Disabled"
 msgstr ""
 
-#: inc/extras.php:887
+#: inc/extras.php:879
 #, php-format
 msgid "Follow %s on:"
 msgstr ""
 
-#: inc/extras.php:889
+#: inc/extras.php:881
 msgid "Facebook"
 msgstr ""
 
-#: inc/extras.php:892
+#: inc/extras.php:884
 msgid "Twitter"
 msgstr ""
 
-#: inc/extras.php:895
+#: inc/extras.php:887
 msgid "Google Plus"
 msgstr ""
 
