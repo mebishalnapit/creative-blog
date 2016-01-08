@@ -1,6 +1,8 @@
 /*
 Theme Name: Creative Blog
+Theme URI: http://napitwptech.com/creative-blog-wordpress-theme/
 Author: Bishal Napit
+Author URI: http://napitwptech.com/our-wordpress-themes/
 Description: Creative Blog is an extremely creative WordPress theme to create your own personal blog site very easily. This theme totally focuses on the features which you may require for blogging sites. Some of the features of this theme are as logo upload option, custom header and custom background(in boxed layout) can be kept as requirement. Also, this theme features custom social menu and also you have the ability to display the five latest post in the header top section as well as you can have the layout option for each of the different pages/posts individually. This theme also supports 10 post formats so that you can show the contents uniquely according to the post formats used in your site.
 Version: 0.2
 License: GNU General Public License v3 or later
@@ -875,6 +877,20 @@ li.comments-tab-widget img {
     padding: 10px 0;
 }
 
+/* JetPack subscription form */
+#subscribe-email input {
+    width: 100% !important;
+    padding: 10px !important;
+}
+#subscribe-email input {
+    color: #000;
+}
+
+/* GitHub Gist table */
+.gist tr, .gist td, .gist th {
+    border: none;
+}
+
 /* Accessibility */
 .screen-reader-text {
     clip: rect(1px, 1px, 1px, 1px);
@@ -883,7 +899,6 @@ li.comments-tab-widget img {
     width: 1px;
     overflow: hidden;
 }
-
 .screen-reader-text:focus {
     background-color: #f1f1f1;
     border-radius: 3px;
@@ -919,6 +934,7 @@ li.comments-tab-widget img {
 }
 .aligncenter {
     clear: both;
+    display: block;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 10px;
