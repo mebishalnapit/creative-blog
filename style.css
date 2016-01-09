@@ -876,6 +876,16 @@ li.comments-tab-widget img {
 .no-comments-commented-post {
     padding: 10px 0;
 }
+.content-top-sidebar {
+    padding-top: 20px;
+    text-align: center;
+    border-bottom: 1px solid #0099ff;
+}
+.content-bottom-sidebar {
+    padding-top: 20px;
+    text-align: center;
+    border-top: 1px solid #0099ff;
+}
 
 /* JetPack subscription form */
 #subscribe-email input {

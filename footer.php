@@ -11,6 +11,12 @@
 ?>
 
             </div><!-- #content -->
+            
+            <?php if (is_active_sidebar('creative-blog-content-bottom-sidebar')) { ?>
+                <div class="container-fluid content-bottom-sidebar">
+                    <?php dynamic_sidebar('creative-blog-content-bottom-sidebar'); ?>
+                </div>
+            <?php } ?>
 
             <?php do_action('creative_blog_before_footer'); ?>
             <footer id="colophon" class="site-footer" role="contentinfo">

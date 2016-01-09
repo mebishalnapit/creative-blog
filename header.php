@@ -118,4 +118,10 @@
             <?php do_action('creative_blog_after_header'); ?>
             <?php do_action('creative_blog_before_main'); ?>
 
+            <?php if (is_active_sidebar('creative-blog-content-top-sidebar')) { ?>
+                <div class="container-fluid content-top-sidebar">
+                    <?php dynamic_sidebar('creative-blog-content-top-sidebar'); ?>
+                </div>
+            <?php } ?>
+            
             <div id="content" class="site-content container-fluid">

@@ -140,6 +140,26 @@ function creative_blog_widgets_init() {
         'before_title' => '<h3 class="widget-title"><span>',
         'after_title' => '</span></h3>',
     ));
+    
+    register_sidebar(array(
+        'name' => esc_html__('Content Top Sidebar', 'creative-blog'),
+        'id' => 'creative-blog-content-top-sidebar',
+        'description' => __('Display your widgets in the Content Top Sidebar Area', 'creative-blog'),
+        'before_widget' => '<section id="%1$s" class="widget %2$s">',
+        'after_widget' => '</section>',
+        'before_title' => '<h3 class="widget-title"><span>',
+        'after_title' => '</span></h3>',
+    ));
+    
+    register_sidebar(array(
+        'name' => esc_html__('Content Bottom Sidebar', 'creative-blog'),
+        'id' => 'creative-blog-content-bottom-sidebar',
+        'description' => __('Display your widgets in the Content Bottom Sidebar Area', 'creative-blog'),
+        'before_widget' => '<section id="%1$s" class="widget %2$s">',
+        'after_widget' => '</section>',
+        'before_title' => '<h3 class="widget-title"><span>',
+        'after_title' => '</span></h3>',
+    ));
 
     register_sidebar(array(
         'name' => esc_html__('404 Sidebar', 'creative-blog'),
