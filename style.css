@@ -166,6 +166,9 @@ ul.newsticker {
     border-radius: 0;
     margin-bottom: 0;
 }
+.sticky-wrapper #site-navigation {
+    z-index: 9999;
+}
 .search-form-top {
     background-color: #222;
     display: none;

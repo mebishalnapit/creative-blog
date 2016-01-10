@@ -46,15 +46,25 @@ jQuery(document).ready(function () {
             }
         });
     }
-    
+
     // setting for the popup featured image
-    if ( typeof jQuery.fn.magnificPopup !== 'undefined' ) {
+    if (typeof jQuery.fn.magnificPopup !== 'undefined') {
         jQuery('.featured-image-popup').magnificPopup({type: 'image'});
     }
-    
+
     // setting for the gallery slider
-    if ( typeof jQuery.fn.carousel !== 'undefined' ) {
+    if (typeof jQuery.fn.carousel !== 'undefined') {
         jQuery('.carousel').carousel();
+    }
+
+    // setting for the sticky menu
+    if (typeof jQuery.fn.sticky !== 'undefined') {
+        var wpAdminBar = jQuery('#wpadminbar');
+        if (wpAdminBar.length) {
+            jQuery("#site-navigation").sticky({topSpacing: wpAdminBar.height()});
+        } else {
+            jQuery("#site-navigation").sticky({topSpacing: 0});
+        }
     }
 
 });

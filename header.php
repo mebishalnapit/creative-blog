@@ -93,13 +93,14 @@
                         ?>
 
                     </div>
-                </nav><!-- #site-navigation -->
 
-                <?php if (get_theme_mod('creative_blog_search_icon_in_menu', 0) == 1) : ?>
-                    <div class="search-form-top">
-                        <?php get_search_form(); ?>
-                    </div>
-                <?php endif; ?>
+                    <?php if (get_theme_mod('creative_blog_search_icon_in_menu', 0) == 1) : ?>
+                        <div class="search-form-top">
+                            <?php get_search_form(); ?>
+                        </div>
+                    <?php endif; ?>
+
+                </nav><!-- #site-navigation -->
 
             </header><!-- #masthead -->
 
@@ -123,5 +124,5 @@
                     <?php dynamic_sidebar('creative-blog-content-top-sidebar'); ?>
                 </div>
             <?php } ?>
-            
+
             <div id="content" class="site-content container-fluid">

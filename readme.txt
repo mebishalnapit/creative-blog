@@ -12,8 +12,9 @@ Resources packed within the theme.
   SIL OFL 1.1 http://scripts.sil.org/OFL.
 * HTML5 Shiv @afarkas @jdalton @jon_neal @rem | MIT/GPL2 Licensed
 * FitVids by Chris Coyier and Paravel | WTFPL Licensed
-* JQuery Advanced News Ticker 1.0.11 by Valentin Ledrapier(risq) | GPL Licensed
+* JQuery Advanced News Ticker by Valentin Ledrapier(risq) | GPL Licensed
 * Magnific-Popup by Dmitry Semenov | MIT Licensed
+* Stickyjs by Anthony Garand | MIT Licensed
 * Other custom js files are our own creation and is licensed under the same license as this theme.
 
 All other resources and theme elements are licensed under the [GNU GPL](http://www.gnu.org/licenses/gpl-3.0.txt), version 3 or later.
@@ -30,6 +31,7 @@ If you've translated this theme into your native language, then, feel free to se
 
 == CHANGELOG ==
 = VERSION 0.2 =
+* Added the feature to make the primary menu sticky
 * Added the feature to display the social links of the user profile in Author Bio section
 * Added CB: Tabbed Widget
 * Bootstrap Framework updated to version 3.3.6

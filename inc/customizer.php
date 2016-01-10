@@ -138,10 +138,30 @@ function creative_blog_customize_register($wp_customize) {
         'section' => 'creative_blog_breaking_news_section',
         'settings' => 'creative_blog_breaking_news'
     ));
+    
+    // sticky menu enable/disable
+    $wp_customize->add_section('creative_blog_sticky_menu_section', array(
+        'priority' => 4,
+        'title' => __('Sticky Menu', 'creative-blog'),
+        'panel' => 'creative_blog_header_options'
+    ));
+
+    $wp_customize->add_setting('creative_blog_sticky_menu', array(
+        'default' => 0,
+        'capability' => 'edit_theme_options',
+        'sanitize_callback' => 'creative_blog_checkbox_sanitize'
+    ));
+
+    $wp_customize->add_control('creative_blog_sticky_menu', array(
+        'type' => 'checkbox',
+        'label' => __('Check to enable the sticky menu feature. Note: This feature is only applied to the primary menu.', 'creative-blog'),
+        'section' => 'creative_blog_sticky_menu_section',
+        'settings' => 'creative_blog_sticky_menu'
+    ));
 
     // random posts in menu enable/disable
     $wp_customize->add_section('creative_blog_random_post_in_menu_section', array(
-        'priority' => 4,
+        'priority' => 5,
         'title' => __('Random Post', 'creative-blog'),
         'panel' => 'creative_blog_header_options'
     ));
@@ -161,7 +181,7 @@ function creative_blog_customize_register($wp_customize) {
 
     // search icon in menu enable/disable
     $wp_customize->add_section('creative_blog_search_icon_in_menu_section', array(
-        'priority' => 5,
+        'priority' => 6,
         'title' => __('Search Icon', 'creative-blog'),
         'panel' => 'creative_blog_header_options'
     ));
@@ -181,7 +201,7 @@ function creative_blog_customize_register($wp_customize) {
 
     // header top bar enable/disable
     $wp_customize->add_section('creative_blog_header_top_bar_section', array(
-        'priority' => 6,
+        'priority' => 7,
         'title' => __('Header Top Bar', 'creative-blog'),
         'panel' => 'creative_blog_header_options'
     ));
@@ -201,7 +221,7 @@ function creative_blog_customize_register($wp_customize) {
 
     // header image link enable/disable
     $wp_customize->add_section('creative_blog_header_image_link_section', array(
-        'priority' => 7,
+        'priority' => 8,
         'title' => __('Header Image Link', 'creative-blog'),
         'panel' => 'creative_blog_header_options'
     ));
