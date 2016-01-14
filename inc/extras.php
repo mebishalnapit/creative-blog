@@ -25,18 +25,6 @@ function creative_blog_body_classes($classes) {
 add_filter('body_class', 'creative_blog_body_classes');
 
 /*
- * Creating responsive video for posts/pages
- */
-if (!function_exists('creative_blog_responsive_video')) :
-
-    function creative_blog_responsive_video($html, $url, $attr, $post_ID) {
-        return '<div class="fitvids-video">' . $html . '</div>';
-    }
-
-    add_filter('embed_oembed_html', 'creative_blog_responsive_video', 10, 4);
-endif;
-
-/*
  * Display the date in the header
  */
 if (!function_exists('creative_blog_date_display')) :

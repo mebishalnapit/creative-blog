@@ -99,7 +99,7 @@ add_action('after_setup_theme', 'creative_blog_setup');
  * @global int $content_width
  */
 function creative_blog_content_width() {
-    $GLOBALS['content_width'] = apply_filters('creative_blog_content_width', 800);
+    $GLOBALS['content_width'] = apply_filters('creative_blog_content_width', 1000);
 }
 
 add_action('after_setup_theme', 'creative_blog_content_width', 0);

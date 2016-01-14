@@ -8,8 +8,10 @@
  */
 
 /**
- * Add theme support for Infinite Scroll.
+ * Jetpack setup function.
+ *
  * See: https://jetpack.me/support/infinite-scroll/
+ * See: https://jetpack.me/support/responsive-videos/
  */
 function creative_blog_jetpack_setup() {
     add_theme_support('infinite-scroll', array(
@@ -17,6 +19,9 @@ function creative_blog_jetpack_setup() {
         'render' => 'creative_blog_infinite_scroll_render',
         'footer' => 'page',
     ));
+
+    // Add theme support for Responsive Videos.
+    add_theme_support('jetpack-responsive-videos');
 }
 
 // end function creative_blog_jetpack_setup
