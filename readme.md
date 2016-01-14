@@ -13,7 +13,7 @@
 * HTML5 Shiv by Alexander Farkas, Jonathan Neal | MIT/GPL2 Licensed
 * FitVids by Chris Coyier and Paravel | WTFPL Licensed
 * JQuery Advanced News Ticker by Valentin Ledrapier(risq) | GPL Licensed
-* Magnific-Popup by Dmitry Semenov | MIT Licensed
+* Magnific Popup by Dmitry Semenov | MIT Licensed
 * Stickyjs by Anthony Garand | MIT Licensed
 * Other custom js files are our own creation and is licensed under the same license as this theme.
 
@@ -30,7 +30,7 @@ All the available options of this theme can be used from Appearance > Customize.
 If you've translated this theme into your native language, then, feel free to send the translation file to mebishalnapit@gmail.com and we will include it within the theme from next version update.
 
 ## CHANGELOG
-= VERSION 0.3 =
+#### VERSION 0.3
 * Magnific Popup updated to version 1.0.1
 
 #### VERSION 0.2

@@ -337,7 +337,8 @@ ul#menu-social {
     color: #237bc2;
 }
 #menu-social li a[href$="/feed/"]::before,
-#menu-social li a[href*="rss.com"]::before {
+#menu-social li a[href*="rss.com"]::before,
+#menu-social li a[href*="feedburner.com"]::before{
     content: '\f09e';
     color: #f26522;
 }
