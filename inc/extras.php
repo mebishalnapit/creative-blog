@@ -32,7 +32,7 @@ if (!function_exists('creative_blog_date_display')) :
     function creative_blog_date_display() {
         ?>
         <div class="date-in-header">
-            <?php echo date_i18n('l, j F, Y'); ?>
+            <?php echo date_i18n('l, F j, Y'); ?>
         </div>
         <?php
     }
@@ -422,11 +422,11 @@ add_action('add_meta_boxes', 'creative_blog_post_format_meta_box');
 // creating the required text box for the video url for the video post format
 function creative_blog_post_format_video_url($post) {
     $video_post_id = get_post_custom($post->ID);
-    $video_post_url = isset($video_post_id['video_url']) ? esc_attr($video_post_id['video_url'][0]) : '';
+    $video_post_url = isset($video_post_id['video_url']) ? esc_url($video_post_id['video_url'][0]) : '';
     wp_nonce_field('my_meta_box_nonce', 'meta_box_nonce');
     ?>
     <p>
-        <input type="text" class="widefat" name="video_url" id="video_url" value="<?php echo $video_post_url; ?>" />
+        <input type="text" class="widefat" name="video_url" id="video_url" value="<?php echo esc_url($video_post_url); ?>" />
     </p>
     <?php
 }
@@ -434,11 +434,11 @@ function creative_blog_post_format_video_url($post) {
 // creating the required text box for the audio url for the audio post format
 function creative_blog_post_format_audio_url($post) {
     $audio_post_id = get_post_custom($post->ID);
-    $audio_post_url = isset($audio_post_id['audio_url']) ? esc_attr($audio_post_id['audio_url'][0]) : '';
+    $audio_post_url = isset($audio_post_id['audio_url']) ? esc_url($audio_post_id['audio_url'][0]) : '';
     wp_nonce_field('my_meta_box_nonce', 'meta_box_nonce');
     ?>
     <p>
-        <input type="text" class="widefat" name="audio_url" id="audio_url" value="<?php echo $audio_post_url; ?>" />
+        <input type="text" class="widefat" name="audio_url" id="audio_url" value="<?php echo esc_url($audio_post_url); ?>" />
     </p>
     <?php
 }
@@ -450,7 +450,7 @@ function creative_blog_post_format_status($post) {
     wp_nonce_field('my_meta_box_nonce', 'meta_box_nonce');
     ?>
     <p>
-        <textarea class="widefat" rows="5" cols="20" name="status_text" id="status_text"><?php echo $status_post_text; ?></textarea>
+        <textarea class="widefat" rows="5" cols="20" name="status_text" id="status_text"><?php echo esc_html($status_post_text); ?></textarea>
     </p>
     <?php
 }
@@ -462,7 +462,7 @@ function creative_blog_post_format_chat($post) {
     wp_nonce_field('my_meta_box_nonce', 'meta_box_nonce');
     ?>
     <p>
-        <textarea class="widefat" rows="5" cols="20" name="chat_text" id="chat_text"><?php echo $chat_post_text; ?></textarea>
+        <textarea class="widefat" rows="5" cols="20" name="chat_text" id="chat_text"><?php echo esc_textarea($chat_post_text); ?></textarea>
     </p>
     <?php
 }
@@ -474,7 +474,7 @@ function creative_blog_post_format_link_text($post) {
     wp_nonce_field('my_meta_box_nonce', 'meta_box_nonce');
     ?>
     <p>
-        <input type="text" class="widefat" name="link_text" id="link_text" value="<?php echo $link_post_text; ?>" />
+        <input type="text" class="widefat" name="link_text" id="link_text" value="<?php echo esc_html($link_post_text); ?>" />
     </p>
     <?php
 }
@@ -482,11 +482,11 @@ function creative_blog_post_format_link_text($post) {
 // creating the required text box for the link url for the link post format
 function creative_blog_post_format_link_url($post) {
     $link_post_id = get_post_custom($post->ID);
-    $link_post_url = isset($link_post_id['link_url']) ? esc_attr($link_post_id['link_url'][0]) : '';
+    $link_post_url = isset($link_post_id['link_url']) ? esc_url($link_post_id['link_url'][0]) : '';
     wp_nonce_field('my_meta_box_nonce', 'meta_box_nonce');
     ?>
     <p>
-        <input type="text" class="widefat" name="link_url" id="link_url" value="<?php echo $link_post_url; ?>" />
+        <input type="text" class="widefat" name="link_url" id="link_url" value="<?php echo esc_url($link_post_url); ?>" />
     </p>
     <?php
 }
@@ -498,7 +498,7 @@ function creative_blog_post_format_quote_text($post) {
     wp_nonce_field('my_meta_box_nonce', 'meta_box_nonce');
     ?>
     <p>
-        <textarea class="widefat" rows="5" cols="20" name="quote_text" id="quote_text"><?php echo $quote_post_text; ?></textarea>
+        <textarea class="widefat" rows="5" cols="20" name="quote_text" id="quote_text"><?php echo esc_textarea($quote_post_text); ?></textarea>
     </p>
     <?php
 }
@@ -510,7 +510,7 @@ function creative_blog_post_format_quote_author($post) {
     wp_nonce_field('my_meta_box_nonce', 'meta_box_nonce');
     ?>
     <p>
-        <input type="text" class="widefat" name="quote_author" id="quote_author" value="<?php echo $quote_post_author; ?>" />
+        <input type="text" class="widefat" name="quote_author" id="quote_author" value="<?php echo esc_html($quote_post_author); ?>" />
     </p>
     <?php
 }

@@ -42,5 +42,3 @@
         </div><!-- .related-posts-total -->
     </div><!-- .related-posts-main -->
 <?php endif; ?>
-
-<?php wp_reset_query(); ?>

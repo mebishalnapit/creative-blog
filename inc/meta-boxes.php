@@ -63,8 +63,8 @@ function creative_blog_page_layout() {
             $creative_blog_layout_meta = 'default_layout';
         }
         ?>
-        <input class="post-format" id="<?php echo $field['value']; ?>" type="radio" name="<?php echo $field['id']; ?>" value="<?php echo $field['value']; ?>" <?php checked($field['value'], $creative_blog_layout_meta); ?>/>
-        <label for="<?php echo $field['value']; ?>" class="post-format-icon"><?php echo $field['label']; ?></label><br/>
+        <input class="post-format" id="<?php echo esc_attr($field['value']); ?>" type="radio" name="<?php echo esc_attr($field['id']); ?>" value="<?php echo esc_attr($field['value']); ?>" <?php checked($field['value'], $creative_blog_layout_meta); ?>/>
+        <label for="<?php echo esc_attr($field['value']); ?>" class="post-format-icon"><?php echo esc_html($field['label']); ?></label><br/>
         <?php
     }
 }
@@ -95,7 +95,7 @@ if (!function_exists('creative_blog_save_custom_meta_data')) :
         foreach ($creative_blog_page_layout as $field) {
             // Execute this saving function
             $old_meta_data = get_post_meta($post_id, $field['id'], true);
-            $new_meta_data = $_POST[$field['id']];
+            $new_meta_data = sanitize_title($_POST[$field['id']]);
             if ($new_meta_data && $new_meta_data != $old_meta_data) {
                 update_post_meta($post_id, $field['id'], $new_meta_data);
             } elseif ('' == $new_meta_data && $old_meta_data) {

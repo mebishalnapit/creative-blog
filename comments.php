@@ -31,7 +31,7 @@ if (post_password_required()) {
             ?>
         </h3>
 
-            <?php if (get_comment_pages_count() > 1 && get_option('page_comments')) : // Are there comments to navigate through? ?>
+        <?php if (get_comment_pages_count() > 1 && get_option('page_comments')) : // Are there comments to navigate through? ?>
             <nav id="comment-nav-above" class="navigation comment-navigation" role="navigation">
                 <h4 class="screen-reader-text"><?php esc_html_e('Comment navigation', 'creative-blog'); ?></h4>
                 <div class="nav-links">
@@ -41,19 +41,19 @@ if (post_password_required()) {
 
                 </div><!-- .nav-links -->
             </nav><!-- #comment-nav-above -->
-    <?php endif; // Check for comment navigation.  ?>
+        <?php endif; // Check for comment navigation.  ?>
 
         <ol class="comment-list">
-        <?php
-        wp_list_comments(array(
-            'style' => 'ol',
-            'short_ping' => true,
-            'avatar_size' => 80
-        ));
-        ?>
+            <?php
+            wp_list_comments(array(
+                'style' => 'ol',
+                'short_ping' => true,
+                'avatar_size' => 80
+            ));
+            ?>
         </ol><!-- .comment-list -->
 
-            <?php if (get_comment_pages_count() > 1 && get_option('page_comments')) : // Are there comments to navigate through? ?>
+        <?php if (get_comment_pages_count() > 1 && get_option('page_comments')) : // Are there comments to navigate through? ?>
             <nav id="comment-nav-below" class="navigation comment-navigation" role="navigation">
                 <h4 class="screen-reader-text"><?php esc_html_e('Comment navigation', 'creative-blog'); ?></h4>
                 <div class="nav-links">
@@ -63,7 +63,7 @@ if (post_password_required()) {
 
                 </div><!-- .nav-links -->
             </nav><!-- #comment-nav-below -->
-    <?php endif; // Check for comment navigation.  ?>
+        <?php endif; // Check for comment navigation.  ?>
 
     <?php endif; // Check for have_comments().  ?>
 
