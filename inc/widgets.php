@@ -101,7 +101,7 @@ class Creative_Blog_Tabbed_Widget extends WP_Widget {
                     <?php
                 endwhile;
                 // Reset Post Data
-                wp_reset_query();
+                wp_reset_postdata();
                 ?>
             </div>
 
@@ -135,7 +135,7 @@ class Creative_Blog_Tabbed_Widget extends WP_Widget {
                     $i++;
                 endwhile;
                 // Reset Post Data
-                wp_reset_query();
+                wp_reset_postdata();
                 ?>
             </div>
 

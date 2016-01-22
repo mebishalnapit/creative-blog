@@ -95,7 +95,7 @@ if (!function_exists('creative_blog_save_custom_meta_data')) :
         foreach ($creative_blog_page_layout as $field) {
             // Execute this saving function
             $old_meta_data = get_post_meta($post_id, $field['id'], true);
-            $new_meta_data = sanitize_title($_POST[$field['id']]);
+            $new_meta_data = sanitize_key($_POST[$field['id']]);
             if ($new_meta_data && $new_meta_data != $old_meta_data) {
                 update_post_meta($post_id, $field['id'], $new_meta_data);
             } elseif ('' == $new_meta_data && $old_meta_data) {

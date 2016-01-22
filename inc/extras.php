@@ -218,7 +218,7 @@ if (!function_exists('creative_blog_random_post')) :
         <?php endwhile; ?>
         <?php
         // Reset Post Data
-        wp_reset_query();
+        wp_reset_postdata();
     }
 
 endif;
@@ -324,7 +324,6 @@ add_filter('excerpt_more', 'creative_blog_excerpt_string');
 if (!function_exists('creative_blog_related_posts_function')) :
 
     function creative_blog_related_posts_function() {
-        wp_reset_postdata();
         global $post;
 
         // Define shared post arguments
