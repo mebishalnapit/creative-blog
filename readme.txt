@@ -32,6 +32,7 @@ If you've translated this theme into your native language, then, feel free to se
 == CHANGELOG ==
 = VERSION 0.3 =
 * Magnific Popup updated to version 1.0.1
+* Screenshot Changed
 
 = VERSION 0.2 =
 * Added the feature to make the primary menu sticky

@@ -415,11 +415,32 @@ ul#menu-social {
     font-family: 'FontAwesome';
     float: right;
     content: "\f005";
-    color: #0099ff;
+    color: #fff;
 }
 .sticky {
-    background: #ccc;
+    background: #0099ff;
     padding: 20px;
+    color: #fff;
+}
+.sticky .entry-title a {
+    color: #fff;
+}
+.sticky .entry-meta a {
+    color: #fff;
+}
+.sticky .entry-meta {
+    border-top: 1px dotted #fff;
+    border-bottom: 1px dotted #fff;
+}
+.sticky .category-links a {
+    background-color: #fff;
+    color: #0099ff;
+}
+.sticky .category-links a:hover {
+    color: #0099ff;
+}
+.sticky .entry-content a {
+    color: #fff;
 }
 .sticky .entry-content {
     padding-bottom: 10px;
@@ -432,6 +453,9 @@ ul#menu-social {
 .sticky .continue-more-link:hover, .continue-more-link:hover {
     border: none;
     background: #0099ff;
+}
+.sticky .featured-image img {
+    border: 1px solid #fff;
 }
 
 /* meta */
@@ -457,6 +481,9 @@ ul#menu-social {
     border-radius: 5px;
     color: #fff;
     display: inline-block;
+}
+.category-links a:hover {
+    color: #fff;
 }
 .tags-links .fa {
     color: #0099ff;
@@ -669,17 +696,21 @@ ol.children {
     float: left;
 }
 .format-chat .chat-details {
-    background-color: #ccc;
+    background-color: #0099ff;
     padding: 20px;
     font-style: italic;
     margin-bottom: 20px;
     font-size: 18px;
+    color: #fff;
 }
 .format-link .link-details {
     margin-bottom: 20px;
-    background-color: #ccc;
+    background-color: #0099ff;
     padding: 20px;
     font-size: 20px;
+}
+.format-link .link-details a {
+    color: #fff;
 }
 .format-link .link-details a:before {
     font-family: 'fontawesome';
@@ -687,16 +718,23 @@ ol.children {
     margin-right: 5px;
 }
 .format-quote .quote-details {
-    background-color: #ccc;
+    background-color: #0099ff;
     padding: 20px;
     margin-bottom: 20px;
 }
 .format-quote .quote-details blockquote {
     font-size: 22px;
     border-left: 0;
+    color: #fff;
 }
 .format-quote .quote-details cite {
     font-size: 14px;
+    color: #fff;
+}
+.format-quote .quote-details cite:before {
+    font-family: 'fontawesome';
+    content: "\f068";
+    margin-right: 5px;
 }
 .format-quote .quote-details blockquote p:before {
     font-family: 'fontawesome';
