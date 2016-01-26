@@ -105,6 +105,34 @@ function creative_blog_content_width() {
 add_action('after_setup_theme', 'creative_blog_content_width', 0);
 
 /**
+ * $content_width global variable adjustment as per layout option.
+ */
+function creative_blog_dynamic_content_width() {
+    global $post;
+    global $content_width;
+
+    $creative_blog_layout_meta = get_post_meta($post->ID, 'creative_blog_page_layout', true);
+    if (empty($creative_blog_layout_meta) || is_archive() || is_search() || is_404()) {
+        $creative_blog_layout_meta = 'default_layout';
+    }
+    $creative_blog_default_layout = get_theme_mod('creative_blog_default_layout', 'right_sidebar');
+
+    if ($creative_blog_layout_meta == 'default_layout') {
+        if ($creative_blog_default_layout == 'no_sidebar_full_width') {
+            $content_width = 1600; /* pixels */
+        } else {
+            $content_width = 1000; /* pixels */
+        }
+    } elseif ($creative_blog_layout_meta == 'no_sidebar_full_width') {
+        $content_width = 1600; /* pixels */
+    } else {
+        $content_width = 1000; /* pixels */
+    }
+}
+
+add_action('template_redirect', 'creative_blog_dynamic_content_width');
+
+/**
  * Register widget area.
  *
  * @link https://developer.wordpress.org/themes/functionality/sidebars/#registering-a-sidebar
@@ -140,7 +168,7 @@ function creative_blog_widgets_init() {
         'before_title' => '<h3 class="widget-title"><span>',
         'after_title' => '</span></h3>',
     ));
-    
+
     register_sidebar(array(
         'name' => esc_html__('Content Top Sidebar', 'creative-blog'),
         'id' => 'creative-blog-content-top-sidebar',
@@ -150,7 +178,7 @@ function creative_blog_widgets_init() {
         'before_title' => '<h3 class="widget-title"><span>',
         'after_title' => '</span></h3>',
     ));
-    
+
     register_sidebar(array(
         'name' => esc_html__('Content Bottom Sidebar', 'creative-blog'),
         'id' => 'creative-blog-content-bottom-sidebar',
@@ -306,7 +334,7 @@ function creative_blog_scripts() {
     if (get_theme_mod('creative_blog_breaking_news', 0) == 1) {
         wp_enqueue_script('creative-blog-newsticker', get_template_directory_uri() . '/js/news-ticker/jquery.newsTicker' . $suffix . '.js', array('jquery'), false, true);
     }
-    
+
     // enueueing sticky script
     if (get_theme_mod('creative_blog_sticky_menu', 0) == 1) {
         wp_enqueue_script('creative-blog-sticky', get_template_directory_uri() . '/js/sticky/jquery.sticky' . $suffix . '.js', array('jquery'), false, true);

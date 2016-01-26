@@ -9,9 +9,9 @@
 <?php if ($related_posts->have_posts()): ?>
     <div class="related-posts-main">
 
-        <h3 class="related-posts-main-title"><i class="fa fa-thumbs-up"></i><span><?php _e('You May Also Like', 'creative-blog'); ?></span></h3>
+        <h3 class="related-posts-main-title"><span><?php _e('Similar Articles', 'creative-blog'); ?></span></h3>
 
-        <div class="related-posts-total clearfix">
+        <div class="related-posts-total row">
 
             <?php while ($related_posts->have_posts()) : $related_posts->the_post(); ?>
                 <div class="related-posts col-sm-3">

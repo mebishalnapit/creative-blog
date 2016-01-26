@@ -373,17 +373,21 @@ ul#menu-social {
 .related-posts-thumbnail {
     text-align: center;
 }
-.related-posts-main-title, .related-posts-main-title .fa {
-    color: #0099ff;
-}
-.related-posts-main-title .fa {
-    padding-right: 5px;
-}
 .related-post-content .entry-title {
     font-size: 18px;
 }
 .related-post-content .entry-meta {
     font-size: 12px;
+}
+.related-posts-main-title span {
+    background: #0099ff;
+    padding: 10px 20px 10px;
+    font-size: 24px;
+    color: #fff;
+    display: inline-block;
+}
+.related-posts-main-title {
+    border-bottom: 2px solid #0099ff;
 }
 .avatar {
     border-radius: 50%;

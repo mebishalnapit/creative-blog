@@ -3,8 +3,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Creative Blog\n"
-"POT-Creation-Date: 2016-01-10 19:20+0545\n"
-"PO-Revision-Date: 2016-01-10 19:20+0545\n"
+"POT-Creation-Date: 2016-01-27 02:32+0545\n"
+"PO-Revision-Date: 2016-01-27 02:33+0545\n"
 "Last-Translator: \n"
 "Language-Team: Bishal Napit <mebishalnapit@gmail.com>\n"
 "Language: en\n"
@@ -61,100 +61,100 @@ msgstr ""
 msgid "Social Menu"
 msgstr ""
 
-#: functions.php:115 inc/meta-boxes.php:32
+#: functions.php:143 inc/meta-boxes.php:32
 msgid "Right Sidebar"
 msgstr ""
 
-#: functions.php:117
+#: functions.php:145
 msgid "Display your widgets in the Right Sidebar Area"
 msgstr ""
 
-#: functions.php:125 inc/meta-boxes.php:37
+#: functions.php:153 inc/meta-boxes.php:37
 msgid "Left Sidebar"
 msgstr ""
 
-#: functions.php:127
+#: functions.php:155
 msgid "Display your widgets in the Left Sidebar Area"
 msgstr ""
 
-#: functions.php:135
+#: functions.php:163
 msgid "Header Sidebar"
 msgstr ""
 
-#: functions.php:137
+#: functions.php:165
 msgid "Display your widgets in the Header Sidebar Area"
 msgstr ""
 
-#: functions.php:145
+#: functions.php:173
 msgid "Content Top Sidebar"
 msgstr ""
 
-#: functions.php:147
+#: functions.php:175
 msgid "Display your widgets in the Content Top Sidebar Area"
 msgstr ""
 
-#: functions.php:155
+#: functions.php:183
 msgid "Content Bottom Sidebar"
 msgstr ""
 
-#: functions.php:157
+#: functions.php:185
 msgid "Display your widgets in the Content Bottom Sidebar Area"
 msgstr ""
 
-#: functions.php:165
+#: functions.php:193
 msgid "404 Sidebar"
 msgstr ""
 
-#: functions.php:167
+#: functions.php:195
 msgid "Display your widgets in the 404 Error Page Sidebar Area"
 msgstr ""
 
-#: functions.php:175
+#: functions.php:203
 msgid "Contact Sidebar"
 msgstr ""
 
-#: functions.php:177
+#: functions.php:205
 msgid "Display your widgets in the Contact Page Sidebar Area"
 msgstr ""
 
-#: functions.php:185
+#: functions.php:213
 msgid "Footer Sidebar One"
 msgstr ""
 
-#: functions.php:187
+#: functions.php:215
 msgid "Display your widgets in the footer sidebar area one."
 msgstr ""
 
-#: functions.php:195
+#: functions.php:223
 msgid "Footer Sidebar Two"
 msgstr ""
 
-#: functions.php:197
+#: functions.php:225
 msgid "Display your widgets in the footer sidebar area two."
 msgstr ""
 
-#: functions.php:205
+#: functions.php:233
 msgid "Footer Sidebar Three"
 msgstr ""
 
-#: functions.php:207
+#: functions.php:235
 msgid "Display your widgets in the footer sidebar area three."
 msgstr ""
 
-#: functions.php:215
+#: functions.php:243
 msgid "Footer Sidebar Four"
 msgstr ""
 
-#: functions.php:217
+#: functions.php:245
 msgid "Display your widgets in the footer sidebar area four."
 msgstr ""
 
-#: functions.php:247
+#: functions.php:275
 msgctxt "Open Sans font: on or off"
 msgid "on"
 msgstr ""
 
-#: functions.php:255
+#: functions.php:283
 msgctxt "Add new subset ( cyrillic, greek, vietnamese )"
 msgid "no-subset"
 msgstr ""
@@ -234,7 +234,7 @@ msgid ""
 "to the primary menu."
 msgstr ""
 
-#: inc/customizer.php:165 inc/extras.php:229
+#: inc/customizer.php:165 inc/extras.php:217
 msgid "Random Post"
 msgstr ""
 
@@ -418,125 +418,125 @@ msgstr ""
 msgid "%s"
 msgstr ""
 
-#: inc/extras.php:67
+#: inc/extras.php:55
 msgid "Latest:"
 msgstr ""
 
-#: inc/extras.php:275
+#: inc/extras.php:263
 msgid "WordPress"
 msgstr ""
 
-#: inc/extras.php:277
+#: inc/extras.php:265
 msgid "Bishal Napit"
 msgstr ""
 
-#: inc/extras.php:279
+#: inc/extras.php:267
 #, php-format
 msgid "Copyright &copy; %1$s %2$s."
 msgstr ""
 
-#: inc/extras.php:279
+#: inc/extras.php:267
 #, php-format
 msgid "Theme: %1$s by %2$s."
 msgstr ""
 
-#: inc/extras.php:279
+#: inc/extras.php:267
 #, php-format
 msgid "Powered by %s."
 msgstr ""
 
-#: inc/extras.php:400
+#: inc/extras.php:387
 msgid "Post navigation"
 msgstr ""
 
-#: inc/extras.php:403
+#: inc/extras.php:390
 msgctxt "Previous post link"
 msgid ""
 "<span class=\"meta-nav\"><i class=\"fa fa-arrow-circle-o-left\"></i></span>"
 "%title"
 msgstr ""
 
-#: inc/extras.php:404
+#: inc/extras.php:391
 msgctxt "Next post link"
 msgid ""
 "%title<span class=\"meta-nav\"><i class=\"fa fa-arrow-circle-o-right\"></i></"
 "span>"
 msgstr ""
 
-#: inc/extras.php:418
+#: inc/extras.php:405
 msgid "Video URL"
 msgstr ""
 
-#: inc/extras.php:419
+#: inc/extras.php:406
 msgid "Audio URL"
 msgstr ""
 
-#: inc/extras.php:420
+#: inc/extras.php:407
 msgid "Status"
 msgstr ""
 
-#: inc/extras.php:421
+#: inc/extras.php:408
 msgid "Chat"
 msgstr ""
 
-#: inc/extras.php:423
+#: inc/extras.php:410
 msgid "Link Text"
 msgstr ""
 
-#: inc/extras.php:424
+#: inc/extras.php:411
 msgid "Link URL"
 msgstr ""
 
-#: inc/extras.php:426
+#: inc/extras.php:413
 msgid "Quote Text"
 msgstr ""
 
-#: inc/extras.php:427
+#: inc/extras.php:414
 msgid "Quote Author"
 msgstr ""
 
-#: inc/extras.php:848 inc/template-tags.php:25
+#: inc/extras.php:835 inc/template-tags.php:25
 #, php-format
 msgctxt "post date"
 msgid "%s"
 msgstr ""
 
-#: inc/extras.php:852 inc/template-tags.php:29
+#: inc/extras.php:839 inc/template-tags.php:29
 #, php-format
 msgctxt "post author"
 msgid "%s"
 msgstr ""
 
-#: inc/extras.php:858 inc/template-tags.php:36
+#: inc/extras.php:845 inc/template-tags.php:36
 msgid "<i class=\"fa fa-comment\"></i>Leave a reply"
 msgstr ""
 
-#: inc/extras.php:858 inc/template-tags.php:36
+#: inc/extras.php:845 inc/template-tags.php:36
 msgid "<i class=\"fa fa-comment\"></i>1 Comment"
 msgstr ""
 
-#: inc/extras.php:858 inc/template-tags.php:36
+#: inc/extras.php:845 inc/template-tags.php:36
 msgid "<i class=\"fa fa-comment\"></i>% Comments"
 msgstr ""
 
-#: inc/extras.php:858 inc/template-tags.php:36
+#: inc/extras.php:845 inc/template-tags.php:36
 msgid "<i class=\"fa fa-comment\"></i>Comments Disabled"
 msgstr ""
 
-#: inc/extras.php:879
+#: inc/extras.php:866
 #, php-format
 msgid "Follow %s on:"
 msgstr ""
 
-#: inc/extras.php:881
+#: inc/extras.php:868
 msgid "Facebook"
 msgstr ""
 
-#: inc/extras.php:884
+#: inc/extras.php:871
 msgid "Twitter"
 msgstr ""
 
-#: inc/extras.php:887
+#: inc/extras.php:874
 msgid "Google Plus"
 msgstr ""
 
@@ -557,7 +557,7 @@ msgid "No Sidebar Content Centered"
 msgstr ""
 
 #: inc/related-posts.php:12
-msgid "You May Also Like"
+msgid "Similar Articles"
 msgstr ""
 
 #. translators: %s: Name of current post

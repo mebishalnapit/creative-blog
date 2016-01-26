@@ -33,6 +33,7 @@ If you've translated this theme into your native language, then, feel free to se
 = VERSION 0.3 =
 * Magnific Popup updated to version 1.0.1
 * Screenshot Changed
+* Content width adjusted according to the layout choosed
 
 = VERSION 0.2 =
 * Added the feature to make the primary menu sticky
