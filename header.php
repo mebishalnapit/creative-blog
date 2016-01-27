@@ -58,7 +58,7 @@
                     creative_blog_header_text_logo();
                     ?>
 
-                    <div id="header-sidebar" class="sidebar-header col-md-6">
+                    <div id="header-sidebar" class="sidebar-header col-md-8">
                         <?php
                         if (is_active_sidebar('creative-blog-header-sidebar')) {
                             dynamic_sidebar('creative-blog-header-sidebar');

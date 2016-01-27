@@ -1070,6 +1070,17 @@ li.comments-tab-widget img {
         clear: both;
         padding-top: 10px;
         width: 100%;
+        text-align: left;
+    }
+    .header-right-area, .header-left-area {
+        width: 100%;
+        clear: both;
+    }
+    .header-right-area {
+        float: left
+    }
+    ul#menu-social {
+        text-align: left;
     }
     .home .site-description, .blog .site-description {
         margin-top: 1px;

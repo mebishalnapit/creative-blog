@@ -101,7 +101,7 @@ if (!function_exists('creative_blog_header_text_logo')) :
 
     function creative_blog_header_text_logo() {
         ?>
-        <div id="logo-and-title" class="logo-and-title col-md-6">
+        <div id="logo-and-title" class="logo-and-title col-md-4">
             <?php if (((get_theme_mod('creative_blog_header_logo_placement', 'header_text_only') == 'show_both') || (get_theme_mod('creative_blog_header_logo_placement', 'header_text_only') == 'header_logo_only')) && get_theme_mod('creative_blog_logo', '') != '') : ?>
                 <div class="header-logo-image">
                     <a href="<?php echo esc_url(home_url('/')); ?>" title="<?php echo esc_attr(get_bloginfo('name', 'display')); ?>" rel="home"><img src="<?php echo esc_url(get_theme_mod('creative_blog_logo')); ?>" alt="<?php echo esc_attr(get_bloginfo('name', 'display')); ?>"></a>
