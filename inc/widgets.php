@@ -1,10 +1,10 @@
 <?php
+
 /**
  * Contains all the widgets parts included in the theme
  *
  * @package Creative Blog
  */
-
 class Creative_Blog_Tabbed_Widget extends WP_Widget {
 
     /**
@@ -160,6 +160,99 @@ class Creative_Blog_Tabbed_Widget extends WP_Widget {
 
         </div>
 
+        <?php
+        echo $args['after_widget'];
+    }
+
+}
+
+class Creative_Blog_Random_Posts_Widget extends WP_Widget {
+
+    function __construct() {
+        parent::__construct(
+                'creative_blog_random_posts_widget', __('CB: Random Posts Widget', 'creative-blog'), // Name of the widget
+                array('description' => __('Displays the random posts from your site.', 'creative-blog')) // Arguments of the widget, here it is provided with the description
+        );
+    }
+
+    function form($instance) {
+        $number = !empty($instance['number']) ? $instance['number'] : 4;
+        $title = !empty($instance['title']) ? $instance['title'] : '';
+        ?>
+        <p>
+            <label for="<?php echo $this->get_field_id('title'); ?>"><?php _e('Title:', 'creative-blog'); ?></label>
+            <input id="<?php echo $this->get_field_id('title'); ?>" name="<?php echo $this->get_field_name('title'); ?>" type="text" value="<?php echo esc_textarea($title); ?>" />
+        </p>
+        <p>
+            <label for="<?php echo $this->get_field_id('number'); ?>"><?php _e('Number of random posts to display:', 'creative-blog'); ?></label> 
+            <input id="<?php echo $this->get_field_id('number'); ?>" name="<?php echo $this->get_field_name('number'); ?>" type="text" value="<?php echo absint($number); ?>" size="3">
+        </p>
+        <?php
+    }
+
+    function update($new_instance, $old_instance) {
+        $instance = array();
+        $instance['number'] = (!empty($new_instance['number']) ) ? absint($new_instance['number']) : 4;
+        $instance['title'] = strip_tags($new_instance['title']);
+
+        return $instance;
+    }
+
+    function widget($args, $instance) {
+        $number = (!empty($instance['number']) ) ? $instance['number'] : 4;
+        $title = isset($instance['title']) ? $instance['title'] : '';
+
+        echo $args['before_widget'];
+        ?>
+        <div class="random-posts-widget" id="random-posts">
+            <?php
+            global $post;
+            $random_posts = new WP_Query(array(
+                'posts_per_page' => $number,
+                'post_type' => 'post',
+                'ignore_sticky_posts' => true,
+                'orderby' => 'rand',
+                'no_found_rows' => true
+            ));
+            ?>
+
+            <?php
+            if (!empty($title)) {
+                echo $args['before_title'] . esc_html($title) . $args['after_title'];
+            }
+            ?>
+
+            <?php
+            $i = 1;
+            $post_count = $random_posts->post_count;
+            while ($random_posts->have_posts()) :
+                $random_posts->the_post();
+
+                if ($i == 1) {
+                    echo '<div class="random-post-wrapper">';
+                }
+                ?>
+                <div class="single-article">
+                    <?php if (has_post_thumbnail()) { ?>
+                        <a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>"><?php the_post_thumbnail('creative-blog-featured-widget'); ?></a>
+                    <?php } ?>
+                    <h3 class="entry-title">
+                        <a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a>
+                    </h3>
+                    <div class="entry-meta">
+                        <?php creative_blog_entry_meta_custom(); ?>
+                    </div>
+                </div>
+                <?php
+                if ($i == $post_count) {
+                    echo '</div>';
+                }
+                $i++;
+            endwhile;
+            // Reset Post Data
+            wp_reset_postdata();
+            ?>
+        </div>
         <?php
         echo $args['after_widget'];
     }

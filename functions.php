@@ -250,6 +250,7 @@ function creative_blog_widgets_init() {
     ));
 
     register_widget('Creative_Blog_Tabbed_Widget');
+    register_widget('Creative_Blog_Random_Posts_Widget');
 }
 
 add_action('widgets_init', 'creative_blog_widgets_init');

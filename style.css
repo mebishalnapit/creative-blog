@@ -884,6 +884,11 @@ footer .widget {
 footer select {
     color: #222222;
 }
+.creative-blog-tab-content .active {
+    border: 1px solid #ddd;
+    border-top: 0;
+    padding: 10px 20px;
+}
 ul.creative-blog-tabs li {
     padding: 0;
 }
@@ -920,6 +925,23 @@ li.comments-tab-widget img {
 }
 .no-comments-commented-post {
     padding: 10px 0;
+}
+.random-posts-widget .random-post-wrapper {
+    border: 1px solid #ddd;
+    padding: 10px 20px;
+}
+.random-posts-widget .entry-title {
+    font-size: 18px;
+}
+.random-posts-widget .entry-meta {
+    font-size: 12px;
+}
+.random-posts-widget .single-article img {
+    float: left;
+    margin-right: 10px;
+}
+.random-posts-widget .single-article {
+    padding: 5px 0;
 }
 .content-top-sidebar {
     padding-top: 20px;
@@ -1077,7 +1099,7 @@ li.comments-tab-widget img {
         clear: both;
     }
     .header-right-area {
-        float: left
+        float: left;
     }
     ul#menu-social {
         text-align: left;

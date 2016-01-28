@@ -3,8 +3,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Creative Blog\n"
-"POT-Creation-Date: 2016-01-27 02:32+0545\n"
-"PO-Revision-Date: 2016-01-27 02:33+0545\n"
+"POT-Creation-Date: 2016-01-28 20:07+0545\n"
+"PO-Revision-Date: 2016-01-28 20:08+0545\n"
 "Last-Translator: \n"
 "Language-Team: Bishal Napit <mebishalnapit@gmail.com>\n"
 "Language: en\n"
@@ -149,12 +149,12 @@ msgstr ""
 msgid "Display your widgets in the footer sidebar area four."
 msgstr ""
 
-#: functions.php:275
+#: functions.php:276
 msgctxt "Open Sans font: on or off"
 msgid "on"
 msgstr ""
 
-#: functions.php:283
+#: functions.php:284
 msgctxt "Add new subset ( cyrillic, greek, vietnamese )"
 msgid "no-subset"
 msgstr ""
@@ -598,6 +598,22 @@ msgstr ""
 
 #: inc/widgets.php:155
 msgid "No Comments"
+msgstr ""
+
+#: inc/widgets.php:173
+msgid "CB: Random Posts Widget"
+msgstr ""
+
+#: inc/widgets.php:174
+msgid "Displays the random posts from your site."
+msgstr ""
+
+#: inc/widgets.php:183
+msgid "Title:"
+msgstr ""
+
+#: inc/widgets.php:187
+msgid "Number of random posts to display:"
 msgstr ""
 
 #: inc/wp_bootstrap_navwalker.php:196

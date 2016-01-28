@@ -31,6 +31,7 @@ If you've translated this theme into your native language, then, feel free to se
 
 ## CHANGELOG
 #### VERSION 0.3
+* Added CB: Random Posts Widget
 * Magnific Popup updated to version 1.0.1
 * Screenshot Changed
 * Content width adjusted according to the layout choosed
