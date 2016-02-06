@@ -68,7 +68,7 @@ class Creative_Blog_Tabbed_Widget extends WP_Widget {
         <ul class="nav nav-tabs creative-blog-tabs" role="tablist">
             <li role="presentation" class="popular active"><a href="#popular" aria-controls="popular" role="tab" data-toggle="tab"><i class="fa fa-star"></i><?php _e('Popular', 'creative-blog'); ?></a></li>
             <li role="presentation" class="recent"><a href="#recent" aria-controls="recent" role="tab" data-toggle="tab"><i class="fa fa-history"></i><?php _e('Recent', 'creative-blog'); ?></a></li>
-            <li role="presentation" class="comment"><a href="#comments" aria-controls="comments" role="tab" data-toggle="tab"><i class="fa fa-comment"></i><?php _e('Comment', 'creative-blog'); ?></a></li>
+            <li role="presentation" class="comment"><a href="#user-comments" aria-controls="comments" role="tab" data-toggle="tab"><i class="fa fa-comment"></i><?php _e('Comment', 'creative-blog'); ?></a></li>
         </ul>
 
         <!-- Tab panes -->
@@ -140,7 +140,7 @@ class Creative_Blog_Tabbed_Widget extends WP_Widget {
             </div>
 
             <!-- Comment Tab -->
-            <div role="tabpanel" class="tab-pane comment-tab" id="comments">
+            <div role="tabpanel" class="tab-pane comment-tab" id="user-comments">
                 <?php
                 $comments_query = new WP_Comment_Query();
                 $comments = $comments_query->query(array('number' => $number, 'status' => 'approve'));
