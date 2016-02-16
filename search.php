@@ -13,7 +13,7 @@ get_header();
 
 <?php creative_blog_left_sidebar_select(); ?>
 
-<section id="primary" class="content-area <?php creative_blog_layout_class(); ?>">
+<div id="primary" class="content-area <?php echo creative_blog_layout_class(); ?>">
     <main id="main" class="site-main" role="main">
 
         <?php if (have_posts()) : ?>
@@ -50,7 +50,7 @@ get_header();
         <?php endif; ?>
 
     </main><!-- #main -->
-</section><!-- #primary -->
+</div><!-- #primary -->
 
 <?php creative_blog_right_sidebar_select(); ?>
 

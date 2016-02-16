@@ -694,37 +694,40 @@ if (!function_exists('creative_blog_layout_class')) :
         $creative_blog_default_page_layout = get_theme_mod('creative_blog_default_page_layout', 'right_sidebar');
         $creative_blog_default_post_layout = get_theme_mod('creative_blog_default_single_posts_layout', 'right_sidebar');
 
+        $class = '';
         if ($creative_blog_layout_meta == 'default_layout') {
             if (is_page()) {
                 if (($creative_blog_default_page_layout == 'right_sidebar') || ($creative_blog_default_page_layout == 'left_sidebar')) {
-                    echo 'col-md-8';
+                    $class = 'col-md-8';
                 } elseif ($creative_blog_default_page_layout == 'no_sidebar_full_width') {
-                    echo 'col-md-12';
+                    $class = 'col-md-12';
                 } elseif ($creative_blog_default_page_layout == 'no_sidebar_content_centered') {
-                    echo 'content-centered col-md-8';
+                    $class = 'content-centered col-md-8';
                 }
             } elseif (is_single()) {
                 if (($creative_blog_default_post_layout == 'right_sidebar') || ($creative_blog_default_post_layout == 'left_sidebar')) {
-                    echo 'col-md-8';
+                    $class = 'col-md-8';
                 } elseif ($creative_blog_default_post_layout == 'no_sidebar_full_width') {
-                    echo 'col-md-12';
+                    $class = 'col-md-12';
                 } elseif ($creative_blog_default_post_layout == 'no_sidebar_content_centered') {
-                    echo 'content-centered col-md-8';
+                    $class = 'content-centered col-md-8';
                 }
             } elseif (($creative_blog_default_layout == 'right_sidebar') || ($creative_blog_default_layout == 'left_sidebar')) {
-                echo 'col-md-8';
+                $class = 'col-md-8';
             } elseif ($creative_blog_default_layout == 'no_sidebar_full_width') {
-                echo 'col-md-12';
+                $class = 'col-md-12';
             } elseif ($creative_blog_default_layout == 'no_sidebar_content_centered') {
-                echo 'content-centered col-md-8';
+                $class = 'content-centered col-md-8';
             }
         } elseif (($creative_blog_layout_meta == 'right_sidebar') || ($creative_blog_layout_meta == 'left_sidebar')) {
-            echo 'col-md-8';
+            $class = 'col-md-8';
         } elseif ($creative_blog_layout_meta == 'no_sidebar_full_width') {
-            echo 'col-md-12';
+            $class = 'col-md-12';
         } elseif ($creative_blog_layout_meta == 'no_sidebar_content_centered') {
-            echo 'content-centered col-md-8';
+            $class = 'content-centered col-md-8';
         }
+        
+        return $class;
     }
 
 endif;

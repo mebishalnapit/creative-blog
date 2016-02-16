@@ -18,7 +18,7 @@ get_header();
 
 <?php creative_blog_left_sidebar_select(); ?>
 
-<div id="primary" class="content-area <?php creative_blog_layout_class(); ?>">
+<div id="primary" class="content-area <?php echo creative_blog_layout_class(); ?>">
     <main id="main" class="site-main" role="main">
 
         <?php if (have_posts()) : ?>
