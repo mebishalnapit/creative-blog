@@ -31,8 +31,8 @@ get_header();
             <?php if (get_the_author_meta('description')) : ?>
                 <div class="author-box">
                     <div class="author-img"><?php echo get_avatar(get_the_author_meta('user_email'), '100'); ?></div>
-                    <h4 class="author-name"><?php the_author_meta('display_name'); ?></h4>
-                    <p class="author-description"><?php the_author_meta('description'); ?></p>
+                    <h4 class="author-name"><?php esc_html(the_author_meta('display_name')); ?></h4>
+                    <p class="author-description"><?php esc_textarea(the_author_meta('description')); ?></p>
                     <?php
                     if (get_theme_mod('creative_blog_author_bio_social_links', 0) == 1)
                         creative_blog_author_bio_links();

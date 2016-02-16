@@ -3,8 +3,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Creative Blog\n"
-"POT-Creation-Date: 2016-01-28 20:07+0545\n"
-"PO-Revision-Date: 2016-01-28 20:08+0545\n"
+"POT-Creation-Date: 2016-02-16 07:15+0545\n"
+"PO-Revision-Date: 2016-02-16 07:15+0545\n"
 "Last-Translator: \n"
 "Language-Team: Bishal Napit <mebishalnapit@gmail.com>\n"
 "Language: en\n"
@@ -161,6 +161,10 @@ msgstr ""
 
 #: header.php:26
 msgid "Skip to content"
+msgstr ""
+
+#: header.php:75
+msgid "Toggle navigation"
 msgstr ""
 
 #: inc/customizer.php:26
@@ -495,48 +499,48 @@ msgstr ""
 msgid "Quote Author"
 msgstr ""
 
-#: inc/extras.php:835 inc/template-tags.php:25
+#: inc/extras.php:838 inc/template-tags.php:25
 #, php-format
 msgctxt "post date"
 msgid "%s"
 msgstr ""
 
-#: inc/extras.php:839 inc/template-tags.php:29
+#: inc/extras.php:842 inc/template-tags.php:29
 #, php-format
 msgctxt "post author"
 msgid "%s"
 msgstr ""
 
-#: inc/extras.php:845 inc/template-tags.php:36
+#: inc/extras.php:848 inc/template-tags.php:36
 msgid "<i class=\"fa fa-comment\"></i>Leave a reply"
 msgstr ""
 
-#: inc/extras.php:845 inc/template-tags.php:36
+#: inc/extras.php:848 inc/template-tags.php:36
 msgid "<i class=\"fa fa-comment\"></i>1 Comment"
 msgstr ""
 
-#: inc/extras.php:845 inc/template-tags.php:36
+#: inc/extras.php:848 inc/template-tags.php:36
 msgid "<i class=\"fa fa-comment\"></i>% Comments"
 msgstr ""
 
-#: inc/extras.php:845 inc/template-tags.php:36
+#: inc/extras.php:848 inc/template-tags.php:36
 msgid "<i class=\"fa fa-comment\"></i>Comments Disabled"
 msgstr ""
 
-#: inc/extras.php:866
+#: inc/extras.php:869
 #, php-format
 msgid "Follow %s on:"
 msgstr ""
 
-#: inc/extras.php:868
+#: inc/extras.php:871
 msgid "Facebook"
 msgstr ""
 
-#: inc/extras.php:871
+#: inc/extras.php:874
 msgid "Twitter"
 msgstr ""
 
-#: inc/extras.php:874
+#: inc/extras.php:877
 msgid "Google Plus"
 msgstr ""
 
@@ -561,7 +565,7 @@ msgid "Similar Articles"
 msgstr ""
 
 #. translators: %s: Name of current post
-#: inc/template-tags.php:43 template-parts/content-page.php:33
+#: inc/template-tags.php:43 template-parts/content-page.php:39
 #, php-format
 msgid "<i class=\"fa fa-edit\"></i>Edit %s"
 msgstr ""
@@ -685,7 +689,7 @@ msgstr ""
 #: template-parts/content-aside.php:37 template-parts/content-audio.php:55
 #: template-parts/content-chat.php:52 template-parts/content-gallery.php:79
 #: template-parts/content-image.php:64 template-parts/content-link.php:53
-#: template-parts/content-page.php:22 template-parts/content-quote.php:54
+#: template-parts/content-page.php:28 template-parts/content-quote.php:54
 #: template-parts/content-status.php:57 template-parts/content-video.php:55
 #: template-parts/content.php:63
 msgid "Pages:"

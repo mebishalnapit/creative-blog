@@ -34,11 +34,11 @@
             <!-- Controls -->
             <a class="left carousel-control" href="#gallery-carousel" role="button" data-slide="prev">
                 <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-                <span class="sr-only"><?php __('Previous', 'creative-blog'); ?></span>
+                <span class="sr-only"><?php esc_html__('Previous', 'creative-blog'); ?></span>
             </a>
             <a class="right carousel-control" href="#gallery-carousel" role="button" data-slide="next">
                 <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-                <span class="sr-only"><?php __('Next', 'creative-blog'); ?></span>
+                <span class="sr-only"><?php esc_html__('Next', 'creative-blog'); ?></span>
             </a>
         </div>
     <?php endif; ?>

@@ -11,9 +11,9 @@ add_action('add_meta_boxes', 'creative_blog_custom_meta_boxes');
  */
 function creative_blog_custom_meta_boxes() {
     // Adding the layout meta box for single page
-    add_meta_box('page-layout', __('Select Layout', 'creative-blog'), 'creative_blog_page_layout', 'page', 'side', 'default');
+    add_meta_box('page-layout', esc_html__('Select Layout', 'creative-blog'), 'creative_blog_page_layout', 'page', 'side', 'default');
     // Adding the layout meta box for single post page
-    add_meta_box('page-layout', __('Select Layout', 'creative-blog'), 'creative_blog_page_layout', 'post', 'side', 'default');
+    add_meta_box('page-layout', esc_html__('Select Layout', 'creative-blog'), 'creative_blog_page_layout', 'post', 'side', 'default');
 }
 
 /*
@@ -24,27 +24,27 @@ $creative_blog_page_layout = array(
     'default-layout' => array(
         'id' => 'creative_blog_page_layout',
         'value' => 'default_layout',
-        'label' => __('Default Layout', 'creative-blog'),
+        'label' => esc_html__('Default Layout', 'creative-blog'),
     ),
     'right-sidebar' => array(
         'id' => 'creative_blog_page_layout',
         'value' => 'right_sidebar',
-        'label' => __('Right Sidebar', 'creative-blog'),
+        'label' => esc_html__('Right Sidebar', 'creative-blog'),
     ),
     'left-sidebar' => array(
         'id' => 'creative_blog_page_layout',
         'value' => 'left_sidebar',
-        'label' => __('Left Sidebar', 'creative-blog'),
+        'label' => esc_html__('Left Sidebar', 'creative-blog'),
     ),
     'no-sidebar-full-width' => array(
         'id' => 'creative_blog_page_layout',
         'value' => 'no_sidebar_full_width',
-        'label' => __('No Sidebar Full Width', 'creative-blog'),
+        'label' => esc_html__('No Sidebar Full Width', 'creative-blog'),
     ),
     'no-sidebar-content-centered' => array(
         'id' => 'creative_blog_page_layout',
         'value' => 'no_sidebar_content_centered',
-        'label' => __('No Sidebar Content Centered', 'creative-blog'),
+        'label' => esc_html__('No Sidebar Content Centered', 'creative-blog'),
     ),
 );
 

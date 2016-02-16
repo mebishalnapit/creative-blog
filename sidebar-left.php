@@ -22,15 +22,15 @@
     <?php
     if (!dynamic_sidebar($sidebar)) :
         if ($sidebar == 'creative-blog-contact-sidebar') {
-            $sidebar_display_text = __('Contact Page', 'creative-blog');
+            $sidebar_display_text = esc_html__('Contact Page', 'creative-blog');
         } else {
-            $sidebar_display_text = __('Left', 'creative-blog');
+            $sidebar_display_text = esc_html__('Left', 'creative-blog');
         }
 
         // displaying the default widget text if no widget is associated with it
         the_widget('WP_Widget_Text', array(
-            'title' => __('Example Widget', 'creative-blog'),
-            'text' => sprintf(__('This is an example widget to show how the %s Sidebar looks by default. You can add custom widgets from the %swidgets screen%s in the admin area. If the custom widget is added in this sidebar, then, this will be replaced by those widgets.', 'creative-blog'), $sidebar_display_text, current_user_can('edit_theme_options') ? '<a href="' . esc_url(admin_url('widgets.php')) . '">' : '', current_user_can('edit_theme_options') ? '</a>' : '' ),
+            'title' => esc_html__('Example Widget', 'creative-blog'),
+            'text' => sprintf(esc_html__('This is an example widget to show how the %s Sidebar looks by default. You can add custom widgets from the %swidgets screen%s in the admin area. If the custom widget is added in this sidebar, then, this will be replaced by those widgets.', 'creative-blog'), $sidebar_display_text, current_user_can('edit_theme_options') ? '<a href="' . esc_url(admin_url('widgets.php')) . '">' : '', current_user_can('edit_theme_options') ? '</a>' : '' ),
             'filter' => true,
                 ), array(
             'before_widget' => '<aside class="widget widget_text">',

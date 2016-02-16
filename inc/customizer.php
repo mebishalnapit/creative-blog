@@ -39,7 +39,7 @@ function creative_blog_customize_register($wp_customize) {
     // adding section for donation link
     $wp_customize->add_section('creative_blog_donate_section', array(
         'priority' => 1000,
-        'title' => __('Donate Now', 'creative-blog'),
+        'title' => esc_html__('Donate Now', 'creative-blog'),
     ));
 
     // adding setting for donation link
@@ -57,15 +57,15 @@ function creative_blog_customize_register($wp_customize) {
     // Start Of Header Options
     $wp_customize->add_panel('creative_blog_header_options', array(
         'capabitity' => 'edit_theme_options',
-        'description' => __('Change the Header Settings from here as you want to best suit your need.', 'creative-blog'),
+        'description' => esc_html__('Change the Header Settings from here as you want to best suit your need.', 'creative-blog'),
         'priority' => 500,
-        'title' => __('Header Options', 'creative-blog')
+        'title' => esc_html__('Header Options', 'creative-blog')
     ));
 
     // logo upload options
     $wp_customize->add_section('creative_blog_header_logo', array(
         'priority' => 1,
-        'title' => __('Header Logo', 'creative-blog'),
+        'title' => esc_html__('Header Logo', 'creative-blog'),
         'panel' => 'creative_blog_header_options'
     ));
 
@@ -76,7 +76,7 @@ function creative_blog_customize_register($wp_customize) {
     ));
 
     $wp_customize->add_control(new WP_Customize_Image_Control($wp_customize, 'creative_blog_logo', array(
-        'label' => __('Upload logo for your header here.', 'creative-blog'),
+        'label' => esc_html__('Upload logo for your header here.', 'creative-blog'),
         'section' => 'creative_blog_header_logo',
         'setting' => 'creative_blog_logo'
     )));
@@ -89,20 +89,20 @@ function creative_blog_customize_register($wp_customize) {
 
     $wp_customize->add_control('creative_blog_header_logo_placement', array(
         'type' => 'radio',
-        'label' => __('Choose the option that you want for your site for Header Logo.', 'creative-blog'),
+        'label' => esc_html__('Choose the option that you want for your site for Header Logo.', 'creative-blog'),
         'section' => 'creative_blog_header_logo',
         'choices' => array(
-            'header_logo_only' => __('Header Logo Only', 'creative-blog'),
-            'header_text_only' => __('Header Text Only', 'creative-blog'),
-            'show_both' => __('Show Both', 'creative-blog'),
-            'disable' => __('Disable', 'creative-blog')
+            'header_logo_only' => esc_html__('Header Logo Only', 'creative-blog'),
+            'header_text_only' => esc_html__('Header Text Only', 'creative-blog'),
+            'show_both' => esc_html__('Show Both', 'creative-blog'),
+            'disable' => esc_html__('Disable', 'creative-blog')
         )
     ));
 
     // date display enable/disable
     $wp_customize->add_section('creative_blog_date_display_section', array(
         'priority' => 2,
-        'title' => __('Show Date', 'creative-blog'),
+        'title' => esc_html__('Show Date', 'creative-blog'),
         'panel' => 'creative_blog_header_options'
     ));
 
@@ -114,7 +114,7 @@ function creative_blog_customize_register($wp_customize) {
 
     $wp_customize->add_control('creative_blog_date_display', array(
         'type' => 'checkbox',
-        'label' => __('Check to show the date in header area.', 'creative-blog'),
+        'label' => esc_html__('Check to show the date in header area.', 'creative-blog'),
         'section' => 'creative_blog_date_display_section',
         'settings' => 'creative_blog_date_display'
     ));
@@ -122,7 +122,7 @@ function creative_blog_customize_register($wp_customize) {
     // breaking news enable/disable
     $wp_customize->add_section('creative_blog_breaking_news_section', array(
         'priority' => 3,
-        'title' => __('Breaking News', 'creative-blog'),
+        'title' => esc_html__('Breaking News', 'creative-blog'),
         'panel' => 'creative_blog_header_options'
     ));
 
@@ -134,7 +134,7 @@ function creative_blog_customize_register($wp_customize) {
 
     $wp_customize->add_control('creative_blog_breaking_news', array(
         'type' => 'checkbox',
-        'label' => __('Check to enable the breaking news section.', 'creative-blog'),
+        'label' => esc_html__('Check to enable the breaking news section.', 'creative-blog'),
         'section' => 'creative_blog_breaking_news_section',
         'settings' => 'creative_blog_breaking_news'
     ));
@@ -142,7 +142,7 @@ function creative_blog_customize_register($wp_customize) {
     // sticky menu enable/disable
     $wp_customize->add_section('creative_blog_sticky_menu_section', array(
         'priority' => 4,
-        'title' => __('Sticky Menu', 'creative-blog'),
+        'title' => esc_html__('Sticky Menu', 'creative-blog'),
         'panel' => 'creative_blog_header_options'
     ));
 
@@ -154,7 +154,7 @@ function creative_blog_customize_register($wp_customize) {
 
     $wp_customize->add_control('creative_blog_sticky_menu', array(
         'type' => 'checkbox',
-        'label' => __('Check to enable the sticky menu feature. Note: This feature is only applied to the primary menu.', 'creative-blog'),
+        'label' => esc_html__('Check to enable the sticky menu feature. Note: This feature is only applied to the primary menu.', 'creative-blog'),
         'section' => 'creative_blog_sticky_menu_section',
         'settings' => 'creative_blog_sticky_menu'
     ));
@@ -162,7 +162,7 @@ function creative_blog_customize_register($wp_customize) {
     // random posts in menu enable/disable
     $wp_customize->add_section('creative_blog_random_post_in_menu_section', array(
         'priority' => 5,
-        'title' => __('Random Post', 'creative-blog'),
+        'title' => esc_html__('Random Post', 'creative-blog'),
         'panel' => 'creative_blog_header_options'
     ));
 
@@ -174,7 +174,7 @@ function creative_blog_customize_register($wp_customize) {
 
     $wp_customize->add_control('creative_blog_random_post_in_menu', array(
         'type' => 'checkbox',
-        'label' => __('Check to display the random post icon in the primary menu. Note: Only works when you have set the primary menu manually.', 'creative-blog'),
+        'label' => esc_html__('Check to display the random post icon in the primary menu. Note: Only works when you have set the primary menu manually.', 'creative-blog'),
         'section' => 'creative_blog_random_post_in_menu_section',
         'settings' => 'creative_blog_random_post_in_menu'
     ));
@@ -182,7 +182,7 @@ function creative_blog_customize_register($wp_customize) {
     // search icon in menu enable/disable
     $wp_customize->add_section('creative_blog_search_icon_in_menu_section', array(
         'priority' => 6,
-        'title' => __('Search Icon', 'creative-blog'),
+        'title' => esc_html__('Search Icon', 'creative-blog'),
         'panel' => 'creative_blog_header_options'
     ));
 
@@ -194,7 +194,7 @@ function creative_blog_customize_register($wp_customize) {
 
     $wp_customize->add_control('creative_blog_search_icon_in_menu', array(
         'type' => 'checkbox',
-        'label' => __('Check to display the search icon in the primary menu. Note: Only works when you have set the primary menu manually.', 'creative-blog'),
+        'label' => esc_html__('Check to display the search icon in the primary menu. Note: Only works when you have set the primary menu manually.', 'creative-blog'),
         'section' => 'creative_blog_search_icon_in_menu_section',
         'settings' => 'creative_blog_search_icon_in_menu'
     ));
@@ -202,7 +202,7 @@ function creative_blog_customize_register($wp_customize) {
     // header top bar enable/disable
     $wp_customize->add_section('creative_blog_header_top_bar_section', array(
         'priority' => 7,
-        'title' => __('Header Top Bar', 'creative-blog'),
+        'title' => esc_html__('Header Top Bar', 'creative-blog'),
         'panel' => 'creative_blog_header_options'
     ));
 
@@ -214,7 +214,7 @@ function creative_blog_customize_register($wp_customize) {
 
     $wp_customize->add_control('creative_blog_header_top_bar', array(
         'type' => 'checkbox',
-        'label' => __('Check to enable the header top bar for your site. It includes current server date, latest posts and social menus.', 'creative-blog'),
+        'label' => esc_html__('Check to enable the header top bar for your site. It includes current server date, latest posts and social menus.', 'creative-blog'),
         'section' => 'creative_blog_header_top_bar_section',
         'settings' => 'creative_blog_header_top_bar'
     ));
@@ -222,7 +222,7 @@ function creative_blog_customize_register($wp_customize) {
     // header image link enable/disable
     $wp_customize->add_section('creative_blog_header_image_link_section', array(
         'priority' => 8,
-        'title' => __('Header Image Link', 'creative-blog'),
+        'title' => esc_html__('Header Image Link', 'creative-blog'),
         'panel' => 'creative_blog_header_options'
     ));
 
@@ -234,7 +234,7 @@ function creative_blog_customize_register($wp_customize) {
 
     $wp_customize->add_control('creative_blog_header_image_link', array(
         'type' => 'checkbox',
-        'label' => __('Check to enable the header image to link back to the home page.', 'creative-blog'),
+        'label' => esc_html__('Check to enable the header image to link back to the home page.', 'creative-blog'),
         'section' => 'creative_blog_header_image_link_section',
         'settings' => 'creative_blog_header_image_link'
     ));
@@ -242,15 +242,15 @@ function creative_blog_customize_register($wp_customize) {
     // Start Of Design Options
     $wp_customize->add_panel('creative_blog_design_options', array(
         'capabitity' => 'edit_theme_options',
-        'description' => __('Change the Design Settings from here as you want to best suit your need.', 'creative-blog'),
+        'description' => esc_html__('Change the Design Settings from here as you want to best suit your need.', 'creative-blog'),
         'priority' => 505,
-        'title' => __('Design Options', 'creative-blog')
+        'title' => esc_html__('Design Options', 'creative-blog')
     ));
 
     // site layout setting
     $wp_customize->add_section('creative_blog_site_layout_setting', array(
         'priority' => 1,
-        'title' => __('Site Layout', 'creative-blog'),
+        'title' => esc_html__('Site Layout', 'creative-blog'),
         'panel' => 'creative_blog_design_options'
     ));
 
@@ -262,10 +262,10 @@ function creative_blog_customize_register($wp_customize) {
 
     $wp_customize->add_control('creative_blog_site_layout', array(
         'type' => 'radio',
-        'label' => __('Choose your site layout. The change is reflected in the whole site.', 'creative-blog'),
+        'label' => esc_html__('Choose your site layout. The change is reflected in the whole site.', 'creative-blog'),
         'choices' => array(
-            'boxed_layout' => __('Boxed Layout', 'creative-blog'),
-            'wide_layout' => __('Wide Layout', 'creative-blog')
+            'boxed_layout' => esc_html__('Boxed Layout', 'creative-blog'),
+            'wide_layout' => esc_html__('Wide Layout', 'creative-blog')
         ),
         'section' => 'creative_blog_site_layout_setting'
     ));
@@ -301,7 +301,7 @@ function creative_blog_customize_register($wp_customize) {
                 }
             </style>
             <span class="customize-control-title"><?php echo esc_html($this->label); ?></span>
-            <ul class="controls" id = 'creative-blog-img-container'>
+            <ul class="controls" id='creative-blog-img-container'>
                 <?php
                 foreach ($this->choices as $value => $label) :
                     $class = ($this->value() == $value) ? 'creative-blog-radio-img-selected creative-blog-radio-img-img' : 'creative-blog-radio-img-img';
@@ -312,7 +312,7 @@ function creative_blog_customize_register($wp_customize) {
                                                           $this->link();
                                                           checked($this->value(), $value);
                                                           ?> />
-                            <img src = '<?php echo esc_html($label); ?>' class = '<?php echo $class; ?>' />
+                            <img src='<?php echo esc_html($label); ?>' class='<?php echo esc_html($class); ?>' />
                         </label>
                     </li>
                     <?php
@@ -339,7 +339,7 @@ function creative_blog_customize_register($wp_customize) {
     // default layout setting
     $wp_customize->add_section('creative_blog_default_layout_setting', array(
         'priority' => 2,
-        'title' => __('Default layout', 'creative-blog'),
+        'title' => esc_html__('Default layout', 'creative-blog'),
         'panel' => 'creative_blog_design_options'
     ));
 
@@ -351,7 +351,7 @@ function creative_blog_customize_register($wp_customize) {
 
     $wp_customize->add_control(new Creative_Blog_Image_Radio_Control($wp_customize, 'creative_blog_default_layout', array(
         'type' => 'radio',
-        'label' => __('Select default layout. This layout will be reflected in whole site archives, categories, search page etc. The layout for a single post and page can be controlled from the other options available in this theme.', 'creative-blog'),
+        'label' => esc_html__('Select default layout. This layout will be reflected in whole site archives, categories, search page etc. The layout for a single post and page can be controlled from the other options available in this theme.', 'creative-blog'),
         'section' => 'creative_blog_default_layout_setting',
         'settings' => 'creative_blog_default_layout',
         'choices' => array(
@@ -365,7 +365,7 @@ function creative_blog_customize_register($wp_customize) {
     // default layout for pages
     $wp_customize->add_section('creative_blog_default_page_layout_setting', array(
         'priority' => 3,
-        'title' => __('Default layout for pages only', 'creative-blog'),
+        'title' => esc_html__('Default layout for pages only', 'creative-blog'),
         'panel' => 'creative_blog_design_options'
     ));
 
@@ -377,7 +377,7 @@ function creative_blog_customize_register($wp_customize) {
 
     $wp_customize->add_control(new Creative_Blog_Image_Radio_Control($wp_customize, 'creative_blog_default_page_layout', array(
         'type' => 'radio',
-        'label' => __('Select default layout for pages. This layout will be reflected in all pages unless unique layout is set for the specific page.', 'creative-blog'),
+        'label' => esc_html__('Select default layout for pages. This layout will be reflected in all pages unless unique layout is set for the specific page.', 'creative-blog'),
         'section' => 'creative_blog_default_page_layout_setting',
         'settings' => 'creative_blog_default_page_layout',
         'choices' => array(
@@ -391,7 +391,7 @@ function creative_blog_customize_register($wp_customize) {
     // default layout for single posts
     $wp_customize->add_section('creative_blog_default_single_posts_layout_setting', array(
         'priority' => 4,
-        'title' => __('Default layout for single posts only', 'creative-blog'),
+        'title' => esc_html__('Default layout for single posts only', 'creative-blog'),
         'panel' => 'creative_blog_design_options'
     ));
 
@@ -403,7 +403,7 @@ function creative_blog_customize_register($wp_customize) {
 
     $wp_customize->add_control(new Creative_Blog_Image_Radio_Control($wp_customize, 'creative_blog_default_single_posts_layout', array(
         'type' => 'radio',
-        'label' => __('Select default layout for single posts. This layout will be reflected in all single posts unless unique layout is set for the specific post.', 'creative-blog'),
+        'label' => esc_html__('Select default layout for single posts. This layout will be reflected in all single posts unless unique layout is set for the specific post.', 'creative-blog'),
         'section' => 'creative_blog_default_single_posts_layout_setting',
         'settings' => 'creative_blog_default_single_posts_layout',
         'choices' => array(
@@ -418,7 +418,7 @@ function creative_blog_customize_register($wp_customize) {
     $wp_customize->add_section('creative_blog_primary_color_setting', array(
         'panel' => 'creative_blog_design_options',
         'priority' => 5,
-        'title' => __('Primary Color', 'creative-blog')
+        'title' => esc_html__('Primary Color', 'creative-blog')
     ));
 
     $wp_customize->add_setting('creative_blog_primary_color', array(
@@ -429,7 +429,7 @@ function creative_blog_customize_register($wp_customize) {
     ));
 
     $wp_customize->add_control(new WP_Customize_Color_Control($wp_customize, 'creative_blog_primary_color', array(
-        'label' => __('This will reflect in links, buttons and many others. Choose the color to match best suit your site need.', 'creative-blog'),
+        'label' => esc_html__('This will reflect in links, buttons and many others. Choose the color to match best suit your site need.', 'creative-blog'),
         'section' => 'creative_blog_primary_color_setting',
         'settings' => 'creative_blog_primary_color'
     )));
@@ -437,7 +437,7 @@ function creative_blog_customize_register($wp_customize) {
     // custom CSS setting
     $wp_customize->add_section('creative_blog_custom_css_setting', array(
         'priority' => 6,
-        'title' => __('Custom CSS', 'creative-blog'),
+        'title' => esc_html__('Custom CSS', 'creative-blog'),
         'panel' => 'creative_blog_design_options'
     ));
 
@@ -450,7 +450,7 @@ function creative_blog_customize_register($wp_customize) {
 
     $wp_customize->add_control('creative_blog_custom_css', array(
         'type' => 'textarea',
-        'label' => __('Write your custom css and design live.', 'creative-blog'),
+        'label' => esc_html__('Write your custom css and design live.', 'creative-blog'),
         'section' => 'creative_blog_custom_css_setting',
         'settings' => 'creative_blog_custom_css'
     ));
@@ -458,15 +458,15 @@ function creative_blog_customize_register($wp_customize) {
     // Start of Additional Options
     $wp_customize->add_panel('creative_blog_additional_options', array(
         'capability' => 'edit_theme_options',
-        'description' => __('Change the Additional Settings from here as you want to best suite your site.', 'creative-blog'),
+        'description' => esc_html__('Change the Additional Settings from here as you want to best suite your site.', 'creative-blog'),
         'priority' => 515,
-        'title' => __('Additional Options', 'creative-blog')
+        'title' => esc_html__('Additional Options', 'creative-blog')
     ));
 
     // related posts
     $wp_customize->add_section('creative_blog_related_posts_section', array(
         'priority' => 1,
-        'title' => __('Related Posts', 'creative-blog'),
+        'title' => esc_html__('Related Posts', 'creative-blog'),
         'panel' => 'creative_blog_additional_options'
     ));
 
@@ -478,7 +478,7 @@ function creative_blog_customize_register($wp_customize) {
 
     $wp_customize->add_control('creative_blog_related_posts_activate', array(
         'type' => 'checkbox',
-        'label' => __('Check to activate the related posts.', 'creative-blog'),
+        'label' => esc_html__('Check to activate the related posts.', 'creative-blog'),
         'section' => 'creative_blog_related_posts_section',
         'settings' => 'creative_blog_related_posts_activate'
     ));
@@ -491,19 +491,19 @@ function creative_blog_customize_register($wp_customize) {
 
     $wp_customize->add_control('creative_blog_related_posts', array(
         'type' => 'radio',
-        'label' => __('Related Posts To Be Shown As:', 'creative-blog'),
+        'label' => esc_html__('Related Posts To Be Shown As:', 'creative-blog'),
         'section' => 'creative_blog_related_posts_section',
         'settings' => 'creative_blog_related_posts',
         'choices' => array(
-            'categories' => __('Related Posts By Categories', 'creative-blog'),
-            'tags' => __('Related Posts By Tags', 'creative-blog')
+            'categories' => esc_html__('Related Posts By Categories', 'creative-blog'),
+            'tags' => esc_html__('Related Posts By Tags', 'creative-blog')
         )
     ));
 
     // featured image popup check
     $wp_customize->add_section('creative_blog_featured_image_popup_setting', array(
         'priority' => 2,
-        'title' => __('Image Lightbox', 'creative-blog'),
+        'title' => esc_html__('Image Lightbox', 'creative-blog'),
         'panel' => 'creative_blog_additional_options'
     ));
 
@@ -515,14 +515,14 @@ function creative_blog_customize_register($wp_customize) {
 
     $wp_customize->add_control('creative_blog_featured_image_popup', array(
         'type' => 'checkbox',
-        'label' => __('Check to enable the lightbox feature for the featured images in single post page. Note: the post should be of image post format to support this feature, ie, we have supported the featured image in single post page only when image post format is choosen.', 'creative-blog'),
+        'label' => esc_html__('Check to enable the lightbox feature for the featured images in single post page. Note: the post should be of image post format to support this feature, ie, we have supported the featured image in single post page only when image post format is choosen.', 'creative-blog'),
         'section' => 'creative_blog_featured_image_popup_setting',
         'settings' => 'creative_blog_featured_image_popup'
     ));
     
     $wp_customize->add_section('creative_blog_author_bio_social_links_setting', array(
         'priority' => 3,
-        'title' => __('Social Links In Author Bio', 'creative-blog'),
+        'title' => esc_html__('Social Links In Author Bio', 'creative-blog'),
         'panel' => 'creative_blog_additional_options'
     ));
 
@@ -534,7 +534,7 @@ function creative_blog_customize_register($wp_customize) {
 
     $wp_customize->add_control('creative_blog_author_bio_social_links', array(
         'type' => 'checkbox',
-        'label' => __('Check to enable the social links in the Author Bio section. For this to work, you need to add the URL of your social sites in the profile section. This theme supports WordPress SEO and All In One SEO Pack plugin for this feature.', 'creative-blog'),
+        'label' => esc_html__('Check to enable the social links in the Author Bio section. For this to work, you need to add the URL of your social sites in the profile section. This theme supports WordPress SEO and All In One SEO Pack plugin for this feature.', 'creative-blog'),
         'section' => 'creative_blog_author_bio_social_links_setting',
         'settings' => 'creative_blog_author_bio_social_links'
     ));
@@ -542,14 +542,14 @@ function creative_blog_customize_register($wp_customize) {
     // Category Color Options
     $wp_customize->add_panel('creative_blog_category_color_panel', array(
         'priority' => 535,
-        'title' => __('Category Color Options', 'creative-blog'),
+        'title' => esc_html__('Category Color Options', 'creative-blog'),
         'capability' => 'edit_theme_options',
-        'description' => __('Change the color of each category items as you want to best suit your requirement.', 'creative-blog')
+        'description' => esc_html__('Change the color of each category items as you want to best suit your requirement.', 'creative-blog')
     ));
 
     $wp_customize->add_section('creative_blog_category_color_setting', array(
         'priority' => 1,
-        'title' => __('Category Color Settings', 'creative-blog'),
+        'title' => esc_html__('Category Color Settings', 'creative-blog'),
         'panel' => 'creative_blog_category_color_panel'
     ));
 
@@ -573,7 +573,7 @@ function creative_blog_customize_register($wp_customize) {
         ));
 
         $wp_customize->add_control(new WP_Customize_Color_Control($wp_customize, 'creative_blog_category_color_' . get_cat_id($wp_category_list[$category_list->cat_ID]), array(
-            'label' => sprintf(__('%s', 'creative-blog'), $wp_category_list[$category_list->cat_ID]),
+            'label' => sprintf(esc_html__('%s', 'creative-blog'), $wp_category_list[$category_list->cat_ID]),
             'section' => 'creative_blog_category_color_setting',
             'settings' => 'creative_blog_category_color_' . get_cat_id($wp_category_list[$category_list->cat_ID]),
             'priority' => $i

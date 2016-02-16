@@ -52,7 +52,7 @@ if (!function_exists('creative_blog_breaking_news')) :
         ));
         ?>
         <div class="breaking-news">
-            <strong class="breaking-news-latest"><?php _e('Latest:', 'creative-blog'); ?></strong>
+            <strong class="breaking-news-latest"><?php esc_html_e('Latest:', 'creative-blog'); ?></strong>
             <ul class="newsticker">
                 <?php while ($get_featured_posts->have_posts()):$get_featured_posts->the_post(); ?>
                     <li>
@@ -214,7 +214,7 @@ if (!function_exists('creative_blog_random_post')) :
         ));
         ?>
         <?php while ($get_random_post->have_posts()):$get_random_post->the_post(); ?>
-            <?php return '<li class="filtered-menu"><a href="' . get_the_permalink() . '" title="' . __('Random Post', 'creative-blog') . '"><i class="fa fa-random"></i></a></li>'; ?>
+            <?php return '<li class="filtered-menu"><a href="' . esc_url(get_the_permalink()) . '" title="' . esc_html__('Random Post', 'creative-blog') . '"><i class="fa fa-random"></i></a></li>'; ?>
         <?php endwhile; ?>
         <?php
         // Reset Post Data
@@ -264,7 +264,7 @@ if (!function_exists('creative_blog_footer_copyright')) :
 
         $my_link_name = '<a href="http://napitwptech.com" target="_blank" title="' . esc_attr__('Bishal Napit', 'creative-blog') . '"><span>' . __('Bishal Napit', 'creative-blog') . '</span></a>';
 
-        $default_footer_value = sprintf(__('Copyright &copy; %1$s %2$s.', 'creative-blog'), date('Y'), $site_link) . ' ' . sprintf(__('Theme: %1$s by %2$s.', 'creative-blog'), 'Creative Blog', $my_link_name) . ' ' . sprintf(__('Powered by %s.', 'creative-blog'), $wp_link);
+        $default_footer_value = sprintf(esc_html__('Copyright &copy; %1$s %2$s.', 'creative-blog'), date('Y'), $site_link) . ' ' . sprintf(esc_html__('Theme: %1$s by %2$s.', 'creative-blog'), 'Creative Blog', $my_link_name) . ' ' . sprintf(esc_html__('Powered by %s.', 'creative-blog'), $wp_link);
 
         $creative_blog_footer_copyright = '<div class="copyright col-md-12">' . $default_footer_value . '</div>';
         echo $creative_blog_footer_copyright;
@@ -288,7 +288,7 @@ function creative_blog_custom_css() {
     // color change options code
     if (!empty($creative_blog_custom_options_color)) {
         echo '<!-- ' . get_bloginfo('name') . ' Internal Styles -->';
-        ?><style type="text/css"><?php echo $creative_blog_custom_options_color; ?></style>
+        ?><style type="text/css"><?php echo esc_html($creative_blog_custom_options_color); ?></style>
         <?php
     }
 
@@ -296,7 +296,7 @@ function creative_blog_custom_css() {
     $creative_blog_custom_css = get_theme_mod('creative_blog_custom_css', '');
     if (!empty($creative_blog_custom_css)) {
         echo '<!-- ' . get_bloginfo('name') . ' Custom Styles -->';
-        ?><style type="text/css"><?php echo $creative_blog_custom_css; ?></style><?php
+        ?><style type="text/css"><?php echo esc_html($creative_blog_custom_css); ?></style><?php
     }
 }
 
@@ -402,16 +402,16 @@ endif;
 if (!function_exists('creative_blog_post_format_meta_box')) :
 
     function creative_blog_post_format_meta_box() {
-        add_meta_box('post-video-url', __('Video URL', 'creative-blog'), 'creative_blog_post_format_video_url', 'post', 'side', 'high');
-        add_meta_box('post-audio-url', __('Audio URL', 'creative-blog'), 'creative_blog_post_format_audio_url', 'post', 'side', 'high');
-        add_meta_box('post-status', __('Status', 'creative-blog'), 'creative_blog_post_format_status', 'post', 'side', 'high');
-        add_meta_box('post-chat', __('Chat', 'creative-blog'), 'creative_blog_post_format_chat', 'post', 'side', 'high');
+        add_meta_box('post-video-url', esc_html__('Video URL', 'creative-blog'), 'creative_blog_post_format_video_url', 'post', 'side', 'high');
+        add_meta_box('post-audio-url', esc_html__('Audio URL', 'creative-blog'), 'creative_blog_post_format_audio_url', 'post', 'side', 'high');
+        add_meta_box('post-status', esc_html__('Status', 'creative-blog'), 'creative_blog_post_format_status', 'post', 'side', 'high');
+        add_meta_box('post-chat', esc_html__('Chat', 'creative-blog'), 'creative_blog_post_format_chat', 'post', 'side', 'high');
         // adding link text boxes
-        add_meta_box('post-link-text', __('Link Text', 'creative-blog'), 'creative_blog_post_format_link_text', 'post', 'side', 'high');
-        add_meta_box('post-link-url', __('Link URL', 'creative-blog'), 'creative_blog_post_format_link_url', 'post', 'side', 'high');
+        add_meta_box('post-link-text', esc_html__('Link Text', 'creative-blog'), 'creative_blog_post_format_link_text', 'post', 'side', 'high');
+        add_meta_box('post-link-url', esc_html__('Link URL', 'creative-blog'), 'creative_blog_post_format_link_url', 'post', 'side', 'high');
         // adding quote text boxes
-        add_meta_box('post-quote-text', __('Quote Text', 'creative-blog'), 'creative_blog_post_format_quote_text', 'post', 'side', 'high');
-        add_meta_box('post-quote-author', __('Quote Author', 'creative-blog'), 'creative_blog_post_format_quote_author', 'post', 'side', 'high');
+        add_meta_box('post-quote-text', esc_html__('Quote Text', 'creative-blog'), 'creative_blog_post_format_quote_text', 'post', 'side', 'high');
+        add_meta_box('post-quote-author', esc_html__('Quote Author', 'creative-blog'), 'creative_blog_post_format_quote_author', 'post', 'side', 'high');
     }
 
 endif;
@@ -866,15 +866,15 @@ if (!function_exists('creative_blog_author_bio_links')) :
         
         if ($author_twitter_link || $author_googleplus_link || $author_facebook_link) {
             echo '<div class="author-social-links">';
-            printf(__( 'Follow %s on:', 'creative-blog' ), $author_name );
+            printf(esc_html__( 'Follow %s on:', 'creative-blog' ), $author_name );
             if ($author_facebook_link) {
-                echo '<a href="' . esc_url($author_facebook_link) . '" title="' . __('Facebook', 'creative-blog') . '" target="_blank"><i class="fa fa-facebook"></i><span class="screen-reader-text">' . __( 'Facebook', 'creative-blog' ) . '</span></a>';
+                echo '<a href="' . esc_url($author_facebook_link) . '" title="' . esc_html__('Facebook', 'creative-blog') . '" target="_blank"><i class="fa fa-facebook"></i><span class="screen-reader-text">' . esc_html__( 'Facebook', 'creative-blog' ) . '</span></a>';
             }
             if ($author_twitter_link) {
-                echo '<a href="https://twitter.com/' . esc_attr($author_twitter_link) . '" title="' . __('Twitter', 'creative-blog') .'" target="_blank"><i class="fa fa-twitter"></i><span class="screen-reader-text">' . __( 'Twitter', 'creative-blog' ) . '</span></a>';
+                echo '<a href="https://twitter.com/' . esc_attr($author_twitter_link) . '" title="' . esc_html__('Twitter', 'creative-blog') .'" target="_blank"><i class="fa fa-twitter"></i><span class="screen-reader-text">' . esc_html__( 'Twitter', 'creative-blog' ) . '</span></a>';
             }
             if ($author_googleplus_link) {
-                echo '<a href="' . esc_url($author_googleplus_link) . '" title="' . __('Google Plus', 'creative-blog') . '" rel="author" target="_blank"><i class="fa fa-google-plus"></i><span class="screen-reader-text">' . __( 'Google Plus', 'creative-blog' ) . '</span></a>';
+                echo '<a href="' . esc_url($author_googleplus_link) . '" title="' . esc_html__('Google Plus', 'creative-blog') . '" rel="author" target="_blank"><i class="fa fa-google-plus"></i><span class="screen-reader-text">' . esc_html__( 'Google Plus', 'creative-blog' ) . '</span></a>';
             }
             echo '</div>';
         }

@@ -9,7 +9,7 @@
 <?php if ($related_posts->have_posts()): ?>
     <div class="related-posts-main">
 
-        <h3 class="related-posts-main-title"><span><?php _e('Similar Articles', 'creative-blog'); ?></span></h3>
+        <h3 class="related-posts-main-title"><span><?php esc_html_e('Similar Articles', 'creative-blog'); ?></span></h3>
 
         <div class="related-posts-total row">
 

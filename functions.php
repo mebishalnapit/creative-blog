@@ -142,7 +142,7 @@ function creative_blog_widgets_init() {
     register_sidebar(array(
         'name' => esc_html__('Right Sidebar', 'creative-blog'),
         'id' => 'creative-blog-right-sidebar',
-        'description' => __('Display your widgets in the Right Sidebar Area', 'creative-blog'),
+        'description' => esc_html__('Display your widgets in the Right Sidebar Area', 'creative-blog'),
         'before_widget' => '<section id="%1$s" class="widget %2$s">',
         'after_widget' => '</section>',
         'before_title' => '<h3 class="widget-title"><span>',
@@ -152,7 +152,7 @@ function creative_blog_widgets_init() {
     register_sidebar(array(
         'name' => esc_html__('Left Sidebar', 'creative-blog'),
         'id' => 'creative-blog-left-sidebar',
-        'description' => __('Display your widgets in the Left Sidebar Area', 'creative-blog'),
+        'description' => esc_html__('Display your widgets in the Left Sidebar Area', 'creative-blog'),
         'before_widget' => '<section id="%1$s" class="widget %2$s">',
         'after_widget' => '</section>',
         'before_title' => '<h3 class="widget-title"><span>',
@@ -162,7 +162,7 @@ function creative_blog_widgets_init() {
     register_sidebar(array(
         'name' => esc_html__('Header Sidebar', 'creative-blog'),
         'id' => 'creative-blog-header-sidebar',
-        'description' => __('Display your widgets in the Header Sidebar Area', 'creative-blog'),
+        'description' => esc_html__('Display your widgets in the Header Sidebar Area', 'creative-blog'),
         'before_widget' => '<section id="%1$s" class="widget %2$s">',
         'after_widget' => '</section>',
         'before_title' => '<h3 class="widget-title"><span>',
@@ -172,7 +172,7 @@ function creative_blog_widgets_init() {
     register_sidebar(array(
         'name' => esc_html__('Content Top Sidebar', 'creative-blog'),
         'id' => 'creative-blog-content-top-sidebar',
-        'description' => __('Display your widgets in the Content Top Sidebar Area', 'creative-blog'),
+        'description' => esc_html__('Display your widgets in the Content Top Sidebar Area', 'creative-blog'),
         'before_widget' => '<section id="%1$s" class="widget %2$s">',
         'after_widget' => '</section>',
         'before_title' => '<h3 class="widget-title"><span>',
@@ -182,7 +182,7 @@ function creative_blog_widgets_init() {
     register_sidebar(array(
         'name' => esc_html__('Content Bottom Sidebar', 'creative-blog'),
         'id' => 'creative-blog-content-bottom-sidebar',
-        'description' => __('Display your widgets in the Content Bottom Sidebar Area', 'creative-blog'),
+        'description' => esc_html__('Display your widgets in the Content Bottom Sidebar Area', 'creative-blog'),
         'before_widget' => '<section id="%1$s" class="widget %2$s">',
         'after_widget' => '</section>',
         'before_title' => '<h3 class="widget-title"><span>',
@@ -192,7 +192,7 @@ function creative_blog_widgets_init() {
     register_sidebar(array(
         'name' => esc_html__('404 Sidebar', 'creative-blog'),
         'id' => 'creative-blog-404-sidebar',
-        'description' => __('Display your widgets in the 404 Error Page Sidebar Area', 'creative-blog'),
+        'description' => esc_html__('Display your widgets in the 404 Error Page Sidebar Area', 'creative-blog'),
         'before_widget' => '<section id="%1$s" class="widget %2$s">',
         'after_widget' => '</section>',
         'before_title' => '<h3 class="widget-title"><span>',
@@ -202,7 +202,7 @@ function creative_blog_widgets_init() {
     register_sidebar(array(
         'name' => esc_html__('Contact Sidebar', 'creative-blog'),
         'id' => 'creative-blog-contact-sidebar',
-        'description' => __('Display your widgets in the Contact Page Sidebar Area', 'creative-blog'),
+        'description' => esc_html__('Display your widgets in the Contact Page Sidebar Area', 'creative-blog'),
         'before_widget' => '<section id="%1$s" class="widget %2$s">',
         'after_widget' => '</section>',
         'before_title' => '<h3 class="widget-title"><span>',
@@ -212,7 +212,7 @@ function creative_blog_widgets_init() {
     register_sidebar(array(
         'name' => esc_html__('Footer Sidebar One', 'creative-blog'),
         'id' => 'creative-blog-footer-sidebar-one',
-        'description' => __('Display your widgets in the footer sidebar area one.', 'creative-blog'),
+        'description' => esc_html__('Display your widgets in the footer sidebar area one.', 'creative-blog'),
         'before_widget' => '<section id="%1$s" class="widget %2$s">',
         'after_widget' => '</section>',
         'before_title' => '<h3 class="widget-title"><span>',
@@ -222,7 +222,7 @@ function creative_blog_widgets_init() {
     register_sidebar(array(
         'name' => esc_html__('Footer Sidebar Two', 'creative-blog'),
         'id' => 'creative-blog-footer-sidebar-two',
-        'description' => __('Display your widgets in the footer sidebar area two.', 'creative-blog'),
+        'description' => esc_html__('Display your widgets in the footer sidebar area two.', 'creative-blog'),
         'before_widget' => '<section id="%1$s" class="widget %2$s">',
         'after_widget' => '</section>',
         'before_title' => '<h3 class="widget-title"><span>',
@@ -232,7 +232,7 @@ function creative_blog_widgets_init() {
     register_sidebar(array(
         'name' => esc_html__('Footer Sidebar Three', 'creative-blog'),
         'id' => 'creative-blog-footer-sidebar-three',
-        'description' => __('Display your widgets in the footer sidebar area three.', 'creative-blog'),
+        'description' => esc_html__('Display your widgets in the footer sidebar area three.', 'creative-blog'),
         'before_widget' => '<section id="%1$s" class="widget %2$s">',
         'after_widget' => '</section>',
         'before_title' => '<h3 class="widget-title"><span>',
@@ -242,7 +242,7 @@ function creative_blog_widgets_init() {
     register_sidebar(array(
         'name' => esc_html__('Footer Sidebar Four', 'creative-blog'),
         'id' => 'creative-blog-footer-sidebar-four',
-        'description' => __('Display your widgets in the footer sidebar area four.', 'creative-blog'),
+        'description' => esc_html__('Display your widgets in the footer sidebar area four.', 'creative-blog'),
         'before_widget' => '<section id="%1$s" class="widget %2$s">',
         'after_widget' => '</section>',
         'before_title' => '<h3 class="widget-title"><span>',
