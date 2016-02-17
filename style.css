@@ -80,9 +80,18 @@ embed, iframe, object {
     width: 95%;
     margin: 2% auto;
 }
-#primary.content-centered {
+.no-sidebar-content-centered #primary {
     margin: 0 auto;
     float: none;
+}
+.no-sidebar-full-width #primary {
+    width: 100%;
+}
+.left-sidebar #secondary {
+    float: left;
+}
+.left-sidebar #primary {
+    float: right;
 }
 
 /* header settings */
@@ -1119,6 +1128,11 @@ li.comments-tab-widget img {
     }
     p.site-title {
         margin-top: 0;
+    }
+}
+@media screen and (max-width: 991px) {
+    .left-sidebar #secondary, .left-sidebar #primary {
+        float: none;
     }
 }
 @media screen and (max-width: 600px) {

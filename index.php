@@ -16,9 +16,7 @@ get_header();
 
 <?php do_action('creative_blog_before_body_content'); ?>
 
-<?php creative_blog_left_sidebar_select(); ?>
-
-<div id="primary" class="content-area <?php echo creative_blog_layout_class(); ?>">
+<div id="primary" class="content-area col-md-8">
     <main id="main" class="site-main" role="main">
 
         <?php if (have_posts()) : ?>
@@ -59,7 +57,7 @@ get_header();
     </main><!-- #main -->
 </div><!-- #primary -->
 
-<?php creative_blog_right_sidebar_select(); ?>
+<?php creative_blog_sidebar_select(); ?>
 
 <?php do_action('creative_blog_after_body_content'); ?>
 
