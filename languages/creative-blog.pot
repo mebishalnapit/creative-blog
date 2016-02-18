@@ -3,8 +3,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Creative Blog\n"
-"POT-Creation-Date: 2016-02-16 07:15+0545\n"
-"PO-Revision-Date: 2016-02-16 07:15+0545\n"
+"POT-Creation-Date: 2016-02-18 20:06+0545\n"
+"PO-Revision-Date: 2016-02-18 20:07+0545\n"
 "Last-Translator: \n"
 "Language-Team: Bishal Napit <mebishalnapit@gmail.com>\n"
 "Language: en\n"
@@ -20,11 +20,11 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Poedit-SearchPath-0: .\n"
 
-#: 404.php:22 404.php:30
+#: 404.php:20 404.php:28
 msgid "404 Error!"
 msgstr ""
 
-#: 404.php:34
+#: 404.php:32
 msgid ""
 "It looks like nothing was found at this location. Maybe try a search instead?"
 msgstr ""
@@ -238,7 +238,7 @@ msgid ""
 "to the primary menu."
 msgstr ""
 
-#: inc/customizer.php:165 inc/extras.php:217
+#: inc/customizer.php:165 inc/extras.php:218
 msgid "Random Post"
 msgstr ""
 
@@ -426,121 +426,125 @@ msgstr ""
 msgid "Latest:"
 msgstr ""
 
-#: inc/extras.php:263
+#: inc/extras.php:264
 msgid "WordPress"
 msgstr ""
 
-#: inc/extras.php:265
+#: inc/extras.php:266
 msgid "Bishal Napit"
 msgstr ""
 
-#: inc/extras.php:267
+#: inc/extras.php:268
 #, php-format
 msgid "Copyright &copy; %1$s %2$s."
 msgstr ""
 
-#: inc/extras.php:267
+#: inc/extras.php:268
 #, php-format
 msgid "Theme: %1$s by %2$s."
 msgstr ""
 
-#: inc/extras.php:267
+#: inc/extras.php:268
+msgid "Creative Blog"
+msgstr ""
+
+#: inc/extras.php:268
 #, php-format
 msgid "Powered by %s."
 msgstr ""
 
-#: inc/extras.php:387
+#: inc/extras.php:388
 msgid "Post navigation"
 msgstr ""
 
-#: inc/extras.php:390
+#: inc/extras.php:391
 msgctxt "Previous post link"
 msgid ""
 "<span class=\"meta-nav\"><i class=\"fa fa-arrow-circle-o-left\"></i></span>"
 "%title"
 msgstr ""
 
-#: inc/extras.php:391
+#: inc/extras.php:392
 msgctxt "Next post link"
 msgid ""
 "%title<span class=\"meta-nav\"><i class=\"fa fa-arrow-circle-o-right\"></i></"
 "span>"
 msgstr ""
 
-#: inc/extras.php:405
+#: inc/extras.php:406
 msgid "Video URL"
 msgstr ""
 
-#: inc/extras.php:406
+#: inc/extras.php:407
 msgid "Audio URL"
 msgstr ""
 
-#: inc/extras.php:407
+#: inc/extras.php:408
 msgid "Status"
 msgstr ""
 
-#: inc/extras.php:408
+#: inc/extras.php:409
 msgid "Chat"
 msgstr ""
 
-#: inc/extras.php:410
+#: inc/extras.php:411
 msgid "Link Text"
 msgstr ""
 
-#: inc/extras.php:411
+#: inc/extras.php:412
 msgid "Link URL"
 msgstr ""
 
-#: inc/extras.php:413
+#: inc/extras.php:414
 msgid "Quote Text"
 msgstr ""
 
-#: inc/extras.php:414
+#: inc/extras.php:415
 msgid "Quote Author"
 msgstr ""
 
-#: inc/extras.php:838 inc/template-tags.php:25
+#: inc/extras.php:801 inc/template-tags.php:25
 #, php-format
 msgctxt "post date"
 msgid "%s"
 msgstr ""
 
-#: inc/extras.php:842 inc/template-tags.php:29
+#: inc/extras.php:805 inc/template-tags.php:29
 #, php-format
 msgctxt "post author"
 msgid "%s"
 msgstr ""
 
-#: inc/extras.php:848 inc/template-tags.php:36
+#: inc/extras.php:811 inc/template-tags.php:36
 msgid "<i class=\"fa fa-comment\"></i>Leave a reply"
 msgstr ""
 
-#: inc/extras.php:848 inc/template-tags.php:36
+#: inc/extras.php:811 inc/template-tags.php:36
 msgid "<i class=\"fa fa-comment\"></i>1 Comment"
 msgstr ""
 
-#: inc/extras.php:848 inc/template-tags.php:36
+#: inc/extras.php:811 inc/template-tags.php:36
 msgid "<i class=\"fa fa-comment\"></i>% Comments"
 msgstr ""
 
-#: inc/extras.php:848 inc/template-tags.php:36
+#: inc/extras.php:811 inc/template-tags.php:36
 msgid "<i class=\"fa fa-comment\"></i>Comments Disabled"
 msgstr ""
 
-#: inc/extras.php:869
+#: inc/extras.php:832
 #, php-format
 msgid "Follow %s on:"
 msgstr ""
 
-#: inc/extras.php:871
+#: inc/extras.php:834
 msgid "Facebook"
 msgstr ""
 
-#: inc/extras.php:874
+#: inc/extras.php:837
 msgid "Twitter"
 msgstr ""
 
-#: inc/extras.php:877
+#: inc/extras.php:840
 msgid "Google Plus"
 msgstr ""
 
@@ -633,22 +637,14 @@ msgid "<i class=\"glyphicon glyphicon-chevron-right\"></i>"
 msgstr ""
 
 #: inc/wp_bootstrap_pagination.php:56
-msgid "First"
-msgstr ""
-
-#: inc/wp_bootstrap_pagination.php:59
-msgid "previous"
-msgstr ""
-
-#: inc/wp_bootstrap_pagination.php:74
-msgid "next"
+msgid "First Page"
 msgstr ""
 
 #: inc/wp_bootstrap_pagination.php:78
-msgid "Last"
+msgid "Last Page"
 msgstr ""
 
-#: search.php:22
+#: search.php:20
 #, php-format
 msgid "Search Results for: %s"
 msgstr ""

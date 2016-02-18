@@ -25,7 +25,7 @@
                 }
                 // displaying the attached image of gallery
                 $link = wp_get_attachment_image($attachment_id, 'creative-blog-featured');
-                $output .= '<div class="item ' . $active_class . '">' . $link . '</div>';
+                $output .= '<div class="item ' . esc_attr($active_class) . '">' . $link . '</div>';
                 $i++;
             }
             $output .= '</div>';

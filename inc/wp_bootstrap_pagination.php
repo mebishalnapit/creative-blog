@@ -6,10 +6,10 @@
 function wp_bootstrap_pagination($args = array()) {
 
     $defaults = array(
-        'range' => 4,
+        'range' => 5,
         'custom_query' => FALSE,
-        'previous_string' => __('<i class="glyphicon glyphicon-chevron-left"></i>', 'creative-blog'),
-        'next_string' => __('<i class="glyphicon glyphicon-chevron-right"></i>', 'creative-blog'),
+        'previous_string' => wp_kses(__('<i class="glyphicon glyphicon-chevron-left"></i>', 'creative-blog'), array('i' => array('class' => array()))),
+        'next_string' => wp_kses(__('<i class="glyphicon glyphicon-chevron-right"></i>', 'creative-blog'), array('i' => array('class' => array()))),
         'before_output' => '<div class="post-nav"><ul class="pager">',
         'after_output' => '</ul></div>'
     );
@@ -53,10 +53,10 @@ function wp_bootstrap_pagination($args = array()) {
 
     $firstpage = esc_attr(get_pagenum_link(1));
     if ($firstpage && (1 != $page))
-        $echo .= '<li class="previous"><a href="' . $firstpage . '">' . __('First', 'creative-blog') . '</a></li>';
+        $echo .= '<li class="previous"><a href="' . $firstpage . '">' . esc_html__('First Page', 'creative-blog') . '</a></li>';
 
     if ($previous && (1 != $page))
-        $echo .= '<li><a href="' . $previous . '" title="' . __('previous', 'creative-blog') . '">' . $args['previous_string'] . '</a></li>';
+        $echo .= '<li><a href="' . $previous . '">' . $args['previous_string'] . '</a></li>';
 
     if (!empty($min) && !empty($max)) {
         for ($i = $min; $i <= $max; $i++) {
@@ -71,11 +71,11 @@ function wp_bootstrap_pagination($args = array()) {
     $next = intval($page) + 1;
     $next = esc_attr(get_pagenum_link($next));
     if ($next && ($count != $page))
-        $echo .= '<li><a href="' . $next . '" title="' . __('next', 'creative-blog') . '">' . $args['next_string'] . '</a></li>';
+        $echo .= '<li><a href="' . $next . '">' . $args['next_string'] . '</a></li>';
 
     $lastpage = esc_attr(get_pagenum_link($count));
     if ($lastpage) {
-        $echo .= '<li class="next"><a href="' . $lastpage . '">' . __('Last', 'creative-blog') . '</a></li>';
+        $echo .= '<li class="next"><a href="' . $lastpage . '">' . esc_html__('Last Page', 'creative-blog') . '</a></li>';
     }
 
     if (isset($echo))

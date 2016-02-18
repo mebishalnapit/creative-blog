@@ -34,10 +34,10 @@
     <footer class="entry-footer">
         <?php
         edit_post_link(
-                sprintf(
+                wp_kses(sprintf(
                         /* translators: %s: Name of current post */
                         __('<i class="fa fa-edit"></i>Edit %s', 'creative-blog'), the_title('<span class="screen-reader-text">"', '"</span>', false)
-                ), '<span class="edit-link">', '</span>'
+                ), array('i' => array('class' => array()), 'span' => array('class' => array()))), '<span class="edit-link">', '</span>'
         );
         ?>
     </footer><!-- .entry-footer -->

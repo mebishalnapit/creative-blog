@@ -33,15 +33,15 @@ if (!function_exists('creative_blog_posted_on')) :
 
         if (!post_password_required() && ( comments_open() || get_comments_number() )) {
             echo '<span class="comments-link">';
-            comments_popup_link(__('<i class="fa fa-comment"></i>Leave a reply', 'creative-blog'), __('<i class="fa fa-comment"></i>1 Comment', 'creative-blog'), __('<i class="fa fa-comment"></i>% Comments', 'creative-blog'), '', __('<i class="fa fa-comment"></i>Comments Disabled', 'creative-blog'));
+            comments_popup_link(wp_kses(__('<i class="fa fa-comment"></i>Leave a reply', 'creative-blog'), array('i' => array('class' => array()))), wp_kses(__('<i class="fa fa-comment"></i>1 Comment', 'creative-blog'), array('i' => array('class' => array()))), wp_kses(__('<i class="fa fa-comment"></i>% Comments', 'creative-blog'), array('i' => array('class' => array()))), '', wp_kses(__('<i class="fa fa-comment"></i>Comments Disabled', 'creative-blog'), array('i' => array('class' => array()))));
             echo '</span>';
         }
 
         edit_post_link(
-                sprintf(
+                wp_kses(sprintf(
                         /* translators: %s: Name of current post */
                         __('<i class="fa fa-edit"></i>Edit %s', 'creative-blog'), the_title('<span class="screen-reader-text">"', '"</span>', false)
-                ), '<span class="edit-link">', '</span>'
+                ), array('i' => array('class' => array()), 'span' => array('class' => array()))), '<span class="edit-link">', '</span>'
         );
     }
 

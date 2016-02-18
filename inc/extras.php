@@ -115,7 +115,7 @@ if (!function_exists('creative_blog_header_text_logo')) :
             }
             ?>
 
-            <div class="site-info <?php echo $class; ?>">
+            <div class="site-info <?php echo esc_attr($class); ?>">
                 <?php if (is_front_page() && is_home()) : ?>
                     <h1 class="site-title"><a href="<?php echo esc_url(home_url('/')); ?>" rel="home"><?php bloginfo('name'); ?></a></h1>
                 <?php else : ?>
@@ -265,7 +265,7 @@ if (!function_exists('creative_blog_footer_copyright')) :
 
         $my_link_name = '<a href="http://napitwptech.com" target="_blank" title="' . esc_attr__('Bishal Napit', 'creative-blog') . '"><span>' . esc_html__('Bishal Napit', 'creative-blog') . '</span></a>';
 
-        $default_footer_value = sprintf(esc_html__('Copyright &copy; %1$s %2$s.', 'creative-blog'), date('Y'), $site_link) . ' ' . sprintf(esc_html__('Theme: %1$s by %2$s.', 'creative-blog'), 'Creative Blog', $my_link_name) . ' ' . sprintf(esc_html__('Powered by %s.', 'creative-blog'), $wp_link);
+        $default_footer_value = sprintf(esc_html__('Copyright &copy; %1$s %2$s.', 'creative-blog'), date('Y'), $site_link) . ' ' . sprintf(esc_html__('Theme: %1$s by %2$s.', 'creative-blog'), esc_html__('Creative Blog', 'creative-blog'), $my_link_name) . ' ' . sprintf(esc_html__('Powered by %s.', 'creative-blog'), $wp_link);
 
         $creative_blog_footer_copyright = '<div class="copyright col-md-12">' . $default_footer_value . '</div>';
         echo $creative_blog_footer_copyright;
@@ -808,7 +808,7 @@ if (!function_exists('creative_blog_entry_meta_custom')) :
         echo '<span class="posted-on">' . $posted_on . '</span><span class="byline"> ' . $byline . '</span>'; // WPCS: XSS OK.
 
         echo '<span class="comments-link">';
-        comments_popup_link(__('<i class="fa fa-comment"></i>Leave a reply', 'creative-blog'), __('<i class="fa fa-comment"></i>1 Comment', 'creative-blog'), __('<i class="fa fa-comment"></i>% Comments', 'creative-blog'), '', __('<i class="fa fa-comment"></i>Comments Disabled', 'creative-blog'));
+        comments_popup_link(wp_kses(__('<i class="fa fa-comment"></i>Leave a reply', 'creative-blog'), array('i' => array('class' => array()))), wp_kses(__('<i class="fa fa-comment"></i>1 Comment', 'creative-blog'), array('i' => array('class' => array()))), wp_kses(__('<i class="fa fa-comment"></i>% Comments', 'creative-blog'), array('i' => array('class' => array()))), '', wp_kses(__('<i class="fa fa-comment"></i>Comments Disabled', 'creative-blog'), array('i' => array('class' => array()))));
         echo '</span>';
     }
 

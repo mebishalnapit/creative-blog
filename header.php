@@ -31,7 +31,7 @@
                         <div class="header-top-area container-fluid">
                             <?php if ((get_theme_mod('creative_blog_date_display', 0) == 1) || (get_theme_mod('creative_blog_breaking_news', 0) == 1)) {
                                 ?>
-                                <div id="date-latest" class="header-left-area col-md-9">
+                                <div id="date-latest" class="header-left-area col-md-8">
                                     <?php
                                     // date display option
                                     if (get_theme_mod('creative_blog_date_display', 0) == 1) {
@@ -45,7 +45,7 @@
                                 </div>
                             <?php } ?>
 
-                            <div id="social-menu" class="header-right-area col-md-3">
+                            <div id="social-menu" class="header-right-area col-md-4">
                                 <?php creative_blog_social_menu(); ?>
                             </div>
                         </div>
