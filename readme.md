@@ -38,6 +38,10 @@ All the available options of this theme can be used from Appearance > Customize.
 If you've translated this theme into your native language, then, feel free to send the translation file to mebishalnapit@gmail.com and we will include it within the theme from next version update.
 
 ## CHANGELOG
+#### VERSION 0.4
+* Styling fixes
+* Content width issue fixed for default post and pages layout
+
 #### VERSION 0.3
 * Added CB: Random Posts Widget
 * Magnific Popup updated to version 1.0.1

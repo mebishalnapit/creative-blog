@@ -115,10 +115,25 @@ function creative_blog_dynamic_content_width() {
     if (empty($creative_blog_layout_meta) || is_archive() || is_search() || is_404()) {
         $creative_blog_layout_meta = 'default_layout';
     }
+
     $creative_blog_default_layout = get_theme_mod('creative_blog_default_layout', 'right_sidebar');
+    $creative_blog_default_page_layout = get_theme_mod('creative_blog_default_page_layout', 'right_sidebar');
+    $creative_blog_default_post_layout = get_theme_mod('creative_blog_default_single_posts_layout', 'right_sidebar');
 
     if ($creative_blog_layout_meta == 'default_layout') {
-        if ($creative_blog_default_layout == 'no_sidebar_full_width') {
+        if (is_page()) {
+            if ($creative_blog_default_page_layout == 'no_sidebar_full_width') {
+                    $content_width = 1600; /* pixels */
+            } else {
+                $content_width = 1000; /* pixels */
+            }
+        } elseif (is_single()) {
+            if ($creative_blog_default_post_layout == 'no_sidebar_full_width') {
+                    $content_width = 1600; /* pixels */
+            } else {
+                $content_width = 1000; /* pixels */
+            }
+        } elseif ($creative_blog_default_layout == 'no_sidebar_full_width') {
             $content_width = 1600; /* pixels */
         } else {
             $content_width = 1000; /* pixels */
