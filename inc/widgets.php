@@ -68,7 +68,7 @@ class Creative_Blog_Tabbed_Widget extends WP_Widget {
         <ul class="nav nav-tabs creative-blog-tabs" role="tablist">
             <li role="presentation" class="popular active"><a href="#popular" aria-controls="popular" role="tab" data-toggle="tab"><i class="fa fa-star"></i><?php esc_html_e('Popular', 'creative-blog'); ?></a></li>
             <li role="presentation" class="recent"><a href="#recent" aria-controls="recent" role="tab" data-toggle="tab"><i class="fa fa-history"></i><?php esc_html_e('Recent', 'creative-blog'); ?></a></li>
-            <li role="presentation" class="comment"><a href="#user-comments" aria-controls="comments" role="tab" data-toggle="tab"><i class="fa fa-comment"></i><?php esc_html_e('Comment', 'creative-blog'); ?></a></li>
+            <li role="presentation" class="comment"><a href="#user-comments" aria-controls="user-comments" role="tab" data-toggle="tab"><i class="fa fa-comment"></i><?php esc_html_e('Comment', 'creative-blog'); ?></a></li>
         </ul>
 
         <!-- Tab panes -->
@@ -145,6 +145,7 @@ class Creative_Blog_Tabbed_Widget extends WP_Widget {
                 $comments_query = new WP_Comment_Query();
                 $comments = $comments_query->query(array('number' => $number, 'status' => 'approve'));
                 $commented = '';
+                $commented .= '<ul class="comments-tab">';
                 if ($comments) : foreach ($comments as $comment) :
                         $commented .= '<li class="comments-tab-widget"><a class="author" href="' . esc_url(get_permalink($comment->comment_post_ID)) . '#comment-' . $comment->comment_ID . '">';
                         $commented .= get_avatar($comment->comment_author_email, '50');
@@ -154,6 +155,7 @@ class Creative_Blog_Tabbed_Widget extends WP_Widget {
                 else :
                     $commented .= '<p class="no-comments-commented-post">' . esc_html__('No Comments', 'creative-blog') . '</p>';
                 endif;
+                $commented .= '</ul>';
                 echo $commented;
                 ?>
             </div>

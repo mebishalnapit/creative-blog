@@ -906,7 +906,7 @@ ul.creative-blog-tabs {
 .popular .fa, .recent .fa, .comment .fa {
     margin-right: 5px;
 }
-li.comments-tab-widget {
+ul.comments-tab li.comments-tab-widget {
     list-style: none;
     padding: 15px 0;
     border-bottom: 1px solid #ccc;
