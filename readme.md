@@ -41,6 +41,7 @@ If you've translated this theme into your native language, then, feel free to se
 #### VERSION 0.4
 * Styling fixes
 * Content width issue fixed for default post and pages layout
+* Inline CSS and JavaScript codes removed
 
 #### VERSION 0.3
 * Added CB: Random Posts Widget

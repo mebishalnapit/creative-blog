@@ -280,26 +280,6 @@ function creative_blog_customize_register($wp_customize) {
 
             $name = '_customize-radio-' . $this->id;
             ?>
-            <style>
-                #creative-blog-img-container .creative-blog-radio-img-img {
-                    border: 3px solid #DEDEDE;
-                    margin: 0 5px 5px 0;
-                    cursor: pointer;
-                    border-radius: 3px;
-                    -moz-border-radius: 3px;
-                    -webkit-border-radius: 3px;
-                }
-                #creative-blog-img-container .creative-blog-radio-img-selected {
-                    border: 3px solid #AAA;
-                    border-radius: 3px;
-                    -moz-border-radius: 3px;
-                    -webkit-border-radius: 3px;
-                }
-                input[type=checkbox]:before {
-                    content: '';
-                    margin: -3px 0 0 -4px;
-                }
-            </style>
             <span class="customize-control-title"><?php echo esc_html($this->label); ?></span>
             <ul class="controls" id='creative-blog-img-container'>
                 <?php
@@ -319,18 +299,6 @@ function creative_blog_customize_register($wp_customize) {
                 endforeach;
                 ?>
             </ul>
-            <script type="text/javascript">
-
-                jQuery(document).ready(function ($) {
-                    $('.controls#creative-blog-img-container li img').click(function () {
-                        $('.controls#creative-blog-img-container li').each(function () {
-                            $(this).find('img').removeClass('creative-blog-radio-img-selected');
-                        });
-                        $(this).addClass('creative-blog-radio-img-selected');
-                    });
-                });
-
-            </script>
             <?php
         }
 

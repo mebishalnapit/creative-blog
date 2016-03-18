@@ -123,13 +123,13 @@ function creative_blog_dynamic_content_width() {
     if ($creative_blog_layout_meta == 'default_layout') {
         if (is_page()) {
             if ($creative_blog_default_page_layout == 'no_sidebar_full_width') {
-                    $content_width = 1600; /* pixels */
+                $content_width = 1600; /* pixels */
             } else {
                 $content_width = 1000; /* pixels */
             }
         } elseif (is_single()) {
             if ($creative_blog_default_post_layout == 'no_sidebar_full_width') {
-                    $content_width = 1600; /* pixels */
+                $content_width = 1600; /* pixels */
             } else {
                 $content_width = 1000; /* pixels */
             }
@@ -325,7 +325,7 @@ if (!function_exists('creative_blog_fonts_url')) {
 function creative_blog_scripts() {
 
     // adding the function to load the minified version if SCRIPT_DEFUG is disable
-    $suffix = ( defined('SCRIPT_DEBUG') && SCRIPT_DEBUG ) ? '' : '.min';
+    $suffix = (defined('SCRIPT_DEBUG') && SCRIPT_DEBUG) ? '' : '.min';
 
     // use of enqueued google fonts
     wp_enqueue_style('creative-blog-google-fonts', creative_blog_fonts_url(), array(), null);
@@ -379,6 +379,35 @@ function creative_blog_scripts() {
 }
 
 add_action('wp_enqueue_scripts', 'creative_blog_scripts');
+
+/**
+ * Enqueue scripts in the admin areas
+ */
+function creative_blog_admin_scripts() {
+    global $post_type;
+    // adding the function to load the minified version if SCRIPT_DEFUG is disable
+    $suffix = ( defined('SCRIPT_DEBUG') && SCRIPT_DEBUG ) ? '' : '.min';
+
+    // Meta box toggle js script
+    if ($post_type == 'post') {
+        wp_enqueue_script('creative-blog-meta-toggle', get_template_directory_uri() . '/js/metabox-toggle' . $suffix . '.js', false, false, true);
+    }
+}
+
+add_action('admin_enqueue_scripts', 'creative_blog_admin_scripts');
+
+/**
+ * Enqueue scripts and styles in the customizer
+ */
+function creative_blog_customizer_scripts() {
+    // adding the function to load the minified version if SCRIPT_DEFUG is disable
+    $suffix = ( defined('SCRIPT_DEBUG') && SCRIPT_DEBUG ) ? '' : '.min';
+    
+    wp_enqueue_style('creative-blog-customizer-layout-option-css', get_template_directory_uri() . '/css/custom-layout' . $suffix . '.css');
+    wp_enqueue_script('creative-blog-customizer-layout-option', get_template_directory_uri() . '/js/custom-layout' . $suffix . '.js', false, false, true);
+}
+
+add_action('customize_controls_enqueue_scripts', 'creative_blog_customizer_scripts');
 
 /**
  * Implement the Custom Header feature.
