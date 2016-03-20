@@ -100,7 +100,9 @@
 
                     <?php if (get_theme_mod('creative_blog_search_icon_in_menu', 0) == 1) : ?>
                         <div class="search-form-top">
-                            <?php get_search_form(); ?>
+                            <div class="container">
+                                <?php get_search_form(); ?>
+                            </div>
                         </div>
                     <?php endif; ?>
 
