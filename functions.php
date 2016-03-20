@@ -42,7 +42,7 @@ if (!function_exists('creative_blog_setup')) :
          * @link https://developer.wordpress.org/themes/functionality/featured-images-post-thumbnails/
          */
         add_theme_support('post-thumbnails');
-        add_image_size('creative-blog-featured', 1000, 600, true);
+        add_image_size('creative-blog-featured', 800, 480, true);
         add_image_size('creative-blog-featured-thumb', 200, 200, true);
         add_image_size('creative-blog-featured-small', 300, 180, true);
         add_image_size('creative-blog-featured-widget', 120, 90, true);
@@ -99,7 +99,7 @@ add_action('after_setup_theme', 'creative_blog_setup');
  * @global int $content_width
  */
 function creative_blog_content_width() {
-    $GLOBALS['content_width'] = apply_filters('creative_blog_content_width', 1000);
+    $GLOBALS['content_width'] = apply_filters('creative_blog_content_width', 800);
 }
 
 add_action('after_setup_theme', 'creative_blog_content_width', 0);
@@ -123,25 +123,25 @@ function creative_blog_dynamic_content_width() {
     if ($creative_blog_layout_meta == 'default_layout') {
         if (is_page()) {
             if ($creative_blog_default_page_layout == 'no_sidebar_full_width') {
-                $content_width = 1600; /* pixels */
+                $content_width = 1170; /* pixels */
             } else {
-                $content_width = 1000; /* pixels */
+                $content_width = 800; /* pixels */
             }
         } elseif (is_single()) {
             if ($creative_blog_default_post_layout == 'no_sidebar_full_width') {
-                $content_width = 1600; /* pixels */
+                $content_width = 1170; /* pixels */
             } else {
-                $content_width = 1000; /* pixels */
+                $content_width = 800; /* pixels */
             }
         } elseif ($creative_blog_default_layout == 'no_sidebar_full_width') {
-            $content_width = 1600; /* pixels */
+            $content_width = 1170; /* pixels */
         } else {
-            $content_width = 1000; /* pixels */
+            $content_width = 800; /* pixels */
         }
     } elseif ($creative_blog_layout_meta == 'no_sidebar_full_width') {
-        $content_width = 1600; /* pixels */
+        $content_width = 1170; /* pixels */
     } else {
-        $content_width = 1000; /* pixels */
+        $content_width = 800; /* pixels */
     }
 }
 

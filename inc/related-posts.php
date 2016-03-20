@@ -14,7 +14,7 @@
         <div class="related-posts-total row">
 
             <?php while ($related_posts->have_posts()) : $related_posts->the_post(); ?>
-                <div class="related-posts col-sm-3">
+                <div class="related-posts col-xs-4">
 
                     <?php if (has_post_thumbnail()): ?>
                         <div class="related-posts-thumbnail">
