@@ -460,10 +460,14 @@ ul#menu-social {
     background: #0099ff;
     border: none;
     margin-top: 15px;
+    border: 1px solid #fff;
+    text-shadow: none;
+    box-shadow: none;
 }
 .sticky .continue-more-link:hover, .continue-more-link:hover {
     border: none;
     background: #0099ff;
+    border: 1px solid #fff;
 }
 .sticky .featured-image img {
     border: 1px solid #fff;

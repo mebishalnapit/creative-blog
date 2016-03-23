@@ -50,7 +50,7 @@
                 // displaying full content for the sticky post
                 the_content(sprintf(
                                 /* translators: %s: Name of current post. */
-                                wp_kses(__('<button type="button" class="btn btn-primary continue-more-link">' . __('Read More <i class="fa fa-arrow-circle-o-right"></i>', 'creative-blog') . '</button> %s', 'creative-blog'), array('span' => array('class' => array()), 'i' => array('class' => array()), 'button' => array('class' => array(), 'type' => array()))), the_title('<span class="screen-reader-text">', '</span>', false)
+                                wp_kses('<button type="button" class="btn btn-primary continue-more-link">' . __('Read More <i class="fa fa-arrow-circle-o-right"></i>', 'creative-blog') . '</button> %s', array('span' => array('class' => array()), 'i' => array('class' => array()), 'button' => array('class' => array(), 'type' => array()))), the_title('<span class="screen-reader-text">', '</span>', false)
                 ));
             else :
                 the_excerpt(); // displaying excerpt for the archive pages
