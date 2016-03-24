@@ -829,8 +829,8 @@ footer .site-info {
 .widget ul ul {
     padding-left: 6px;
 }
-.widget ul li {
-    padding: 5px;
+.widget ul li ul li {
+    margin-left: 10px;
 }
 .widget_nav_menu a, .widget_pages a, .widget_recent_comments li, .widget_recent_entries li {
     border-bottom: 2px dotted #0099ff;
@@ -890,6 +890,9 @@ footer .site-info {
 }
 footer .widget {
     color: #fff;
+}
+footer .widget .search-form {
+    color: #222;
 }
 footer select {
     color: #222222;
