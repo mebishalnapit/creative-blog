@@ -9,7 +9,7 @@
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
     <?php do_action('creative_blog_before_post_content'); ?>
 
-    <?php if (!empty(get_post_gallery())) : ?>
+    <?php if (get_post_gallery()) : ?>
         <div id="gallery-carousel" class="carousel slide" data-ride="carousel">
             <?php
             $output = '';

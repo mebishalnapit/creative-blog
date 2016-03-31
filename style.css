@@ -835,6 +835,7 @@ footer .site-info {
 .widget_nav_menu a, .widget_pages a, .widget_recent_comments li, .widget_recent_entries li {
     border-bottom: 2px dotted #0099ff;
     display: block;
+    padding: 5px;
 }
 .widget_rss .widget-title .rsswidget {
     color: #fff;
@@ -878,12 +879,17 @@ footer .site-info {
 }
 .widget_pages li:before {
     content: "\f039";
+    margin-top: 5px;
 }
 .widget_nav_menu li:before {
     content: "\f0c9";
+    margin-top: 5px;
 }
 .widget_rss li:before {
     content: "\f09e";
+}
+.widget_rss ul li {
+    margin-bottom: 12px;
 }
 .widget select {
     max-width: 100%;
