@@ -98,16 +98,13 @@ embed, iframe, object {
 .site-title a {
     font-size: 48px;
 }
-p.site-title {
-    font-size: 48px;
-    margin-top: 12px;
+.site-title {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    line-height: 1.1;
 }
 .site-description {
     font-size: 20px;
-    margin-top: -8px;
-}
-.home .site-description, .blog .site-description {
-    margin-top: 0;
 }
 .site-branding {
     padding-bottom: 20px;
@@ -1128,20 +1125,11 @@ li.comments-tab-widget img {
     ul#menu-social {
         text-align: left;
     }
-    .home .site-description, .blog .site-description {
-        margin-top: 1px;
-    }
-    p.site-title a {
-        font-size: 30px;
-    }
-    #logo-and-title .site-title a {
+    #logo-and-title .site-title a, #logo-and-title .site-title {
         font-size: 30px;
     }
     #logo-and-title .site-description {
         font-size: 10px;
-    }
-    p.site-title {
-        margin-top: 0;
     }
 }
 @media screen and (max-width: 991px) {
