@@ -3,20 +3,20 @@
 
 ## COPYRIGHT AND LICENSE
 #### External resources linked to the theme.
-* Open Sans by Steve Matteson https://www.google.com/fonts/specimen/Open+Sans
+* Open Sans by Steve Matteson https://www.google.com/fonts/specimen/Open+Sans  
   Apache License, version 2.0
 
 #### Resources packed within the theme.
-* Images in the screenshot is from http://pixabay.com/. License: CC0 Public Domain
-  Links: https://pixabay.com/en/hike-hikers-scene-climb-boyfriend-863454/
-         https://pixabay.com/en/gravel-road-lady-walking-road-1031726/
-         https://pixabay.com/en/studio-portrait-woman-face-model-660806/
-         https://pixabay.com/en/guess-attic-girl-woman-pretty-hair-837156/
-         https://pixabay.com/en/girls-girl-with-a-red-scarf-1107329/
-         https://pixabay.com/en/mountain-bike-dirt-road-wet-1149074/
-         https://pixabay.com/en/hiking-wlaking-hillwalking-rough-1149737/
+* Images in the screenshot is from http://pixabay.com/. License: CC0 Public Domain  
+  Links: https://pixabay.com/en/hike-hikers-scene-climb-boyfriend-863454/  
+         https://pixabay.com/en/gravel-road-lady-walking-road-1031726/  
+         https://pixabay.com/en/studio-portrait-woman-face-model-660806/  
+         https://pixabay.com/en/guess-attic-girl-woman-pretty-hair-837156/  
+         https://pixabay.com/en/girls-girl-with-a-red-scarf-1107329/  
+         https://pixabay.com/en/mountain-bike-dirt-road-wet-1149074/  
+         https://pixabay.com/en/hiking-wlaking-hillwalking-rough-1149737/  
 * Bootstrap Framework by Mark Otto and Jacob Thornton http://getbootstrap.com/ | Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
-* Font Awesome by Dave Gandy http://fortawesome.github.io/Font-Awesome/
+* Font Awesome by Dave Gandy http://fortawesome.github.io/Font-Awesome/  
   SIL OFL 1.1 http://scripts.sil.org/OFL.
 * HTML5 Shiv by Alexander Farkas, Jonathan Neal | MIT/GPL2 Licensed
 * FitVids by Chris Coyier and Paravel | WTFPL Licensed
