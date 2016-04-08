@@ -203,13 +203,13 @@ ul.newsticker {
 }
 .navigation .nav-previous:before {
     color: #0099ff;
-    font-family: 'fontawesome';
+    font-family: "fontawesome";
     content: "\f190";
     margin-right: 5px;
 }
 .navigation .nav-next:after {
     color: #0099ff;
-    font-family: 'fontawesome';
+    font-family: "fontawesome";
     content: "\f18e";
     margin-left: 5px;
 }
@@ -230,10 +230,10 @@ ul.newsticker {
 }
 
 /* social links settings */
-#menu-social li a::before {
+#menu-social li a:before {
     display: inline-block;
     padding: 0 10px;
-    font-family: FontAwesome;
+    font-family: "fontawesome";
     vertical-align: middle;
     content: "\f005";
     color: #0099ff;
@@ -420,7 +420,7 @@ ul#menu-social {
 
 /* sticky post */
 .sticky .entry-title:after {
-    font-family: 'FontAwesome';
+    font-family: "fontawesome";
     float: right;
     content: "\f005";
     color: #fff;
@@ -598,7 +598,7 @@ ol.children {
     border-bottom: 1px solid #ccc;
 }
 .bypostauthor > .comment-body .fn:before {
-    font-family: 'fontawesome';
+    font-family: "fontawesome";
     content: "\f044";
     margin-right: 5px;
     color: #0099ff;
@@ -607,12 +607,12 @@ ol.children {
     color: #0099ff;
 }
 .comments-area .comment-meta time:before {
-    font-family: 'fontawesome';
+    font-family: "fontawesome";
     content: "\f073";
     margin-right: 2px;
 }
 .comments-area .comment-meta .edit-link:before {
-    font-family: 'fontawesome';
+    font-family: "fontawesome";
     content: "\f044";
     margin-right: 5px;
     color: #0099ff;
@@ -726,7 +726,7 @@ ol.children {
     color: #fff;
 }
 .format-link .link-details a:before {
-    font-family: 'fontawesome';
+    font-family: "fontawesome";
     content: "\f0c1";
     margin-right: 5px;
 }
@@ -745,18 +745,18 @@ ol.children {
     color: #fff;
 }
 .format-quote .quote-details cite:before {
-    font-family: 'fontawesome';
+    font-family: "fontawesome";
     content: "\f068";
     margin-right: 5px;
 }
 .format-quote .quote-details blockquote p:before {
-    font-family: 'fontawesome';
+    font-family: "fontawesome";
     content: "\f10d";
     margin-right: 5px;
     margin-left: -18px;
 }
 .format-quote .quote-details blockquote p:after {
-    font-family: 'fontawesome';
+    font-family: "fontawesome";
     content: "\f10e";
     margin-left: 5px;
     margin-right: -18px;
@@ -814,7 +814,7 @@ footer .site-info {
 }
 .widget-title span:before {
     content: "\f005";
-    font-family: 'fontawesome';
+    font-family: "fontawesome";
     margin-right: 5px;
 }
 .widget ul li {
@@ -859,7 +859,7 @@ footer .site-info {
     display: inline-block;
     float: left;
     padding-right: 5px;
-    font-family: 'fontawesome';
+    font-family: "fontawesome";
     color: #0099ff;
 }
 .widget_recent_entries li:before {
