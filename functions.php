@@ -371,11 +371,9 @@ function creative_blog_scripts() {
     // enqueueing the theme's main javascript file
     wp_enqueue_script('creative-blog-main-script', get_template_directory_uri() . '/js/creative-blog-custom' . $suffix . '.js', array('jquery'), null, true);
 
-    // loading the HTML5Shiv js for IE8 and above
-    $creative_blog_user_agent = strtolower($_SERVER['HTTP_USER_AGENT']);
-    if (preg_match('/(?i)msie [1-8]/', $creative_blog_user_agent)) {
-        wp_enqueue_script('html5shiv', get_template_directory_uri() . '/js/html5shiv/html5shiv' . $suffix . '.js', true);
-    }
+    // loading the HTML5Shiv js for IE8 and below
+    wp_enqueue_script('html5shiv', get_template_directory_uri() . '/js/html5shiv/html5shiv' . $suffix . '.js', false);
+    wp_script_add_data('html5shiv', 'conditional', 'lt IE 9');
 }
 
 add_action('wp_enqueue_scripts', 'creative_blog_scripts');
