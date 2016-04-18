@@ -9,16 +9,6 @@
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
     <?php do_action('creative_blog_before_post_content'); ?>
 
-    <?php $video_post_url = get_post_meta($post->ID, 'video_url', true); ?>
-    <?php if (!empty($video_post_url)) : ?>
-        <div class="fitvids-video">
-            <?php
-            $embed_code = wp_oembed_get($video_post_url);
-            echo $embed_code;
-            ?>
-        </div>
-    <?php endif; ?>
-
     <?php if ('post' === get_post_type()) : ?>
         <div class="category-links">
             <?php creative_blog_colored_category(); ?>

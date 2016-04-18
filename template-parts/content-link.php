@@ -9,14 +9,6 @@
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
     <?php do_action('creative_blog_before_post_content'); ?>
 
-    <?php $link_post_text = get_post_meta($post->ID, 'link_text', true); ?>
-    <?php $link_post_url = get_post_meta($post->ID, 'link_url', true); ?>
-    <?php if (!empty($link_post_text && $link_post_url)) : ?>
-        <div class="link-details">
-            <a href="<?php echo esc_url($link_post_url); ?>"><?php echo esc_html($link_post_text); ?></a>
-        </div>
-    <?php endif; ?>
-
     <?php if ('post' === get_post_type()) : ?>
         <div class="category-links">
             <?php creative_blog_colored_category(); ?>

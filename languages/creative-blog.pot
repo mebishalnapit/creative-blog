@@ -3,8 +3,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Creative Blog\n"
-"POT-Creation-Date: 2016-04-18 23:36+0545\n"
-"PO-Revision-Date: 2016-04-18 23:36+0545\n"
+"POT-Creation-Date: 2016-04-19 00:37+0545\n"
+"PO-Revision-Date: 2016-04-19 00:37+0545\n"
 "Last-Translator: \n"
 "Language-Team: Bishal Napit <mebishalnapit@gmail.com>\n"
 "Language: en\n"
@@ -470,80 +470,48 @@ msgid ""
 "span>"
 msgstr ""
 
-#: inc/extras.php:408
-msgid "Video URL"
-msgstr ""
-
-#: inc/extras.php:409
-msgid "Audio URL"
-msgstr ""
-
-#: inc/extras.php:410
-msgid "Status"
-msgstr ""
-
-#: inc/extras.php:411
-msgid "Chat"
-msgstr ""
-
-#: inc/extras.php:413
-msgid "Link Text"
-msgstr ""
-
-#: inc/extras.php:414
-msgid "Link URL"
-msgstr ""
-
-#: inc/extras.php:416
-msgid "Quote Text"
-msgstr ""
-
-#: inc/extras.php:417
-msgid "Quote Author"
-msgstr ""
-
-#: inc/extras.php:722 inc/template-tags.php:25
+#: inc/extras.php:548 inc/template-tags.php:25
 #, php-format
 msgctxt "post date"
 msgid "%s"
 msgstr ""
 
-#: inc/extras.php:726 inc/template-tags.php:29
+#: inc/extras.php:552 inc/template-tags.php:29
 #, php-format
 msgctxt "post author"
 msgid "%s"
 msgstr ""
 
-#: inc/extras.php:732 inc/template-tags.php:36
+#: inc/extras.php:558 inc/template-tags.php:36
 msgid "<i class=\"fa fa-comment\"></i>Leave a reply"
 msgstr ""
 
-#: inc/extras.php:732 inc/template-tags.php:36
+#: inc/extras.php:558 inc/template-tags.php:36
 msgid "<i class=\"fa fa-comment\"></i>1 Comment"
 msgstr ""
 
-#: inc/extras.php:732 inc/template-tags.php:36
+#: inc/extras.php:558 inc/template-tags.php:36
 msgid "<i class=\"fa fa-comment\"></i>% Comments"
 msgstr ""
 
-#: inc/extras.php:732 inc/template-tags.php:36
+#: inc/extras.php:558 inc/template-tags.php:36
 msgid "<i class=\"fa fa-comment\"></i>Comments Disabled"
 msgstr ""
 
-#: inc/extras.php:753
+#: inc/extras.php:579
 #, php-format
 msgid "Follow %s on:"
 msgstr ""
 
-#: inc/extras.php:755
+#: inc/extras.php:581
 msgid "Facebook"
 msgstr ""
 
-#: inc/extras.php:758
+#: inc/extras.php:584
 msgid "Twitter"
 msgstr ""
 
-#: inc/extras.php:761
+#: inc/extras.php:587
 msgid "Google Plus"
 msgstr ""
 
@@ -681,29 +649,29 @@ msgstr ""
 msgid "Right"
 msgstr ""
 
-#: template-parts/content-aside.php:37 template-parts/content-audio.php:55
-#: template-parts/content-chat.php:52 template-parts/content-gallery.php:79
-#: template-parts/content-image.php:64 template-parts/content-link.php:53
-#: template-parts/content-page.php:28 template-parts/content-quote.php:54
-#: template-parts/content-status.php:57 template-parts/content-video.php:55
+#: template-parts/content-aside.php:37 template-parts/content-audio.php:45
+#: template-parts/content-chat.php:45 template-parts/content-gallery.php:79
+#: template-parts/content-image.php:64 template-parts/content-link.php:45
+#: template-parts/content-page.php:28 template-parts/content-quote.php:45
+#: template-parts/content-status.php:45 template-parts/content-video.php:45
 #: template-parts/content.php:63
 msgid "Pages:"
 msgstr ""
 
 #. translators: used between list items, there is a space after the comma
-#: template-parts/content-aside.php:46 template-parts/content-audio.php:64
-#: template-parts/content-chat.php:61 template-parts/content-gallery.php:88
-#: template-parts/content-image.php:73 template-parts/content-link.php:62
-#: template-parts/content-quote.php:63 template-parts/content-status.php:66
-#: template-parts/content-video.php:64 template-parts/content.php:72
+#: template-parts/content-aside.php:46 template-parts/content-audio.php:54
+#: template-parts/content-chat.php:54 template-parts/content-gallery.php:88
+#: template-parts/content-image.php:73 template-parts/content-link.php:54
+#: template-parts/content-quote.php:54 template-parts/content-status.php:54
+#: template-parts/content-video.php:54 template-parts/content.php:72
 msgid ", "
 msgstr ""
 
-#: template-parts/content-aside.php:48 template-parts/content-audio.php:66
-#: template-parts/content-chat.php:63 template-parts/content-gallery.php:90
-#: template-parts/content-image.php:75 template-parts/content-link.php:64
-#: template-parts/content-quote.php:65 template-parts/content-status.php:68
-#: template-parts/content-video.php:66 template-parts/content.php:74
+#: template-parts/content-aside.php:48 template-parts/content-audio.php:56
+#: template-parts/content-chat.php:56 template-parts/content-gallery.php:90
+#: template-parts/content-image.php:75 template-parts/content-link.php:56
+#: template-parts/content-quote.php:56 template-parts/content-status.php:56
+#: template-parts/content-video.php:56 template-parts/content.php:74
 #, php-format
 msgid "%1$s"
 msgstr ""

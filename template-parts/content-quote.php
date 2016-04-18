@@ -9,15 +9,6 @@
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
     <?php do_action('creative_blog_before_post_content'); ?>
 
-    <?php $quote_post_text = get_post_meta($post->ID, 'quote_text', true); ?>
-    <?php $quote_post_author = get_post_meta($post->ID, 'quote_author', true); ?>
-    <?php if (!empty($quote_post_text && $quote_post_author)) : ?>
-        <div class="quote-details">
-            <blockquote><?php echo wpautop(esc_textarea($quote_post_text)); ?></blockquote>
-            <cite><?php echo esc_html($quote_post_author); ?></cite>
-        </div>
-    <?php endif; ?>
-
     <?php if ('post' === get_post_type()) : ?>
         <div class="category-links">
             <?php creative_blog_colored_category(); ?>

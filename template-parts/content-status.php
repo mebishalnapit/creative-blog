@@ -9,18 +9,6 @@
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
     <?php do_action('creative_blog_before_post_content'); ?>
 
-    <?php $status_post_text = get_post_meta($post->ID, 'status_text', true); ?>
-    <?php if (!empty($status_post_text)) : ?>
-        <div class="status-details">
-            <div class="status-user-avatar">
-                <?php echo get_avatar(get_the_author_meta('user_email'), '75'); ?>
-            </div>
-            <div class="status-user-text">
-                <?php echo esc_html($status_post_text); ?>
-            </div>
-        </div>
-    <?php endif; ?>
-
     <?php if ('post' === get_post_type()) : ?>
         <div class="category-links">
             <?php creative_blog_colored_category(); ?>

@@ -9,13 +9,6 @@
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
     <?php do_action('creative_blog_before_post_content'); ?>
 
-    <?php $chat_post_text = get_post_meta($post->ID, 'chat_text', true); ?>
-    <?php if (!empty($chat_post_text)) : ?>
-        <div class="chat-details">
-            <?php echo wpautop(esc_textarea($chat_post_text)); ?>
-        </div>
-    <?php endif; ?>
-
     <?php if ('post' === get_post_type()) : ?>
         <div class="category-links">
             <?php creative_blog_colored_category(); ?>
