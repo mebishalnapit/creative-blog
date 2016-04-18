@@ -104,9 +104,11 @@ if (!function_exists('creative_blog_header_text_logo')) :
         <div id="logo-and-title" class="logo-and-title col-md-4">
             <?php if (((get_theme_mod('creative_blog_header_logo_placement', 'header_text_only') == 'show_both') || (get_theme_mod('creative_blog_header_logo_placement', 'header_text_only') == 'header_logo_only')) && get_theme_mod('creative_blog_logo', '') != '') : ?>
                 <div class="header-logo-image">
-                    <?php if (function_exists('the_custom_logo')) {
+                    <?php
+                    if (function_exists('the_custom_logo')) {
                         the_custom_logo();
-                    } ?>
+                    }
+                    ?>
                 </div><!-- #header-logo-image -->
             <?php endif; ?>
 
@@ -588,6 +590,102 @@ if (!function_exists('creative_blog_author_bio_links')) :
             }
             echo '</div>';
         }
+    }
+
+endif;
+
+// link post format support added
+if (!function_exists('creative_blog_link_post_format')) :
+
+    function creative_blog_link_post_format() {
+        if (!preg_match('/<a\s[^>]*?href=[\'"](.+?)[\'"]/is', get_the_content(), $matches))
+            return false;
+
+        return esc_url_raw($matches[1]);
+    }
+
+endif;
+
+// audio and video post format support added
+if (!function_exists('creative_blog_audio_video_post_format')) :
+
+    function creative_blog_audio_video_post_format() {
+        $document = new DOMDocument();
+        $content = apply_filters('the_content', get_the_content('', true));
+        if ('' != $content) {
+            libxml_use_internal_errors(true);
+            $document->loadHTML($content);
+            libxml_clear_errors();
+            $iframes = $document->getElementsByTagName('iframe');
+            $objects = $document->getElementsByTagName('object');
+            $embeds = $document->getElementsByTagName('embed');
+            $document = new DOMDocument();
+            if ($iframes->length) {
+                $iframe = $iframes->item($iframes->length - 1);
+                $document->appendChild($document->importNode($iframe, true));
+            } elseif ($objects->length) {
+                $object = $objects->item($objects->length - 1);
+                $document->appendChild($document->importNode($object, true));
+            } elseif ($embeds->length) {
+                $embed = $embeds->item($embeds->length - 1);
+                $document->appendChild($document->importNode($embed, true));
+            }
+            return wpautop($document->saveHTML());
+        }
+        return false;
+    }
+
+endif;
+
+// status post format support added
+if (!function_exists('creative_blog_status_post_format_first_paragraph')) :
+
+    function creative_blog_status_post_format_first_paragraph() {
+        $first_paragraph_str = wpautop(get_the_content());
+        $first_paragraph_str = substr($first_paragraph_str, 0, strpos($first_paragraph_str, '</p>') + 4);
+        $first_paragraph_str = strip_tags($first_paragraph_str, '<a><strong><em>');
+        return '<p>' . $first_paragraph_str . '</p>';
+    }
+
+endif;
+
+if (!function_exists('creative_blog_status_post_format_avatar_image')) :
+
+    function creative_blog_status_post_format_avatar_image() {
+        return get_avatar(get_the_author_meta('user_email'), '75');
+    }
+
+endif;
+
+// quote post format support added
+if (!function_exists('creative_blog_quote_post_format_blockquote')) :
+
+    function creative_blog_quote_post_format_blockquote() {
+
+        $document = new DOMDocument();
+        $content = apply_filters('the_content', get_the_content('', true));
+        $output = '';
+        if ('' != $content) {
+            libxml_use_internal_errors(true);
+            $document->loadHTML(mb_convert_encoding($content, 'html-entities', 'utf-8'));
+            libxml_clear_errors();
+            $blockquotes = $document->getElementsByTagName('blockquote');
+            if (!empty($blockquotes)) {
+                $blockquote = $blockquotes->item(0);
+                $document = new DOMDocument();
+                $document->appendChild($document->importNode($blockquote, true));
+                $output .= $document->saveHTML();
+            }
+        }
+        return wpautop($output);
+    }
+
+endif;
+
+if (!function_exists('creative_blog_quote_post_format_cite')) :
+
+    function creative_blog_quote_post_format_cite() {
+        return get_the_author();
     }
 
 endif;

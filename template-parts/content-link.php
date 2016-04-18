@@ -8,6 +8,10 @@
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
     <?php do_action('creative_blog_before_post_content'); ?>
+    
+    <div class="link-details">
+        <a href="<?php echo creative_blog_link_post_format(); ?>" target="_blank"><?php echo esc_html('Link', 'creative-blog'); ?></a>
+    </div>
 
     <?php if ('post' === get_post_type()) : ?>
         <div class="category-links">

@@ -119,7 +119,10 @@ function creative_blog_dynamic_content_width() {
     global $post;
     global $content_width;
 
-    $creative_blog_layout_meta = get_post_meta($post->ID, 'creative_blog_page_layout', true);
+    if ($post) {
+        $creative_blog_layout_meta = get_post_meta($post->ID, 'creative_blog_page_layout', true);
+    }
+
     if (empty($creative_blog_layout_meta) || is_archive() || is_search() || is_404()) {
         $creative_blog_layout_meta = 'default_layout';
     }

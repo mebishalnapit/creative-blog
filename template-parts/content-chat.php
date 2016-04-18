@@ -9,6 +9,10 @@
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
     <?php do_action('creative_blog_before_post_content'); ?>
 
+    <div class="chat-details">
+        <?php the_content(); ?>
+    </div>
+
     <?php if ('post' === get_post_type()) : ?>
         <div class="category-links">
             <?php creative_blog_colored_category(); ?>

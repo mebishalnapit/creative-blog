@@ -9,6 +9,15 @@
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
     <?php do_action('creative_blog_before_post_content'); ?>
 
+    <div class="status-details">
+        <div class="status-user-avatar">
+            <?php echo creative_blog_status_post_format_avatar_image(); ?>
+        </div>
+        <div class="status-user-text">
+            <?php echo creative_blog_status_post_format_first_paragraph(); ?>
+        </div>
+    </div>
+
     <?php if ('post' === get_post_type()) : ?>
         <div class="category-links">
             <?php creative_blog_colored_category(); ?>

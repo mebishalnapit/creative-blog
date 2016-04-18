@@ -46,6 +46,7 @@ If you've translated this theme into your native language, then, feel free to se
 * Featured image size has been changed
 * Theme prefix removed from the enqueued third party scripts
 * Site logo feature added and removed the header logo upload option
+* Post format meta box removed and supporter it by calling first elements in the content as for example the first link for link post format
 
 #### VERSION 0.4
 * Styling fixes

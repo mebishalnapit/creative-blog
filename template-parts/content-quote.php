@@ -8,6 +8,11 @@
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
     <?php do_action('creative_blog_before_post_content'); ?>
+    
+    <div class="quote-details">
+        <?php echo creative_blog_quote_post_format_blockquote(); ?>
+        <cite><?php echo creative_blog_quote_post_format_cite(); ?></cite>
+    </div>
 
     <?php if ('post' === get_post_type()) : ?>
         <div class="category-links">

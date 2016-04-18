@@ -3,8 +3,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Creative Blog\n"
-"POT-Creation-Date: 2016-04-19 00:37+0545\n"
-"PO-Revision-Date: 2016-04-19 00:37+0545\n"
+"POT-Creation-Date: 2016-04-19 02:50+0545\n"
+"PO-Revision-Date: 2016-04-19 02:51+0545\n"
 "Last-Translator: \n"
 "Language-Team: Bishal Napit <mebishalnapit@gmail.com>\n"
 "Language: en\n"
@@ -61,100 +61,100 @@ msgstr ""
 msgid "Social Menu"
 msgstr ""
 
-#: functions.php:166 inc/meta-boxes.php:32
+#: functions.php:169 inc/meta-boxes.php:32
 msgid "Right Sidebar"
 msgstr ""
 
-#: functions.php:168
+#: functions.php:171
 msgid "Display your widgets in the Right Sidebar Area"
 msgstr ""
 
-#: functions.php:176 inc/meta-boxes.php:37
+#: functions.php:179 inc/meta-boxes.php:37
 msgid "Left Sidebar"
 msgstr ""
 
-#: functions.php:178
+#: functions.php:181
 msgid "Display your widgets in the Left Sidebar Area"
 msgstr ""
 
-#: functions.php:186
+#: functions.php:189
 msgid "Header Sidebar"
 msgstr ""
 
-#: functions.php:188
+#: functions.php:191
 msgid "Display your widgets in the Header Sidebar Area"
 msgstr ""
 
-#: functions.php:196
+#: functions.php:199
 msgid "Content Top Sidebar"
 msgstr ""
 
-#: functions.php:198
+#: functions.php:201
 msgid "Display your widgets in the Content Top Sidebar Area"
 msgstr ""
 
-#: functions.php:206
+#: functions.php:209
 msgid "Content Bottom Sidebar"
 msgstr ""
 
-#: functions.php:208
+#: functions.php:211
 msgid "Display your widgets in the Content Bottom Sidebar Area"
 msgstr ""
 
-#: functions.php:216
+#: functions.php:219
 msgid "404 Sidebar"
 msgstr ""
 
-#: functions.php:218
+#: functions.php:221
 msgid "Display your widgets in the 404 Error Page Sidebar Area"
 msgstr ""
 
-#: functions.php:226
+#: functions.php:229
 msgid "Contact Sidebar"
 msgstr ""
 
-#: functions.php:228
+#: functions.php:231
 msgid "Display your widgets in the Contact Page Sidebar Area"
 msgstr ""
 
-#: functions.php:236
+#: functions.php:239
 msgid "Footer Sidebar One"
 msgstr ""
 
-#: functions.php:238
+#: functions.php:241
 msgid "Display your widgets in the footer sidebar area one."
 msgstr ""
 
-#: functions.php:246
+#: functions.php:249
 msgid "Footer Sidebar Two"
 msgstr ""
 
-#: functions.php:248
+#: functions.php:251
 msgid "Display your widgets in the footer sidebar area two."
 msgstr ""
 
-#: functions.php:256
+#: functions.php:259
 msgid "Footer Sidebar Three"
 msgstr ""
 
-#: functions.php:258
+#: functions.php:261
 msgid "Display your widgets in the footer sidebar area three."
 msgstr ""
 
-#: functions.php:266
+#: functions.php:269
 msgid "Footer Sidebar Four"
 msgstr ""
 
-#: functions.php:268
+#: functions.php:271
 msgid "Display your widgets in the footer sidebar area four."
 msgstr ""
 
-#: functions.php:299
+#: functions.php:302
 msgctxt "Open Sans font: on or off"
 msgid "on"
 msgstr ""
 
-#: functions.php:307
+#: functions.php:310
 msgctxt "Add new subset ( cyrillic, greek, vietnamese )"
 msgid "no-subset"
 msgstr ""
@@ -237,7 +237,7 @@ msgid ""
 "to the primary menu."
 msgstr ""
 
-#: inc/customizer.php:153 inc/extras.php:220
+#: inc/customizer.php:153 inc/extras.php:222
 msgid "Random Post"
 msgstr ""
 
@@ -425,93 +425,93 @@ msgstr ""
 msgid "Latest:"
 msgstr ""
 
-#: inc/extras.php:266
+#: inc/extras.php:268
 msgid "WordPress"
 msgstr ""
 
-#: inc/extras.php:268
+#: inc/extras.php:270
 msgid "Bishal Napit"
 msgstr ""
 
-#: inc/extras.php:270
+#: inc/extras.php:272
 #, php-format
 msgid "Copyright &copy; %1$s %2$s."
 msgstr ""
 
-#: inc/extras.php:270
+#: inc/extras.php:272
 #, php-format
 msgid "Theme: %1$s by %2$s."
 msgstr ""
 
-#: inc/extras.php:270
+#: inc/extras.php:272
 msgid "Creative Blog"
 msgstr ""
 
-#: inc/extras.php:270
+#: inc/extras.php:272
 #, php-format
 msgid "Powered by %s."
 msgstr ""
 
-#: inc/extras.php:390
+#: inc/extras.php:392
 msgid "Post navigation"
 msgstr ""
 
-#: inc/extras.php:393
+#: inc/extras.php:395
 msgctxt "Previous post link"
 msgid ""
 "<span class=\"meta-nav\"><i class=\"fa fa-arrow-circle-o-left\"></i></span>"
 "%title"
 msgstr ""
 
-#: inc/extras.php:394
+#: inc/extras.php:396
 msgctxt "Next post link"
 msgid ""
 "%title<span class=\"meta-nav\"><i class=\"fa fa-arrow-circle-o-right\"></i></"
 "span>"
 msgstr ""
 
-#: inc/extras.php:548 inc/template-tags.php:25
+#: inc/extras.php:550 inc/template-tags.php:25
 #, php-format
 msgctxt "post date"
 msgid "%s"
 msgstr ""
 
-#: inc/extras.php:552 inc/template-tags.php:29
+#: inc/extras.php:554 inc/template-tags.php:29
 #, php-format
 msgctxt "post author"
 msgid "%s"
 msgstr ""
 
-#: inc/extras.php:558 inc/template-tags.php:36
+#: inc/extras.php:560 inc/template-tags.php:36
 msgid "<i class=\"fa fa-comment\"></i>Leave a reply"
 msgstr ""
 
-#: inc/extras.php:558 inc/template-tags.php:36
+#: inc/extras.php:560 inc/template-tags.php:36
 msgid "<i class=\"fa fa-comment\"></i>1 Comment"
 msgstr ""
 
-#: inc/extras.php:558 inc/template-tags.php:36
+#: inc/extras.php:560 inc/template-tags.php:36
 msgid "<i class=\"fa fa-comment\"></i>% Comments"
 msgstr ""
 
-#: inc/extras.php:558 inc/template-tags.php:36
+#: inc/extras.php:560 inc/template-tags.php:36
 msgid "<i class=\"fa fa-comment\"></i>Comments Disabled"
 msgstr ""
 
-#: inc/extras.php:579
+#: inc/extras.php:581
 #, php-format
 msgid "Follow %s on:"
 msgstr ""
 
-#: inc/extras.php:581
+#: inc/extras.php:583
 msgid "Facebook"
 msgstr ""
 
-#: inc/extras.php:584
+#: inc/extras.php:586
 msgid "Twitter"
 msgstr ""
 
-#: inc/extras.php:587
+#: inc/extras.php:589
 msgid "Google Plus"
 msgstr ""
 
@@ -649,29 +649,29 @@ msgstr ""
 msgid "Right"
 msgstr ""
 
-#: template-parts/content-aside.php:37 template-parts/content-audio.php:45
-#: template-parts/content-chat.php:45 template-parts/content-gallery.php:79
-#: template-parts/content-image.php:64 template-parts/content-link.php:45
-#: template-parts/content-page.php:28 template-parts/content-quote.php:45
-#: template-parts/content-status.php:45 template-parts/content-video.php:45
+#: template-parts/content-aside.php:37 template-parts/content-audio.php:49
+#: template-parts/content-chat.php:49 template-parts/content-gallery.php:79
+#: template-parts/content-image.php:64 template-parts/content-link.php:49
+#: template-parts/content-page.php:28 template-parts/content-quote.php:50
+#: template-parts/content-status.php:54 template-parts/content-video.php:49
 #: template-parts/content.php:63
 msgid "Pages:"
 msgstr ""
 
 #. translators: used between list items, there is a space after the comma
-#: template-parts/content-aside.php:46 template-parts/content-audio.php:54
-#: template-parts/content-chat.php:54 template-parts/content-gallery.php:88
-#: template-parts/content-image.php:73 template-parts/content-link.php:54
-#: template-parts/content-quote.php:54 template-parts/content-status.php:54
-#: template-parts/content-video.php:54 template-parts/content.php:72
+#: template-parts/content-aside.php:46 template-parts/content-audio.php:58
+#: template-parts/content-chat.php:58 template-parts/content-gallery.php:88
+#: template-parts/content-image.php:73 template-parts/content-link.php:58
+#: template-parts/content-quote.php:59 template-parts/content-status.php:63
+#: template-parts/content-video.php:58 template-parts/content.php:72
 msgid ", "
 msgstr ""
 
-#: template-parts/content-aside.php:48 template-parts/content-audio.php:56
-#: template-parts/content-chat.php:56 template-parts/content-gallery.php:90
-#: template-parts/content-image.php:75 template-parts/content-link.php:56
-#: template-parts/content-quote.php:56 template-parts/content-status.php:56
-#: template-parts/content-video.php:56 template-parts/content.php:74
+#: template-parts/content-aside.php:48 template-parts/content-audio.php:60
+#: template-parts/content-chat.php:60 template-parts/content-gallery.php:90
+#: template-parts/content-image.php:75 template-parts/content-link.php:60
+#: template-parts/content-quote.php:61 template-parts/content-status.php:65
+#: template-parts/content-video.php:60 template-parts/content.php:74
 #, php-format
 msgid "%1$s"
 msgstr ""

@@ -8,6 +8,10 @@
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
     <?php do_action('creative_blog_before_post_content'); ?>
+    
+    <div class="audio-url">
+        <?php echo creative_blog_audio_video_post_format(); ?>
+    </div>
 
     <?php if ('post' === get_post_type()) : ?>
         <div class="category-links">

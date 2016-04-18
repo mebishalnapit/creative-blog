@@ -716,6 +716,9 @@ ol.children {
     font-size: 18px;
     color: #fff;
 }
+.format-chat .entry-content {
+    display: none;
+}
 .format-link .link-details {
     margin-bottom: 20px;
     background-color: #0099ff;
