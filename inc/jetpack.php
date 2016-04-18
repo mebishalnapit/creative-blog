@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Jetpack Compatibility File.
  *
@@ -18,6 +19,7 @@ function creative_blog_jetpack_setup() {
         'container' => 'main',
         'render' => 'creative_blog_infinite_scroll_render',
         'footer' => 'page',
+        'wrapper' => false,
     ));
 
     // Add theme support for Responsive Videos.
