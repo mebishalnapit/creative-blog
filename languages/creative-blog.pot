@@ -1,10 +1,10 @@
-# Copyright (C) 2015 Bishal Napit
+# Copyright (C) 2015/16 Bishal Napit
 # This file is distributed under the GNU General Public License v3 or later.
 msgid ""
 msgstr ""
 "Project-Id-Version: Creative Blog\n"
-"POT-Creation-Date: 2016-03-23 19:38+0545\n"
-"PO-Revision-Date: 2016-03-23 19:38+0545\n"
+"POT-Creation-Date: 2016-04-18 23:36+0545\n"
+"PO-Revision-Date: 2016-04-18 23:36+0545\n"
 "Last-Translator: \n"
 "Language-Team: Bishal Napit <mebishalnapit@gmail.com>\n"
 "Language: en\n"
@@ -61,100 +61,100 @@ msgstr ""
 msgid "Social Menu"
 msgstr ""
 
-#: functions.php:158 inc/meta-boxes.php:32
+#: functions.php:166 inc/meta-boxes.php:32
 msgid "Right Sidebar"
 msgstr ""
 
-#: functions.php:160
+#: functions.php:168
 msgid "Display your widgets in the Right Sidebar Area"
 msgstr ""
 
-#: functions.php:168 inc/meta-boxes.php:37
+#: functions.php:176 inc/meta-boxes.php:37
 msgid "Left Sidebar"
 msgstr ""
 
-#: functions.php:170
+#: functions.php:178
 msgid "Display your widgets in the Left Sidebar Area"
 msgstr ""
 
-#: functions.php:178
+#: functions.php:186
 msgid "Header Sidebar"
 msgstr ""
 
-#: functions.php:180
+#: functions.php:188
 msgid "Display your widgets in the Header Sidebar Area"
 msgstr ""
 
-#: functions.php:188
+#: functions.php:196
 msgid "Content Top Sidebar"
 msgstr ""
 
-#: functions.php:190
+#: functions.php:198
 msgid "Display your widgets in the Content Top Sidebar Area"
 msgstr ""
 
-#: functions.php:198
+#: functions.php:206
 msgid "Content Bottom Sidebar"
 msgstr ""
 
-#: functions.php:200
+#: functions.php:208
 msgid "Display your widgets in the Content Bottom Sidebar Area"
 msgstr ""
 
-#: functions.php:208
+#: functions.php:216
 msgid "404 Sidebar"
 msgstr ""
 
-#: functions.php:210
+#: functions.php:218
 msgid "Display your widgets in the 404 Error Page Sidebar Area"
 msgstr ""
 
-#: functions.php:218
+#: functions.php:226
 msgid "Contact Sidebar"
 msgstr ""
 
-#: functions.php:220
+#: functions.php:228
 msgid "Display your widgets in the Contact Page Sidebar Area"
 msgstr ""
 
-#: functions.php:228
+#: functions.php:236
 msgid "Footer Sidebar One"
 msgstr ""
 
-#: functions.php:230
+#: functions.php:238
 msgid "Display your widgets in the footer sidebar area one."
 msgstr ""
 
-#: functions.php:238
+#: functions.php:246
 msgid "Footer Sidebar Two"
 msgstr ""
 
-#: functions.php:240
+#: functions.php:248
 msgid "Display your widgets in the footer sidebar area two."
 msgstr ""
 
-#: functions.php:248
+#: functions.php:256
 msgid "Footer Sidebar Three"
 msgstr ""
 
-#: functions.php:250
+#: functions.php:258
 msgid "Display your widgets in the footer sidebar area three."
 msgstr ""
 
-#: functions.php:258
+#: functions.php:266
 msgid "Footer Sidebar Four"
 msgstr ""
 
-#: functions.php:260
+#: functions.php:268
 msgid "Display your widgets in the footer sidebar area four."
 msgstr ""
 
-#: functions.php:291
+#: functions.php:299
 msgctxt "Open Sans font: on or off"
 msgid "on"
 msgstr ""
 
-#: functions.php:299
+#: functions.php:307
 msgctxt "Add new subset ( cyrillic, greek, vietnamese )"
 msgid "no-subset"
 msgstr ""
@@ -188,202 +188,201 @@ msgstr ""
 msgid "Header Logo"
 msgstr ""
 
-#: inc/customizer.php:79
-msgid "Upload logo for your header here."
+#: inc/customizer.php:80
+msgid ""
+"Choose the option that you want for your site for Header Logo option. Note: "
+"You can upload the site logo from Appearance &gt; Customize &gt; Site "
+"Identity &gt; Logo section."
 msgstr ""
 
-#: inc/customizer.php:92
-msgid "Choose the option that you want for your site for Header Logo."
-msgstr ""
-
-#: inc/customizer.php:95
+#: inc/customizer.php:83
 msgid "Header Logo Only"
 msgstr ""
 
-#: inc/customizer.php:96
+#: inc/customizer.php:84
 msgid "Header Text Only"
 msgstr ""
 
-#: inc/customizer.php:97
+#: inc/customizer.php:85
 msgid "Show Both"
 msgstr ""
 
-#: inc/customizer.php:98
+#: inc/customizer.php:86
 msgid "Disable"
 msgstr ""
 
-#: inc/customizer.php:105
+#: inc/customizer.php:93
 msgid "Show Date"
 msgstr ""
 
-#: inc/customizer.php:117
+#: inc/customizer.php:105
 msgid "Check to show the date in header area."
 msgstr ""
 
-#: inc/customizer.php:125
+#: inc/customizer.php:113
 msgid "Breaking News"
 msgstr ""
 
-#: inc/customizer.php:137
+#: inc/customizer.php:125
 msgid "Check to enable the breaking news section."
 msgstr ""
 
-#: inc/customizer.php:145
+#: inc/customizer.php:133
 msgid "Sticky Menu"
 msgstr ""
 
-#: inc/customizer.php:157
+#: inc/customizer.php:145
 msgid ""
 "Check to enable the sticky menu feature. Note: This feature is only applied "
 "to the primary menu."
 msgstr ""
 
-#: inc/customizer.php:165 inc/extras.php:218
+#: inc/customizer.php:153 inc/extras.php:220
 msgid "Random Post"
 msgstr ""
 
-#: inc/customizer.php:177
+#: inc/customizer.php:165
 msgid ""
 "Check to display the random post icon in the primary menu. Note: Only works "
 "when you have set the primary menu manually."
 msgstr ""
 
-#: inc/customizer.php:185
+#: inc/customizer.php:173
 msgid "Search Icon"
 msgstr ""
 
-#: inc/customizer.php:197
+#: inc/customizer.php:185
 msgid ""
 "Check to display the search icon in the primary menu. Note: Only works when "
 "you have set the primary menu manually."
 msgstr ""
 
-#: inc/customizer.php:205
+#: inc/customizer.php:193
 msgid "Header Top Bar"
 msgstr ""
 
-#: inc/customizer.php:217
+#: inc/customizer.php:205
 msgid ""
 "Check to enable the header top bar for your site. It includes current server "
 "date, latest posts and social menus."
 msgstr ""
 
-#: inc/customizer.php:225
+#: inc/customizer.php:213
 msgid "Header Image Link"
 msgstr ""
 
-#: inc/customizer.php:237
+#: inc/customizer.php:225
 msgid "Check to enable the header image to link back to the home page."
 msgstr ""
 
-#: inc/customizer.php:245
+#: inc/customizer.php:233
 msgid ""
 "Change the Design Settings from here as you want to best suit your need."
 msgstr ""
 
-#: inc/customizer.php:247
+#: inc/customizer.php:235
 msgid "Design Options"
 msgstr ""
 
-#: inc/customizer.php:253
+#: inc/customizer.php:241
 msgid "Site Layout"
 msgstr ""
 
-#: inc/customizer.php:265
+#: inc/customizer.php:253
 msgid "Choose your site layout. The change is reflected in the whole site."
 msgstr ""
 
-#: inc/customizer.php:267
+#: inc/customizer.php:255
 msgid "Boxed Layout"
 msgstr ""
 
-#: inc/customizer.php:268
+#: inc/customizer.php:256
 msgid "Wide Layout"
 msgstr ""
 
-#: inc/customizer.php:310
+#: inc/customizer.php:298
 msgid "Default layout"
 msgstr ""
 
-#: inc/customizer.php:322
+#: inc/customizer.php:310
 msgid ""
 "Select default layout. This layout will be reflected in whole site archives, "
 "categories, search page etc. The layout for a single post and page can be "
 "controlled from the other options available in this theme."
 msgstr ""
 
-#: inc/customizer.php:336
+#: inc/customizer.php:324
 msgid "Default layout for pages only"
 msgstr ""
 
-#: inc/customizer.php:348
+#: inc/customizer.php:336
 msgid ""
 "Select default layout for pages. This layout will be reflected in all pages "
 "unless unique layout is set for the specific page."
 msgstr ""
 
-#: inc/customizer.php:362
+#: inc/customizer.php:350
 msgid "Default layout for single posts only"
 msgstr ""
 
-#: inc/customizer.php:374
+#: inc/customizer.php:362
 msgid ""
 "Select default layout for single posts. This layout will be reflected in all "
 "single posts unless unique layout is set for the specific post."
 msgstr ""
 
-#: inc/customizer.php:389
+#: inc/customizer.php:377
 msgid "Primary Color"
 msgstr ""
 
-#: inc/customizer.php:400
+#: inc/customizer.php:388
 msgid ""
 "This will reflect in links, buttons and many others. Choose the color to "
 "match best suit your site need."
 msgstr ""
 
-#: inc/customizer.php:408
+#: inc/customizer.php:396
 msgid "Custom CSS"
 msgstr ""
 
-#: inc/customizer.php:421
+#: inc/customizer.php:409
 msgid "Write your custom css and design live."
 msgstr ""
 
-#: inc/customizer.php:429
+#: inc/customizer.php:417
 msgid ""
 "Change the Additional Settings from here as you want to best suite your site."
 msgstr ""
 
-#: inc/customizer.php:431
+#: inc/customizer.php:419
 msgid "Additional Options"
 msgstr ""
 
-#: inc/customizer.php:437
+#: inc/customizer.php:425
 msgid "Related Posts"
 msgstr ""
 
-#: inc/customizer.php:449
+#: inc/customizer.php:437
 msgid "Check to activate the related posts."
 msgstr ""
 
-#: inc/customizer.php:462
+#: inc/customizer.php:450
 msgid "Related Posts To Be Shown As:"
 msgstr ""
 
-#: inc/customizer.php:466
+#: inc/customizer.php:454
 msgid "Related Posts By Categories"
 msgstr ""
 
-#: inc/customizer.php:467
+#: inc/customizer.php:455
 msgid "Related Posts By Tags"
 msgstr ""
 
-#: inc/customizer.php:474
+#: inc/customizer.php:462
 msgid "Image Lightbox"
 msgstr ""
 
-#: inc/customizer.php:486
+#: inc/customizer.php:474
 msgid ""
 "Check to enable the lightbox feature for the featured images in single post "
 "page. Note: the post should be of image post format to support this feature, "
@@ -391,11 +390,11 @@ msgid ""
 "post format is choosen."
 msgstr ""
 
-#: inc/customizer.php:493
+#: inc/customizer.php:481
 msgid "Social Links In Author Bio"
 msgstr ""
 
-#: inc/customizer.php:505
+#: inc/customizer.php:493
 msgid ""
 "Check to enable the social links in the Author Bio section. For this to "
 "work, you need to add the URL of your social sites in the profile section. "
@@ -403,21 +402,21 @@ msgid ""
 "feature."
 msgstr ""
 
-#: inc/customizer.php:513
+#: inc/customizer.php:501
 msgid "Category Color Options"
 msgstr ""
 
-#: inc/customizer.php:515
+#: inc/customizer.php:503
 msgid ""
 "Change the color of each category items as you want to best suit your "
 "requirement."
 msgstr ""
 
-#: inc/customizer.php:520
+#: inc/customizer.php:508
 msgid "Category Color Settings"
 msgstr ""
 
-#: inc/customizer.php:544
+#: inc/customizer.php:532
 #, php-format
 msgid "%s"
 msgstr ""
@@ -426,125 +425,125 @@ msgstr ""
 msgid "Latest:"
 msgstr ""
 
-#: inc/extras.php:264
+#: inc/extras.php:266
 msgid "WordPress"
 msgstr ""
 
-#: inc/extras.php:266
+#: inc/extras.php:268
 msgid "Bishal Napit"
 msgstr ""
 
-#: inc/extras.php:268
+#: inc/extras.php:270
 #, php-format
 msgid "Copyright &copy; %1$s %2$s."
 msgstr ""
 
-#: inc/extras.php:268
+#: inc/extras.php:270
 #, php-format
 msgid "Theme: %1$s by %2$s."
 msgstr ""
 
-#: inc/extras.php:268
+#: inc/extras.php:270
 msgid "Creative Blog"
 msgstr ""
 
-#: inc/extras.php:268
+#: inc/extras.php:270
 #, php-format
 msgid "Powered by %s."
 msgstr ""
 
-#: inc/extras.php:388
+#: inc/extras.php:390
 msgid "Post navigation"
 msgstr ""
 
-#: inc/extras.php:391
+#: inc/extras.php:393
 msgctxt "Previous post link"
 msgid ""
 "<span class=\"meta-nav\"><i class=\"fa fa-arrow-circle-o-left\"></i></span>"
 "%title"
 msgstr ""
 
-#: inc/extras.php:392
+#: inc/extras.php:394
 msgctxt "Next post link"
 msgid ""
 "%title<span class=\"meta-nav\"><i class=\"fa fa-arrow-circle-o-right\"></i></"
 "span>"
 msgstr ""
 
-#: inc/extras.php:406
+#: inc/extras.php:408
 msgid "Video URL"
 msgstr ""
 
-#: inc/extras.php:407
+#: inc/extras.php:409
 msgid "Audio URL"
 msgstr ""
 
-#: inc/extras.php:408
+#: inc/extras.php:410
 msgid "Status"
 msgstr ""
 
-#: inc/extras.php:409
+#: inc/extras.php:411
 msgid "Chat"
 msgstr ""
 
-#: inc/extras.php:411
+#: inc/extras.php:413
 msgid "Link Text"
 msgstr ""
 
-#: inc/extras.php:412
+#: inc/extras.php:414
 msgid "Link URL"
 msgstr ""
 
-#: inc/extras.php:414
+#: inc/extras.php:416
 msgid "Quote Text"
 msgstr ""
 
-#: inc/extras.php:415
+#: inc/extras.php:417
 msgid "Quote Author"
 msgstr ""
 
-#: inc/extras.php:720 inc/template-tags.php:25
+#: inc/extras.php:722 inc/template-tags.php:25
 #, php-format
 msgctxt "post date"
 msgid "%s"
 msgstr ""
 
-#: inc/extras.php:724 inc/template-tags.php:29
+#: inc/extras.php:726 inc/template-tags.php:29
 #, php-format
 msgctxt "post author"
 msgid "%s"
 msgstr ""
 
-#: inc/extras.php:730 inc/template-tags.php:36
+#: inc/extras.php:732 inc/template-tags.php:36
 msgid "<i class=\"fa fa-comment\"></i>Leave a reply"
 msgstr ""
 
-#: inc/extras.php:730 inc/template-tags.php:36
+#: inc/extras.php:732 inc/template-tags.php:36
 msgid "<i class=\"fa fa-comment\"></i>1 Comment"
 msgstr ""
 
-#: inc/extras.php:730 inc/template-tags.php:36
+#: inc/extras.php:732 inc/template-tags.php:36
 msgid "<i class=\"fa fa-comment\"></i>% Comments"
 msgstr ""
 
-#: inc/extras.php:730 inc/template-tags.php:36
+#: inc/extras.php:732 inc/template-tags.php:36
 msgid "<i class=\"fa fa-comment\"></i>Comments Disabled"
 msgstr ""
 
-#: inc/extras.php:751
+#: inc/extras.php:753
 #, php-format
 msgid "Follow %s on:"
 msgstr ""
 
-#: inc/extras.php:753
+#: inc/extras.php:755
 msgid "Facebook"
 msgstr ""
 
-#: inc/extras.php:756
+#: inc/extras.php:758
 msgid "Twitter"
 msgstr ""
 
-#: inc/extras.php:759
+#: inc/extras.php:761
 msgid "Google Plus"
 msgstr ""
 

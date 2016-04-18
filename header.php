@@ -85,7 +85,6 @@
                         <?php
                         wp_nav_menu(array(
                             'theme_location' => 'primary',
-                            'menu' => 'primary',
                             'container' => 'div',
                             'depth' => 2,
                             'container_class' => 'collapse navbar-collapse',

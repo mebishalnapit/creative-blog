@@ -86,6 +86,14 @@ if (!function_exists('creative_blog_setup')) :
             'default-color' => 'ccc',
             'default-image' => '',
         )));
+
+        // Set up the WordPress core custom logo feature.
+        add_theme_support('custom-logo', array(
+            'height' => 100,
+            'width' => 300,
+            'flex-width' => true,
+            'flex-height' => true,
+        ));
     }
 
 endif; // creative_blog_setup
@@ -400,7 +408,7 @@ add_action('admin_enqueue_scripts', 'creative_blog_admin_scripts');
 function creative_blog_customizer_scripts() {
     // adding the function to load the minified version if SCRIPT_DEFUG is disable
     $suffix = ( defined('SCRIPT_DEBUG') && SCRIPT_DEBUG ) ? '' : '.min';
-    
+
     wp_enqueue_style('creative-blog-customizer-layout-option-css', get_template_directory_uri() . '/css/custom-layout' . $suffix . '.css');
     wp_enqueue_script('creative-blog-customizer-layout-option', get_template_directory_uri() . '/js/custom-layout' . $suffix . '.js', false, false, true);
 }

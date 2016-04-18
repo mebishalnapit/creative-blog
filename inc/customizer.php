@@ -69,18 +69,6 @@ function creative_blog_customize_register($wp_customize) {
         'panel' => 'creative_blog_header_options'
     ));
 
-    $wp_customize->add_setting('creative_blog_logo', array(
-        'default' => '',
-        'capability' => 'edit_theme_options',
-        'sanitize_callback' => 'esc_url_raw'
-    ));
-
-    $wp_customize->add_control(new WP_Customize_Image_Control($wp_customize, 'creative_blog_logo', array(
-        'label' => esc_html__('Upload logo for your header here.', 'creative-blog'),
-        'section' => 'creative_blog_header_logo',
-        'setting' => 'creative_blog_logo'
-    )));
-
     $wp_customize->add_setting('creative_blog_header_logo_placement', array(
         'default' => 'header_text_only',
         'capability' => 'edit_theme_options',
@@ -89,7 +77,7 @@ function creative_blog_customize_register($wp_customize) {
 
     $wp_customize->add_control('creative_blog_header_logo_placement', array(
         'type' => 'radio',
-        'label' => esc_html__('Choose the option that you want for your site for Header Logo.', 'creative-blog'),
+        'label' => esc_html__('Choose the option that you want for your site for Header Logo option. Note: You can upload the site logo from Appearance &gt; Customize &gt; Site Identity &gt; Logo section.', 'creative-blog'),
         'section' => 'creative_blog_header_logo',
         'choices' => array(
             'header_logo_only' => esc_html__('Header Logo Only', 'creative-blog'),
