@@ -18,13 +18,7 @@ get_header();
 
             <?php get_template_part('template-parts/content', get_post_format()); ?>
 
-            <?php
-            if (function_exists('creative_blog_posts_pagination')) {
-                creative_blog_posts_pagination();
-            } else {
-                the_post_navigation();
-            }
-            ?>
+            <?php creative_blog_posts_pagination(); ?>
 
             <?php if (get_the_author_meta('description')) : ?>
                 <div class="author-box">

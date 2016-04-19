@@ -41,13 +41,7 @@ get_header();
 
             <?php endwhile; ?>
 
-            <?php
-            if (function_exists('wp_bootstrap_pagination')) {
-                wp_bootstrap_pagination();
-            } else {
-                the_posts_navigation();
-            }
-            ?>
+            <?php creative_blog_paginate_links_display(); ?>
 
         <?php else : ?>
 

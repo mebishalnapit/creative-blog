@@ -389,7 +389,7 @@ if (!function_exists('creative_blog_posts_pagination')) :
             return;
         }
         ?>
-        <h4 class="screen-reader-text"><?php _e('Post navigation', 'creative-blog'); ?></h4>
+        <h4 class="screen-reader-text"><?php esc_html_e('Post navigation', 'creative-blog'); ?></h4>
         <ul class="pager single-post-navigations">
             <?php
             previous_post_link('<li class="previous">%link</li>', _x('<span class="meta-nav"><i class="fa fa-arrow-circle-o-left"></i></span>%title', 'Previous post link', 'creative-blog'));
@@ -689,3 +689,45 @@ if (!function_exists('creative_blog_quote_post_format_cite')) :
     }
 
 endif;
+
+if (!function_exists('creative_blog_paginate_links')) :
+
+    function creative_blog_paginate_links() {
+        ?>
+        <div class="post-nav">
+            <?php
+            global $wp_query;
+            $big = 999999999; // need an unlikely integer
+            $pagination = paginate_links(array(
+                'base' => str_replace($big, '%#%', esc_url(get_pagenum_link($big))),
+                'format' => '?paged=%#%',
+                'current' => max(1, absint(get_query_var('paged'))),
+                'total' => $wp_query->max_num_pages,
+                'mid_size' => 4,
+                'type' => 'array',
+                'prev_text' => wp_kses(__('<i class="glyphicon glyphicon-chevron-left"></i>', 'creative-blog'), array('i' => array('class' => array()))),
+                'next_text' => wp_kses(__('<i class="glyphicon glyphicon-chevron-right"></i>', 'creative-blog'), array('i' => array('class' => array()))),
+            ));
+            ?>
+
+            <?php if (!empty($pagination)) : ?>
+                <h4 class="screen-reader-text"><?php esc_html_e('Posts navigation', 'creative-blog'); ?></h4>
+                <ul class="pager">
+                    <?php foreach ($pagination as $key => $page_link) : ?>
+                        <li<?php
+                        if (strpos($page_link, 'current') !== false) {
+                            echo ' class="active"';
+                        }
+                        ?>><?php echo wp_kses_post($page_link); ?></li>
+                <?php endforeach; ?>
+                </ul>
+        <?php endif ?>
+        </div>
+        <?php
+    }
+
+endif;
+
+function creative_blog_paginate_links_display() {
+    echo creative_blog_paginate_links();
+}

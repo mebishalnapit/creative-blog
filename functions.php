@@ -454,11 +454,6 @@ require get_template_directory() . '/inc/meta-boxes.php';
 require get_template_directory() . '/inc/wp_bootstrap_navwalker.php';
 
 /**
- * Add the required bootstrap page navigation
- */
-require get_template_directory() . '/inc/wp_bootstrap_pagination.php';
-
-/**
  * Add the required custom widgets
  */
 require get_template_directory() . '/inc/widgets.php';

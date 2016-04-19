@@ -62,31 +62,6 @@ function creative_blog_customize_register($wp_customize) {
         'title' => esc_html__('Header Options', 'creative-blog')
     ));
 
-    // logo upload options
-    $wp_customize->add_section('creative_blog_header_logo', array(
-        'priority' => 1,
-        'title' => esc_html__('Header Logo', 'creative-blog'),
-        'panel' => 'creative_blog_header_options'
-    ));
-
-    $wp_customize->add_setting('creative_blog_header_logo_placement', array(
-        'default' => 'header_text_only',
-        'capability' => 'edit_theme_options',
-        'sanitize_callback' => 'creative_blog_radio_select_sanitize'
-    ));
-
-    $wp_customize->add_control('creative_blog_header_logo_placement', array(
-        'type' => 'radio',
-        'label' => esc_html__('Choose the option that you want for your site for Header Logo option. Note: You can upload the site logo from Appearance &gt; Customize &gt; Site Identity &gt; Logo section.', 'creative-blog'),
-        'section' => 'creative_blog_header_logo',
-        'choices' => array(
-            'header_logo_only' => esc_html__('Header Logo Only', 'creative-blog'),
-            'header_text_only' => esc_html__('Header Text Only', 'creative-blog'),
-            'show_both' => esc_html__('Show Both', 'creative-blog'),
-            'disable' => esc_html__('Disable', 'creative-blog')
-        )
-    ));
-
     // date display enable/disable
     $wp_customize->add_section('creative_blog_date_display_section', array(
         'priority' => 2,
@@ -242,6 +217,11 @@ function creative_blog_customize_register($wp_customize) {
                                                           ?> />
                             <img src='<?php echo esc_html($label); ?>' class='<?php echo esc_html($class); ?>' />
                         </label>
+                        <?php
+                        $replace_text = str_replace("_", " ", $value);
+                        $display_text = ucwords($replace_text);
+                        echo esc_html($display_text);
+                        ?>
                     </li>
                     <?php
                 endforeach;
@@ -478,6 +458,25 @@ function creative_blog_customize_register($wp_customize) {
     }
     // End Of Category Color Options
     // Start of the WordPress default sections for theme related options
+    // logo display options
+    $wp_customize->add_setting('creative_blog_header_logo_placement', array(
+        'default' => 'header_text_only',
+        'capability' => 'edit_theme_options',
+        'sanitize_callback' => 'creative_blog_radio_select_sanitize'
+    ));
+
+    $wp_customize->add_control('creative_blog_header_logo_placement', array(
+        'type' => 'radio',
+        'label' => esc_html__('Choose the option that you want for your site.', 'creative-blog'),
+        'section' => 'title_tagline',
+        'choices' => array(
+            'header_logo_only' => esc_html__('Site Logo Only', 'creative-blog'),
+            'header_text_only' => esc_html__('Site Name and Description Only', 'creative-blog'),
+            'show_both' => esc_html__('Show Both', 'creative-blog'),
+            'disable' => esc_html__('Disable', 'creative-blog')
+        )
+    ));
+
     // header image link enable/disable
     $wp_customize->add_setting('creative_blog_header_image_link', array(
         'default' => 0,
@@ -491,7 +490,7 @@ function creative_blog_customize_register($wp_customize) {
         'section' => 'header_image',
         'settings' => 'creative_blog_header_image_link'
     ));
-    
+
     // primary color options
     $wp_customize->add_setting('creative_blog_primary_color', array(
         'default' => '#0099ff',

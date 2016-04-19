@@ -44,6 +44,9 @@ If you've translated this theme into your native language, then, feel free to se
 #### VERSION 0.5
 * Header top bar activate option removed
 * Moved header image option and primary color options to default WordPress related sections
+* Moved logo and site name and description to the Site Identity section
+* Radio image select options shows the respective image details.
+* Changed the pagination function
 
 #### VERSION 0.5
 * Content width has been changed
