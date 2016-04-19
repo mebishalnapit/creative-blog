@@ -458,25 +458,6 @@ function creative_blog_customize_register($wp_customize) {
     }
     // End Of Category Color Options
     // Start of the WordPress default sections for theme related options
-    // logo display options
-    $wp_customize->add_setting('creative_blog_header_logo_placement', array(
-        'default' => 'header_text_only',
-        'capability' => 'edit_theme_options',
-        'sanitize_callback' => 'creative_blog_radio_select_sanitize'
-    ));
-
-    $wp_customize->add_control('creative_blog_header_logo_placement', array(
-        'type' => 'radio',
-        'label' => esc_html__('Choose the option that you want for your site.', 'creative-blog'),
-        'section' => 'title_tagline',
-        'choices' => array(
-            'header_logo_only' => esc_html__('Site Logo Only', 'creative-blog'),
-            'header_text_only' => esc_html__('Site Name and Description Only', 'creative-blog'),
-            'show_both' => esc_html__('Show Both', 'creative-blog'),
-            'disable' => esc_html__('Disable', 'creative-blog')
-        )
-    ));
-
     // header image link enable/disable
     $wp_customize->add_setting('creative_blog_header_image_link', array(
         'default' => 0,

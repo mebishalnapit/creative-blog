@@ -102,24 +102,13 @@ if (!function_exists('creative_blog_header_text_logo')) :
     function creative_blog_header_text_logo() {
         ?>
         <div id="logo-and-title" class="logo-and-title col-md-4">
-            <?php if (((get_theme_mod('creative_blog_header_logo_placement', 'header_text_only') == 'show_both') || (get_theme_mod('creative_blog_header_logo_placement', 'header_text_only') == 'header_logo_only')) && get_theme_mod('creative_blog_logo', '') != '') : ?>
-                <div class="header-logo-image">
-                    <?php
-                    if (function_exists('the_custom_logo')) {
-                        the_custom_logo();
-                    }
-                    ?>
-                </div><!-- #header-logo-image -->
-            <?php endif; ?>
-
             <?php
-            $class = '';
-            if ((get_theme_mod('creative_blog_header_logo_placement', 'header_text_only') == 'header_logo_only') || (get_theme_mod('creative_blog_header_logo_placement', 'header_text_only') == 'disable')) {
-                $class = 'screen-reader-text';
+            if (function_exists('the_custom_logo')) {
+                the_custom_logo();
             }
             ?>
 
-            <div class="site-info <?php echo esc_attr($class); ?>">
+            <div class="site-info">
                 <?php if (is_front_page() && is_home()) : ?>
                     <h1 class="site-title"><a href="<?php echo esc_url(home_url('/')); ?>" rel="home"><?php bloginfo('name'); ?></a></h1>
                 <?php else : ?>
@@ -719,9 +708,9 @@ if (!function_exists('creative_blog_paginate_links')) :
                             echo ' class="active"';
                         }
                         ?>><?php echo wp_kses_post($page_link); ?></li>
-                <?php endforeach; ?>
+                        <?php endforeach; ?>
                 </ul>
-        <?php endif ?>
+            <?php endif; ?>
         </div>
         <?php
     }

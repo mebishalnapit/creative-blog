@@ -3,8 +3,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Creative Blog\n"
-"POT-Creation-Date: 2016-04-20 03:38+0545\n"
-"PO-Revision-Date: 2016-04-20 03:39+0545\n"
+"POT-Creation-Date: 2016-04-20 04:16+0545\n"
+"PO-Revision-Date: 2016-04-20 04:17+0545\n"
 "Last-Translator: \n"
 "Language-Team: Bishal Napit <mebishalnapit@gmail.com>\n"
 "Language: en\n"
@@ -210,7 +210,7 @@ msgid ""
 "to the primary menu."
 msgstr ""
 
-#: inc/customizer.php:128 inc/extras.php:222
+#: inc/customizer.php:128 inc/extras.php:211
 msgid "Random Post"
 msgstr ""
 
@@ -367,30 +367,10 @@ msgid "%s"
 msgstr ""
 
 #: inc/customizer.php:470
-msgid "Choose the option that you want for your site."
-msgstr ""
-
-#: inc/customizer.php:473
-msgid "Site Logo Only"
-msgstr ""
-
-#: inc/customizer.php:474
-msgid "Site Name and Description Only"
-msgstr ""
-
-#: inc/customizer.php:475
-msgid "Show Both"
-msgstr ""
-
-#: inc/customizer.php:476
-msgid "Disable"
-msgstr ""
-
-#: inc/customizer.php:489
 msgid "Check to enable the header image to link back to the home page."
 msgstr ""
 
-#: inc/customizer.php:503
+#: inc/customizer.php:484
 msgid "Primary Color"
 msgstr ""
 
@@ -398,105 +378,105 @@ msgstr ""
 msgid "Latest:"
 msgstr ""
 
-#: inc/extras.php:268
+#: inc/extras.php:257
 msgid "WordPress"
 msgstr ""
 
-#: inc/extras.php:270
+#: inc/extras.php:259
 msgid "Bishal Napit"
 msgstr ""
 
-#: inc/extras.php:272
+#: inc/extras.php:261
 #, php-format
 msgid "Copyright &copy; %1$s %2$s."
 msgstr ""
 
-#: inc/extras.php:272
+#: inc/extras.php:261
 #, php-format
 msgid "Theme: %1$s by %2$s."
 msgstr ""
 
-#: inc/extras.php:272
+#: inc/extras.php:261
 msgid "Creative Blog"
 msgstr ""
 
-#: inc/extras.php:272
+#: inc/extras.php:261
 #, php-format
 msgid "Powered by %s."
 msgstr ""
 
-#: inc/extras.php:392
+#: inc/extras.php:381
 msgid "Post navigation"
 msgstr ""
 
-#: inc/extras.php:395
+#: inc/extras.php:384
 msgctxt "Previous post link"
 msgid ""
 "<span class=\"meta-nav\"><i class=\"fa fa-arrow-circle-o-left\"></i></span>"
 "%title"
 msgstr ""
 
-#: inc/extras.php:396
+#: inc/extras.php:385
 msgctxt "Next post link"
 msgid ""
 "%title<span class=\"meta-nav\"><i class=\"fa fa-arrow-circle-o-right\"></i></"
 "span>"
 msgstr ""
 
-#: inc/extras.php:550 inc/template-tags.php:25
+#: inc/extras.php:539 inc/template-tags.php:25
 #, php-format
 msgctxt "post date"
 msgid "%s"
 msgstr ""
 
-#: inc/extras.php:554 inc/template-tags.php:29
+#: inc/extras.php:543 inc/template-tags.php:29
 #, php-format
 msgctxt "post author"
 msgid "%s"
 msgstr ""
 
-#: inc/extras.php:560 inc/template-tags.php:36
+#: inc/extras.php:549 inc/template-tags.php:36
 msgid "<i class=\"fa fa-comment\"></i>Leave a reply"
 msgstr ""
 
-#: inc/extras.php:560 inc/template-tags.php:36
+#: inc/extras.php:549 inc/template-tags.php:36
 msgid "<i class=\"fa fa-comment\"></i>1 Comment"
 msgstr ""
 
-#: inc/extras.php:560 inc/template-tags.php:36
+#: inc/extras.php:549 inc/template-tags.php:36
 msgid "<i class=\"fa fa-comment\"></i>% Comments"
 msgstr ""
 
-#: inc/extras.php:560 inc/template-tags.php:36
+#: inc/extras.php:549 inc/template-tags.php:36
 msgid "<i class=\"fa fa-comment\"></i>Comments Disabled"
 msgstr ""
 
-#: inc/extras.php:581
+#: inc/extras.php:570
 #, php-format
 msgid "Follow %s on:"
 msgstr ""
 
-#: inc/extras.php:583
+#: inc/extras.php:572
 msgid "Facebook"
 msgstr ""
 
-#: inc/extras.php:586
+#: inc/extras.php:575
 msgid "Twitter"
 msgstr ""
 
-#: inc/extras.php:589
+#: inc/extras.php:578
 msgid "Google Plus"
 msgstr ""
 
-#: inc/extras.php:708
+#: inc/extras.php:697
 msgid "<i class=\"glyphicon glyphicon-chevron-left\"></i>"
 msgstr ""
 
-#: inc/extras.php:709
+#: inc/extras.php:698
 msgid "<i class=\"glyphicon glyphicon-chevron-right\"></i>"
 msgstr ""
 
-#: inc/extras.php:714
+#: inc/extras.php:703
 msgid "Posts navigation"
 msgstr ""
 

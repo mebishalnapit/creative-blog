@@ -113,7 +113,7 @@ embed, iframe, object {
 #logo-and-title {
     float: left;
 }
-#logo-and-title .header-logo-image {
+#logo-and-title .custom-logo {
     margin-right: 10px;
     float: left;
 }
