@@ -187,26 +187,6 @@ function creative_blog_customize_register($wp_customize) {
         'settings' => 'creative_blog_search_icon_in_menu'
     ));
 
-    // header top bar enable/disable
-    $wp_customize->add_section('creative_blog_header_top_bar_section', array(
-        'priority' => 7,
-        'title' => esc_html__('Header Top Bar', 'creative-blog'),
-        'panel' => 'creative_blog_header_options'
-    ));
-
-    $wp_customize->add_setting('creative_blog_header_top_bar', array(
-        'default' => 0,
-        'capability' => 'edit_theme_options',
-        'sanitize_callback' => 'creative_blog_checkbox_sanitize'
-    ));
-
-    $wp_customize->add_control('creative_blog_header_top_bar', array(
-        'type' => 'checkbox',
-        'label' => esc_html__('Check to enable the header top bar for your site. It includes current server date, latest posts and social menus.', 'creative-blog'),
-        'section' => 'creative_blog_header_top_bar_section',
-        'settings' => 'creative_blog_header_top_bar'
-    ));
-
     // header image link enable/disable
     $wp_customize->add_section('creative_blog_header_image_link_section', array(
         'priority' => 8,

@@ -42,6 +42,9 @@ If you've translated this theme into your native language, then, feel free to se
 
 == CHANGELOG ==
 = VERSION 0.5 =
+* Header top bar activate option removed
+
+= VERSION 0.5 =
 * Content width has been changed
 * Featured image size has been changed
 * Theme prefix removed from the enqueued third party scripts

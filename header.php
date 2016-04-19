@@ -26,32 +26,31 @@
             <a class="skip-link screen-reader-text" href="#content"><?php esc_html_e('Skip to content', 'creative-blog'); ?></a>
 
             <header id="masthead" class="site-header" role="banner">
-                <?php if (get_theme_mod('creative_blog_header_top_bar', 0) == 1) : ?>
-                    <?php if ((get_theme_mod('creative_blog_date_display', 0) == 1) || (get_theme_mod('creative_blog_breaking_news', 0) == 1) || has_nav_menu('social')) : ?>
-                        <div class="header-top-area">
-                            <div class="container">
-                                <?php if ((get_theme_mod('creative_blog_date_display', 0) == 1) || (get_theme_mod('creative_blog_breaking_news', 0) == 1)) {
-                                    ?>
-                                    <div id="date-latest" class="header-left-area col-md-8">
-                                        <?php
-                                        // date display option
-                                        if (get_theme_mod('creative_blog_date_display', 0) == 1) {
-                                            creative_blog_date_display();
-                                        }
-                                        // breaking news display section
-                                        if (get_theme_mod('creative_blog_breaking_news', 0) == 1) {
-                                            creative_blog_breaking_news();
-                                        }
-                                        ?>
-                                    </div>
-                                <?php } ?>
 
-                                <div id="social-menu" class="header-right-area col-md-4">
-                                    <?php creative_blog_social_menu(); ?>
+                <?php if ((get_theme_mod('creative_blog_date_display', 0) == 1) || (get_theme_mod('creative_blog_breaking_news', 0) == 1) || has_nav_menu('social')) : ?>
+                    <div class="header-top-area">
+                        <div class="container">
+                            <?php if ((get_theme_mod('creative_blog_date_display', 0) == 1) || (get_theme_mod('creative_blog_breaking_news', 0) == 1)) {
+                                ?>
+                                <div id="date-latest" class="header-left-area col-md-8">
+                                    <?php
+                                    // date display option
+                                    if (get_theme_mod('creative_blog_date_display', 0) == 1) {
+                                        creative_blog_date_display();
+                                    }
+                                    // breaking news display section
+                                    if (get_theme_mod('creative_blog_breaking_news', 0) == 1) {
+                                        creative_blog_breaking_news();
+                                    }
+                                    ?>
                                 </div>
+                            <?php } ?>
+
+                            <div id="social-menu" class="header-right-area col-md-4">
+                                <?php creative_blog_social_menu(); ?>
                             </div>
                         </div>
-                    <?php endif; ?>
+                    </div>
                 <?php endif; ?>
 
                 <div class="site-branding">
