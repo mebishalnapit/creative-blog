@@ -126,7 +126,7 @@ function creative_blog_customize_register($wp_customize) {
         'section' => 'creative_blog_breaking_news_section',
         'settings' => 'creative_blog_breaking_news'
     ));
-    
+
     // sticky menu enable/disable
     $wp_customize->add_section('creative_blog_sticky_menu_section', array(
         'priority' => 4,
@@ -185,26 +185,6 @@ function creative_blog_customize_register($wp_customize) {
         'label' => esc_html__('Check to display the search icon in the primary menu. Note: Only works when you have set the primary menu manually.', 'creative-blog'),
         'section' => 'creative_blog_search_icon_in_menu_section',
         'settings' => 'creative_blog_search_icon_in_menu'
-    ));
-
-    // header image link enable/disable
-    $wp_customize->add_section('creative_blog_header_image_link_section', array(
-        'priority' => 8,
-        'title' => esc_html__('Header Image Link', 'creative-blog'),
-        'panel' => 'creative_blog_header_options'
-    ));
-
-    $wp_customize->add_setting('creative_blog_header_image_link', array(
-        'default' => 0,
-        'capability' => 'edit_theme_options',
-        'sanitize_callback' => 'creative_blog_checkbox_sanitize'
-    ));
-
-    $wp_customize->add_control('creative_blog_header_image_link', array(
-        'type' => 'checkbox',
-        'label' => esc_html__('Check to enable the header image to link back to the home page.', 'creative-blog'),
-        'section' => 'creative_blog_header_image_link_section',
-        'settings' => 'creative_blog_header_image_link'
     ));
     // End Of Header Options
     // Start Of Design Options
@@ -350,26 +330,6 @@ function creative_blog_customize_register($wp_customize) {
         )
     )));
 
-    // primary color options
-    $wp_customize->add_section('creative_blog_primary_color_setting', array(
-        'panel' => 'creative_blog_design_options',
-        'priority' => 5,
-        'title' => esc_html__('Primary Color', 'creative-blog')
-    ));
-
-    $wp_customize->add_setting('creative_blog_primary_color', array(
-        'default' => '#0099ff',
-        'capability' => 'edit_theme_options',
-        'sanitize_callback' => 'creative_blog_color_option_hex_sanitize',
-        'sanitize_js_callback' => 'creative_blog_color_escaping_option_sanitize'
-    ));
-
-    $wp_customize->add_control(new WP_Customize_Color_Control($wp_customize, 'creative_blog_primary_color', array(
-        'label' => esc_html__('This will reflect in links, buttons and many others. Choose the color to match best suit your site need.', 'creative-blog'),
-        'section' => 'creative_blog_primary_color_setting',
-        'settings' => 'creative_blog_primary_color'
-    )));
-
     // custom CSS setting
     $wp_customize->add_section('creative_blog_custom_css_setting', array(
         'priority' => 6,
@@ -455,7 +415,7 @@ function creative_blog_customize_register($wp_customize) {
         'section' => 'creative_blog_featured_image_popup_setting',
         'settings' => 'creative_blog_featured_image_popup'
     ));
-    
+
     $wp_customize->add_section('creative_blog_author_bio_social_links_setting', array(
         'priority' => 3,
         'title' => esc_html__('Social Links In Author Bio', 'creative-blog'),
@@ -516,8 +476,37 @@ function creative_blog_customize_register($wp_customize) {
         )));
         $i++;
     }
-
     // End Of Category Color Options
+    // Start of the WordPress default sections for theme related options
+    // header image link enable/disable
+    $wp_customize->add_setting('creative_blog_header_image_link', array(
+        'default' => 0,
+        'capability' => 'edit_theme_options',
+        'sanitize_callback' => 'creative_blog_checkbox_sanitize'
+    ));
+
+    $wp_customize->add_control('creative_blog_header_image_link', array(
+        'type' => 'checkbox',
+        'label' => esc_html__('Check to enable the header image to link back to the home page.', 'creative-blog'),
+        'section' => 'header_image',
+        'settings' => 'creative_blog_header_image_link'
+    ));
+    
+    // primary color options
+    $wp_customize->add_setting('creative_blog_primary_color', array(
+        'default' => '#0099ff',
+        'capability' => 'edit_theme_options',
+        'sanitize_callback' => 'creative_blog_color_option_hex_sanitize',
+        'sanitize_js_callback' => 'creative_blog_color_escaping_option_sanitize'
+    ));
+
+    $wp_customize->add_control(new WP_Customize_Color_Control($wp_customize, 'creative_blog_primary_color', array(
+        'label' => esc_html__('Primary Color', 'creative-blog'),
+        'section' => 'colors',
+        'settings' => 'creative_blog_primary_color'
+    )));
+
+    // End of the WordPress default sections for theme related options
     // sanitization works
     // radio/select buttons sanitization
     function creative_blog_radio_select_sanitize($input, $setting) {
