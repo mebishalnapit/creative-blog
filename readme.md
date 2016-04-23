@@ -41,6 +41,8 @@ In this theme, we have added the Contact Page template so that you can make your
 If you've translated this theme into your native language, then, feel free to send the translation file to mebishalnapit@gmail.com and we will include it within the theme from next version update.
 
 ## CHANGELOG
+#### VERSION 0.7
+
 #### VERSION 0.6
 * Header top bar activate option removed
 * Moved header image option and primary color options to default WordPress related sections

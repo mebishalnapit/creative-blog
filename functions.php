@@ -349,27 +349,27 @@ function creative_blog_scripts() {
     wp_enqueue_style('creative-blog-style', get_stylesheet_uri());
 
     // enqueueing the fontawesome icons
-    wp_enqueue_style('fontawesome', get_template_directory_uri() . '/fontawesome/css/font-awesome' . $suffix . '.css');
+    wp_enqueue_style('font-awesome', get_template_directory_uri() . '/fontawesome/css/font-awesome' . $suffix . '.css');
 
     // enqueueing the bootstrap javascript
     wp_enqueue_script('bootstrap', get_template_directory_uri() . '/bootstrap/js/bootstrap' . $suffix . '.js', array('jquery'), null, true);
 
     // enqueueing the fitvids javascript file
-    wp_enqueue_script('fitvidsjs', get_template_directory_uri() . '/js/fitvids/jquery.fitvids' . $suffix . '.js', array('jquery'), false, true);
+    wp_enqueue_script('jquery-fitvids', get_template_directory_uri() . '/js/fitvids/jquery.fitvids' . $suffix . '.js', array('jquery'), false, true);
 
     // enqueueing newsticker
     if (get_theme_mod('creative_blog_breaking_news', 0) == 1) {
-        wp_enqueue_script('jquery-advanced-news-ticker', get_template_directory_uri() . '/js/news-ticker/jquery.newsTicker' . $suffix . '.js', array('jquery'), false, true);
+        wp_enqueue_script('jquery-newsTicker', get_template_directory_uri() . '/js/news-ticker/jquery.newsTicker' . $suffix . '.js', array('jquery'), false, true);
     }
 
     // enueueing sticky script
     if (get_theme_mod('creative_blog_sticky_menu', 0) == 1) {
-        wp_enqueue_script('stickyjs', get_template_directory_uri() . '/js/sticky/jquery.sticky' . $suffix . '.js', array('jquery'), false, true);
+        wp_enqueue_script('jquery-sticky', get_template_directory_uri() . '/js/sticky/jquery.sticky' . $suffix . '.js', array('jquery'), false, true);
     }
 
     // enqueueing magnific popup
     if ((get_theme_mod('creative_blog_featured_image_popup', 0) == 1) && has_post_format('image') && has_post_thumbnail()) {
-        wp_enqueue_script('magnific-popup', get_template_directory_uri() . '/js/magnific-popup/jquery.magnific-popup' . $suffix . '.js', array('jquery'), '1.0.0', true);
+        wp_enqueue_script('jquery-magnific-popup', get_template_directory_uri() . '/js/magnific-popup/jquery.magnific-popup' . $suffix . '.js', array('jquery'), '1.0.0', true);
         wp_enqueue_style('magnific-popup', get_template_directory_uri() . '/js/magnific-popup/magnific-popup' . $suffix . '.css');
     }
 
