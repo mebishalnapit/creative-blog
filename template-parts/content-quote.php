@@ -11,7 +11,6 @@
     
     <div class="quote-details">
         <?php echo creative_blog_quote_post_format_blockquote(); ?>
-        <cite><?php echo creative_blog_quote_post_format_cite(); ?></cite>
     </div>
 
     <?php if ('post' === get_post_type()) : ?>

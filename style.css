@@ -722,10 +722,12 @@ ol.children {
     font-size: 22px;
     border-left: 0;
     color: #fff;
+    margin-bottom: 0;
 }
-.format-quote .quote-details cite {
+.format-quote .quote-details cite, .format-quote .quote-details cite a {
     font-size: 14px;
     color: #fff;
+    float: right;
 }
 .format-quote .quote-details cite:before {
     font-family: "fontawesome";
