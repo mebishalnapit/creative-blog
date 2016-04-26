@@ -44,6 +44,7 @@ If you've translated this theme into your native language, then, feel free to se
 #### VERSION 0.7
 * Removed metabox toggle script for post format support
 * Default cite removed of user for quote post format
+* Font Awesome icons updated to version 4.6.1
 
 #### VERSION 0.6
 * Header top bar activate option removed
