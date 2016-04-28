@@ -350,6 +350,7 @@ ul#menu-social {
 .post, .search .page {
     border-bottom: 1px solid #0099ff;
     margin-bottom: 25px;
+    overflow: hidden;
 }
 .single .post, .single .page {
     border-bottom: 0;
@@ -498,7 +499,7 @@ input[type="tel"], input[type="number"] {
     padding: 10px;
     border: 1px solid #ccc;
 }
-input[type="submit"] {
+input[type="submit"], input[type="reset"] {
     background-color: #0099ff;
     border: 1px solid #0099ff;
     color: #fff;
@@ -1168,6 +1169,7 @@ li.comments-tab-widget img {
     .featured-image {
         float: none;
         text-align: center;
+        margin-right: 0;
     }
     ol.children {
         margin-left: 10px;
