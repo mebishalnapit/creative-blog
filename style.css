@@ -509,6 +509,7 @@ input[type="submit"], input[type="reset"] {
 }
 input[type="checkbox"], input[type="radio"] {
     vertical-align: top;
+    display: inline-block;
 }
 input[type="file"] {
     display: block;
@@ -582,7 +583,6 @@ ol.children {
     font-family: "fontawesome";
     content: "\f044";
     margin-right: 5px;
-    color: #0099ff;
 }
 .comment-author {
     color: #0099ff;
