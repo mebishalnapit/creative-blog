@@ -4,12 +4,12 @@
 jQuery(document).ready(function () {
 
     // search toggle
-    jQuery(".search-top").click(function () {
-        jQuery("#masthead .search-form-top").slideToggle('slow');
+    jQuery('.search-top').click(function () {
+        jQuery('#masthead .search-form-top').slideToggle('slow');
     });
 
     // scroll up function
-    jQuery("#scroll-up").hide();
+    jQuery('#scroll-up').hide();
     jQuery(function () {
         jQuery(window).scroll(function () {
             if (jQuery(this).scrollTop() > 1000) {
@@ -28,7 +28,7 @@ jQuery(document).ready(function () {
 
     // Setting for the responsive video using fitvids
     if (typeof jQuery.fn.fitVids !== 'undefined') {
-        jQuery(".fitvids-video").fitVids();
+        jQuery('.fitvids-video').fitVids();
     }
 
     // setting for the news ticker
@@ -42,7 +42,7 @@ jQuery(document).ready(function () {
             autostart: 1,
             pauseOnHover: 1,
             start: function () {
-                jQuery(".newsticker").css("visibility", "visible");
+                jQuery('.newsticker').css('visibility', 'visible');
             }
         });
     }
@@ -61,9 +61,9 @@ jQuery(document).ready(function () {
     if (typeof jQuery.fn.sticky !== 'undefined') {
         var wpAdminBar = jQuery('#wpadminbar');
         if (wpAdminBar.length) {
-            jQuery("#site-navigation").sticky({topSpacing: wpAdminBar.height()});
+            jQuery('#site-navigation').sticky({topSpacing: wpAdminBar.height()});
         } else {
-            jQuery("#site-navigation").sticky({topSpacing: 0});
+            jQuery('#site-navigation').sticky({topSpacing: 0});
         }
     }
 
