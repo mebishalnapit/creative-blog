@@ -367,12 +367,12 @@ ul#menu-social {
 .related-posts-main-title span {
     background: #0099ff;
     padding: 10px 20px 10px;
-    font-size: 24px;
     color: #fff;
     display: inline-block;
 }
 .related-posts-main-title {
     border-bottom: 2px solid #0099ff;
+    font-size: 24px;
 }
 .avatar {
     border-radius: 50%;
@@ -797,6 +797,7 @@ footer .site-info {
 .widget-title {
     border-bottom: 2px solid #0099ff;
     padding-bottom: 8px;
+    font-size: 24px;
 }
 .widget-title span:before {
     content: "\f005";
@@ -1185,5 +1186,8 @@ li.comments-tab-widget img {
     }
     .related-posts {
         width: 100%;
+    }
+    .widget-title, .related-posts-main-title {
+        font-size: 20px;
     }
 }
