@@ -17,3 +17,18 @@ input[type=checkbox]:before {
     content: '';
     margin: -3px 0 0 -4px;
 }
+li.customize-control-creative-blog-important-links p {
+    text-align: center;
+    padding: 10px;
+    background-color: #0099ff;
+}
+li.customize-control-creative-blog-important-links a {
+    color: #fff;
+}
+#accordion-section-creative_blog_important_links_section h3.accordion-section-title, #accordion-section-creative_blog_important_links_section h3.accordion-section-title:hover {
+    background-color: #0099ff !important;
+    color: #fff !important;
+}
+#accordion-section-creative_blog_important_links_section h3.accordion-section-title:after {
+    color: #fff !important;
+}

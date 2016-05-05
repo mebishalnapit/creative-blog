@@ -15,19 +15,40 @@ function creative_blog_customize_register($wp_customize) {
     $wp_customize->get_setting('blogdescription')->transport = 'postMessage';
     $wp_customize->get_setting('header_textcolor')->transport = 'postMessage';
 
-    // extending Customizer Class to add the donation link
-    class Creative_Blog_Donate_Link extends WP_Customize_Control {
+    // extending Customizer Class to add the theme important links
+    class Creative_Blog_Important_Links extends WP_Customize_Control {
 
-        public $type = "creative-blog-donate-link";
+        public $type = "creative-blog-important-links";
 
         public function render_content() {
+            $important_links = array(
+                'theme-info' => array(
+                    'link' => esc_url('http://napitwptech.com/themes/creative-blog/'),
+                    'text' => esc_html__('View Theme Info', 'creative-blog'),
+                ),
+                'documentation' => array(
+                    'link' => esc_url('http://napitwptech.com/themes/creative-blog/creative-blog-wordpress-theme-documentation/'),
+                    'text' => esc_html__('Theme Documentation', 'creative-blog'),
+                ),
+                'demo' => array(
+                    'link' => esc_url('http://demo.napitwptech.com/creative-blog/'),
+                    'text' => esc_html__('View Theme Demo', 'creative-blog'),
+                ),
+                'rating' => array(
+                    'link' => esc_url('http://wordpress.org/support/view/theme-reviews/creative-blog'),
+                    'text' => esc_html__('Rate This Theme', 'creative-blog'),
+                ),
+            );
+            foreach ($important_links as $important_link) {
+                echo '<p><a target="_blank" href="' . esc_url($important_link['link']) . '" >' . esc_attr($important_link['text']) . ' </a></p>';
+            }
             ?>
             <div style="text-align: center;background-color: #fff;padding: 10px;">
                 <strong><?php esc_attr_e('If you like our work. Buy us a beer.', 'creative-blog'); ?></strong>
-                <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
                     <input type="hidden" name="cmd" value="_s-xclick">
                     <input type="hidden" name="hosted_button_id" value="3NT8RH73FFM3L">
-                    <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+                    <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" alt="<?php esc_html_e('PayPal - The safer, easier way to pay online!', 'creative-blog'); ?>">
                     <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
                 </form>
             </div>
@@ -36,22 +57,22 @@ function creative_blog_customize_register($wp_customize) {
 
     }
 
-    // adding section for donation link
-    $wp_customize->add_section('creative_blog_donate_section', array(
-        'priority' => 1000,
-        'title' => esc_html__('Donate Now', 'creative-blog'),
+    // adding section for the theme important links
+    $wp_customize->add_section('creative_blog_important_links_section', array(
+        'priority' => 1,
+        'title' => esc_html__('Theme Important Links', 'creative-blog'),
     ));
 
-    // adding setting for donation link
-    $wp_customize->add_setting('creative_blog_donate', array(
+    // adding setting for the theme important links
+    $wp_customize->add_setting('creative_blog_important_links', array(
         'capability' => 'edit_theme_options',
-        'sanitize_callback' => 'creative_blog_donate_sanitize'
+        'sanitize_callback' => 'creative_blog_important_links_sanitize'
     ));
 
-    // adding control for donation link
-    $wp_customize->add_control(new Creative_Blog_Donate_Link($wp_customize, 'creative_blog_donate', array(
-        'section' => 'creative_blog_donate_section',
-        'setting' => 'creative_blog_donate'
+    // adding control for the theme important links
+    $wp_customize->add_control(new Creative_Blog_Important_Links($wp_customize, 'creative_blog_important_links', array(
+        'section' => 'creative_blog_important_links_section',
+        'setting' => 'creative_blog_important_links'
     )));
 
     // Start Of Header Options
@@ -521,7 +542,7 @@ function creative_blog_customize_register($wp_customize) {
     }
 
     // link sanitization
-    function creative_blog_donate_sanitize() {
+    function creative_blog_important_links_sanitize() {
         return false;
     }
 
