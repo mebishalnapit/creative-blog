@@ -1,9 +1,7 @@
 <?php
 /**
  * Sample implementation of the Custom Header feature.
- *
- * You can add an optional custom header image to header.php like so ...
- *
+ * 
  * @link http://codex.wordpress.org/Custom_Headers
  *
  * @package Creative Blog
@@ -47,7 +45,7 @@ if (!function_exists('creative_blog_header_style')) :
         ?>
         <style type="text/css">
         <?php
-        // Has the text been hidden?
+// Has the text been hidden?
         if (!display_header_text()) :
             ?>
                 .site-title,
@@ -56,7 +54,7 @@ if (!function_exists('creative_blog_header_style')) :
                     clip: rect(1px, 1px, 1px, 1px);
                 }
             <?php
-        // If the user has set a custom color for the text use that.
+// If the user has set a custom color for the text use that.
         else :
             ?>
                 .site-title a,
@@ -67,5 +65,7 @@ if (!function_exists('creative_blog_header_style')) :
         </style>
         <?php
     }
+
+
 
 endif; // creative_blog_header_style
