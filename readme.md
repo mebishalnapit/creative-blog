@@ -41,6 +41,9 @@ In this theme, we have added the Contact Page template so that you can make your
 If you've translated this theme into your native language, then, feel free to send the translation file to mebishalnapit@gmail.com and we will include it within the theme from next version update.
 
 ## CHANGELOG
+#### VERSION 0.9
+* Font Awesome icons updated to version 4.6.2
+
 #### VERSION 0.8
 * Magnific Popup updated to version 1.1.0
 * Theme important links added in customizer options
