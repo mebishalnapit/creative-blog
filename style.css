@@ -790,13 +790,12 @@ footer .site-info {
 }
 .widget-title span {
     background-color: #0099ff;
-    border-bottom: 1px solid #0099ff;
     color: #fff;
     padding: 5px 10px 5px;
+    display: inline-block;
 }
 .widget-title {
     border-bottom: 2px solid #0099ff;
-    padding-bottom: 8px;
     font-size: 24px;
 }
 .widget-title span:before {

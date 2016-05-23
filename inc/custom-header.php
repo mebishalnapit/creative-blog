@@ -66,6 +66,4 @@ if (!function_exists('creative_blog_header_style')) :
         <?php
     }
 
-
-
 endif; // creative_blog_header_style
