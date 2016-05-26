@@ -527,6 +527,24 @@ textarea {
     min-width: 100%;
     border: 1px solid #ccc;
 }
+input[type="text"],
+input[type="email"],
+input[type="url"],
+input[type="password"],
+input[type="search"],
+input[type="number"],
+input[type="tel"],
+input[type="range"],
+input[type="date"],
+input[type="month"],
+input[type="week"],
+input[type="time"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="color"],
+textarea {
+    color: #222;
+}
 
 /* hiding updated date */
 .entry-meta .updated {
