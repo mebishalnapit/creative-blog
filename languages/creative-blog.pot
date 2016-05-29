@@ -3,8 +3,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Creative Blog\n"
-"POT-Creation-Date: 2016-05-05 21:13+0545\n"
-"PO-Revision-Date: 2016-05-05 21:13+0545\n"
+"POT-Creation-Date: 2016-05-29 17:09+0545\n"
+"PO-Revision-Date: 2016-05-29 17:10+0545\n"
 "Last-Translator: \n"
 "Language-Team: Bishal Napit <mebishalnapit@gmail.com>\n"
 "Language: en\n"
@@ -651,6 +651,10 @@ msgstr ""
 
 #: template-parts/content-gallery.php:41
 msgid "Next"
+msgstr ""
+
+#: template-parts/content-link.php:13
+msgid "Link"
 msgstr ""
 
 #: template-parts/content-none.php:13
