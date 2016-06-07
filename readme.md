@@ -42,7 +42,7 @@ If you've translated this theme into your native language, then, feel free to se
 
 ## CHANGELOG
 #### VERSION 1.0
-* Font Awesome icons updated to version 4.6.2
+* Font Awesome icons updated to version 4.6.3
 
 #### VERSION 0.9
 * Styling fixes done for input types
