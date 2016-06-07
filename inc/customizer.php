@@ -34,6 +34,10 @@ function creative_blog_customize_register($wp_customize) {
                     'link' => esc_url('http://demo.napitwptech.com/creative-blog/'),
                     'text' => esc_html__('View Theme Demo', 'creative-blog'),
                 ),
+                'support' => array(
+                    'link' => esc_url('http://napitwptech.com/contact-us/'),
+                    'text' => esc_html__('Theme Support', 'creative-blog'),
+                ),
                 'rating' => array(
                     'link' => esc_url('http://wordpress.org/support/view/theme-reviews/creative-blog'),
                     'text' => esc_html__('Rate This Theme', 'creative-blog'),
