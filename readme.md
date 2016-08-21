@@ -41,6 +41,9 @@ All the available options of this theme can be used from Appearance > Customize.
 If you would like to contribute to the translations of this theme to your native language, then, you can visit this link: https://translate.wordpress.org/projects/wp-themes/creative-blog/ and then contribute to the translation.
 
 ## CHANGELOG
+#### VERSION 1.0.1
+* Bootstrap Framework updated to version 3.3.7
+
 #### VERSION 1.0
 * Font Awesome icons updated to version 4.6.3
 * Theme tags updated according to the new introduced theme tags.
