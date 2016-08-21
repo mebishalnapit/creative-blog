@@ -43,6 +43,7 @@ If you would like to contribute to the translations of this theme to your native
 == CHANGELOG ==
 = VERSION 1.0.1 =
 * Bootstrap Framework updated to version 3.3.7
+* Theme support forum link added in customizer options
 
 = VERSION 1.0 =
 * Font Awesome icons updated to version 4.6.3

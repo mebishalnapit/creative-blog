@@ -254,9 +254,9 @@ if (!function_exists('creative_blog_footer_copyright')) :
     function creative_blog_footer_copyright() {
         $site_link = '<a href="' . esc_url(home_url('/')) . '" title="' . esc_attr(get_bloginfo('name', 'display')) . '" ><span>' . get_bloginfo('name', 'display') . '</span></a>';
 
-        $wp_link = '<a href="http://wordpress.org" target="_blank" title="' . esc_attr__('WordPress', 'creative-blog') . '"><span>' . esc_html__('WordPress', 'creative-blog') . '</span></a>';
+        $wp_link = '<a href="' . esc_url('http://wordpress.org') . '" target="_blank" title="' . esc_attr__('WordPress', 'creative-blog') . '"><span>' . esc_html__('WordPress', 'creative-blog') . '</span></a>';
 
-        $my_link_name = '<a href="http://napitwptech.com" target="_blank" title="' . esc_attr__('Bishal Napit', 'creative-blog') . '"><span>' . esc_html__('Bishal Napit', 'creative-blog') . '</span></a>';
+        $my_link_name = '<a href="' . esc_url('http://napitwptech.com') . '" target="_blank" title="' . esc_attr__('Bishal Napit', 'creative-blog') . '"><span>' . esc_html__('Bishal Napit', 'creative-blog') . '</span></a>';
 
         $default_footer_value = sprintf(esc_html__('Copyright &copy; %1$s %2$s.', 'creative-blog'), date('Y'), $site_link) . ' ' . sprintf(esc_html__('Theme: %1$s by %2$s.', 'creative-blog'), esc_html__('Creative Blog', 'creative-blog'), $my_link_name) . ' ' . sprintf(esc_html__('Powered by %s.', 'creative-blog'), $wp_link);
 
