@@ -34,9 +34,13 @@ function creative_blog_customize_register($wp_customize) {
                     'link' => esc_url('http://demo.napitwptech.com/creative-blog/'),
                     'text' => esc_html__('View Theme Demo', 'creative-blog'),
                 ),
-                'support' => array(
+                'contact' => array(
                     'link' => esc_url('http://napitwptech.com/contact-us/'),
-                    'text' => esc_html__('Theme Support', 'creative-blog'),
+                    'text' => esc_html__('Contact Us', 'creative-blog'),
+                ),
+                'forum' => array(
+                    'link' => esc_url('http://support.napitwptech.com/forums/forum/creative-blog/'),
+                    'text' => esc_html__('Support Forum', 'creative-blog'),
                 ),
                 'rating' => array(
                     'link' => esc_url('http://wordpress.org/support/view/theme-reviews/creative-blog'),
