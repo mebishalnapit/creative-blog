@@ -3,8 +3,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Creative Blog\n"
-"POT-Creation-Date: 2016-08-21 10:30+0545\n"
-"PO-Revision-Date: 2016-08-21 10:30+0545\n"
+"POT-Creation-Date: 2016-08-25 20:07+0545\n"
+"PO-Revision-Date: 2016-08-25 20:07+0545\n"
 "Last-Translator: \n"
 "Language-Team: Bishal Napit <mebishalnapit@gmail.com>\n"
 "Language: en\n"
@@ -191,171 +191,163 @@ msgstr ""
 msgid "Rate This Theme"
 msgstr ""
 
-#: inc/customizer.php:55
-msgid "If you like our work. Buy us a beer."
-msgstr ""
-
-#: inc/customizer.php:59
-msgid "PayPal - The safer, easier way to pay online!"
-msgstr ""
-
-#: inc/customizer.php:71
+#: inc/customizer.php:60
 msgid "Theme Important Links"
 msgstr ""
 
-#: inc/customizer.php:89
+#: inc/customizer.php:78
 msgid ""
 "Change the Header Settings from here as you want to best suit your need."
 msgstr ""
 
-#: inc/customizer.php:91
+#: inc/customizer.php:80
 msgid "Header Options"
 msgstr ""
 
-#: inc/customizer.php:97
+#: inc/customizer.php:86
 msgid "Show Date"
 msgstr ""
 
-#: inc/customizer.php:109
+#: inc/customizer.php:98
 msgid "Check to show the date in header area."
 msgstr ""
 
-#: inc/customizer.php:117
+#: inc/customizer.php:106
 msgid "Breaking News"
 msgstr ""
 
-#: inc/customizer.php:129
+#: inc/customizer.php:118
 msgid "Check to enable the breaking news section."
 msgstr ""
 
-#: inc/customizer.php:137
+#: inc/customizer.php:126
 msgid "Sticky Menu"
 msgstr ""
 
-#: inc/customizer.php:149
+#: inc/customizer.php:138
 msgid ""
 "Check to enable the sticky menu feature. Note: This feature is only applied "
 "to the primary menu."
 msgstr ""
 
-#: inc/customizer.php:157 inc/extras.php:211
+#: inc/customizer.php:146 inc/extras.php:211
 msgid "Random Post"
 msgstr ""
 
-#: inc/customizer.php:169
+#: inc/customizer.php:158
 msgid ""
 "Check to display the random post icon in the primary menu. Note: Only works "
 "when you have set the primary menu manually."
 msgstr ""
 
-#: inc/customizer.php:177
+#: inc/customizer.php:166
 msgid "Search Icon"
 msgstr ""
 
-#: inc/customizer.php:189
+#: inc/customizer.php:178
 msgid ""
 "Check to display the search icon in the primary menu. Note: Only works when "
 "you have set the primary menu manually."
 msgstr ""
 
-#: inc/customizer.php:197
+#: inc/customizer.php:186
 msgid ""
 "Change the Design Settings from here as you want to best suit your need."
 msgstr ""
 
-#: inc/customizer.php:199
+#: inc/customizer.php:188
 msgid "Design Options"
 msgstr ""
 
-#: inc/customizer.php:205
+#: inc/customizer.php:194
 msgid "Site Layout"
 msgstr ""
 
-#: inc/customizer.php:217
+#: inc/customizer.php:206
 msgid "Choose your site layout. The change is reflected in the whole site."
 msgstr ""
 
-#: inc/customizer.php:219
+#: inc/customizer.php:208
 msgid "Boxed Layout"
 msgstr ""
 
-#: inc/customizer.php:220
+#: inc/customizer.php:209
 msgid "Wide Layout"
 msgstr ""
 
-#: inc/customizer.php:267
+#: inc/customizer.php:256
 msgid "Default layout"
 msgstr ""
 
-#: inc/customizer.php:279
+#: inc/customizer.php:268
 msgid ""
 "Select default layout. This layout will be reflected in whole site archives, "
 "categories, search page etc. The layout for a single post and page can be "
 "controlled from the other options available in this theme."
 msgstr ""
 
-#: inc/customizer.php:293
+#: inc/customizer.php:282
 msgid "Default layout for pages only"
 msgstr ""
 
-#: inc/customizer.php:305
+#: inc/customizer.php:294
 msgid ""
 "Select default layout for pages. This layout will be reflected in all pages "
 "unless unique layout is set for the specific page."
 msgstr ""
 
-#: inc/customizer.php:319
+#: inc/customizer.php:308
 msgid "Default layout for single posts only"
 msgstr ""
 
-#: inc/customizer.php:331
+#: inc/customizer.php:320
 msgid ""
 "Select default layout for single posts. This layout will be reflected in all "
 "single posts unless unique layout is set for the specific post."
 msgstr ""
 
-#: inc/customizer.php:345
+#: inc/customizer.php:334
 msgid "Custom CSS"
 msgstr ""
 
-#: inc/customizer.php:358
+#: inc/customizer.php:347
 msgid "Write your custom css and design live."
 msgstr ""
 
-#: inc/customizer.php:366
+#: inc/customizer.php:355
 msgid ""
 "Change the Additional Settings from here as you want to best suite your site."
 msgstr ""
 
-#: inc/customizer.php:368
+#: inc/customizer.php:357
 msgid "Additional Options"
 msgstr ""
 
-#: inc/customizer.php:374
+#: inc/customizer.php:363
 msgid "Related Posts"
 msgstr ""
 
-#: inc/customizer.php:386
+#: inc/customizer.php:375
 msgid "Check to activate the related posts."
 msgstr ""
 
-#: inc/customizer.php:399
+#: inc/customizer.php:388
 msgid "Related Posts To Be Shown As:"
 msgstr ""
 
-#: inc/customizer.php:403
+#: inc/customizer.php:392
 msgid "Related Posts By Categories"
 msgstr ""
 
-#: inc/customizer.php:404
+#: inc/customizer.php:393
 msgid "Related Posts By Tags"
 msgstr ""
 
-#: inc/customizer.php:411
+#: inc/customizer.php:400
 msgid "Image Lightbox"
 msgstr ""
 
-#: inc/customizer.php:423
+#: inc/customizer.php:412
 msgid ""
 "Check to enable the lightbox feature for the featured images in single post "
 "page. Note: the post should be of image post format to support this feature, "
@@ -363,11 +355,11 @@ msgid ""
 "post format is choosen."
 msgstr ""
 
-#: inc/customizer.php:430
+#: inc/customizer.php:419
 msgid "Social Links In Author Bio"
 msgstr ""
 
-#: inc/customizer.php:442
+#: inc/customizer.php:431
 msgid ""
 "Check to enable the social links in the Author Bio section. For this to "
 "work, you need to add the URL of your social sites in the profile section. "
@@ -375,30 +367,30 @@ msgid ""
 "feature."
 msgstr ""
 
-#: inc/customizer.php:450
+#: inc/customizer.php:439
 msgid "Category Color Options"
 msgstr ""
 
-#: inc/customizer.php:452
+#: inc/customizer.php:441
 msgid ""
 "Change the color of each category items as you want to best suit your "
 "requirement."
 msgstr ""
 
-#: inc/customizer.php:457
+#: inc/customizer.php:446
 msgid "Category Color Settings"
 msgstr ""
 
-#: inc/customizer.php:481
+#: inc/customizer.php:470
 #, php-format
 msgid "%s"
 msgstr ""
 
-#: inc/customizer.php:499
+#: inc/customizer.php:488
 msgid "Check to enable the header image to link back to the home page."
 msgstr ""
 
-#: inc/customizer.php:513
+#: inc/customizer.php:502
 msgid "Primary Color"
 msgstr ""
 
