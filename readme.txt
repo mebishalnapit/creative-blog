@@ -41,6 +41,9 @@ Contact Page: In this theme, we have added the Contact Page template so that you
 If you would like to contribute to the translations of this theme to your native language, then, you can visit this link: https://translate.wordpress.org/projects/wp-themes/creative-blog/ and then contribute to the translation.
 
 == CHANGELOG ==
+= VERSION 1.0.2 =
+* Footer credit link has been updated
+
 = VERSION 1.0.1 =
 * Bootstrap Framework updated to version 3.3.7
 * Theme support forum link added in customizer options
