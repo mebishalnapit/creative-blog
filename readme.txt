@@ -43,6 +43,7 @@ If you would like to contribute to the translations of this theme to your native
 == CHANGELOG ==
 = VERSION 1.0.2 =
 * Footer credit link has been updated
+* Font Awesome icons updated to version 4.7.0
 
 = VERSION 1.0.1 =
 * Bootstrap Framework updated to version 3.3.7
