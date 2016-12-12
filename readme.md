@@ -3,20 +3,20 @@
 
 ## COPYRIGHT AND LICENSE
 #### External resources linked to the theme.
-* Open Sans by Steve Matteson https://www.google.com/fonts/specimen/Open+Sans  
+* Open Sans by Steve Matteson https://www.google.com/fonts/specimen/Open+Sans
   Apache License, version 2.0
 
 #### Resources packed within the theme.
-* Images in the screenshot is from http://pixabay.com/. License: CC0 Public Domain  
-  Links: https://pixabay.com/en/hike-hikers-scene-climb-boyfriend-863454/  
-         https://pixabay.com/en/gravel-road-lady-walking-road-1031726/  
-         https://pixabay.com/en/studio-portrait-woman-face-model-660806/  
-         https://pixabay.com/en/guess-attic-girl-woman-pretty-hair-837156/  
-         https://pixabay.com/en/girls-girl-with-a-red-scarf-1107329/  
-         https://pixabay.com/en/mountain-bike-dirt-road-wet-1149074/  
-         https://pixabay.com/en/hiking-wlaking-hillwalking-rough-1149737/  
+* Images in the screenshot is from http://pixabay.com/. License: CC0 Public Domain
+  Links: https://pixabay.com/en/hike-hikers-scene-climb-boyfriend-863454/
+         https://pixabay.com/en/gravel-road-lady-walking-road-1031726/
+         https://pixabay.com/en/studio-portrait-woman-face-model-660806/
+         https://pixabay.com/en/guess-attic-girl-woman-pretty-hair-837156/
+         https://pixabay.com/en/girls-girl-with-a-red-scarf-1107329/
+         https://pixabay.com/en/mountain-bike-dirt-road-wet-1149074/
+         https://pixabay.com/en/hiking-wlaking-hillwalking-rough-1149737/
 * Bootstrap Framework by Mark Otto and Jacob Thornton http://getbootstrap.com/ | Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
-* Font Awesome by Dave Gandy http://fortawesome.github.io/Font-Awesome/  
+* Font Awesome by Dave Gandy http://fortawesome.github.io/Font-Awesome/
   SIL OFL 1.1 http://scripts.sil.org/OFL.
 * HTML5 Shiv by Alexander Farkas, Jonathan Neal | MIT/GPL2 Licensed
 * FitVids by Chris Coyier and Paravel | WTFPL Licensed
@@ -27,7 +27,7 @@
 
 All other resources and theme elements are licensed under the [GNU GPL](http://www.gnu.org/licenses/gpl-3.0.txt), version 3 or later.
 
-Creative Blog WordPress Theme, Copyright 2015/16 Bishal Napit  
+Creative Blog WordPress Theme, Copyright 2015/16 Bishal Napit
 Creative Blog is distributed under the terms of the GNU GPL
 
 ## THEME USAGE
@@ -41,6 +41,9 @@ All the available options of this theme can be used from Appearance > Customize.
 If you would like to contribute to the translations of this theme to your native language, then, you can visit this link: https://translate.wordpress.org/projects/wp-themes/creative-blog/ and then contribute to the translation.
 
 ## CHANGELOG
+#### VERSION 1.0.3
+* Migrated the Custom CSS code added in theme options to Additional CSS section introduced in WordPress 4.7
+
 #### VERSION 1.0.2
 * Footer credit link has been updated
 * Font Awesome icons updated to version 4.7.0
