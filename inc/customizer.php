@@ -23,27 +23,27 @@ function creative_blog_customize_register($wp_customize) {
 		public function render_content() {
 			$important_links = array(
 				'theme-info' => array(
-					'link' => esc_url('http://napitwptech.com/themes/creative-blog/'),
+					'link' => esc_url('https://napitwptech.com/themes/creative-blog/'),
 					'text' => esc_html__('View Theme Info', 'creative-blog'),
 				),
 				'documentation' => array(
-					'link' => esc_url('http://napitwptech.com/themes/creative-blog/creative-blog-wordpress-theme-documentation/'),
+					'link' => esc_url('https://napitwptech.com/themes/creative-blog/creative-blog-wordpress-theme-documentation/'),
 					'text' => esc_html__('Theme Documentation', 'creative-blog'),
 				),
 				'demo' => array(
-					'link' => esc_url('http://demo.napitwptech.com/creative-blog/'),
+					'link' => esc_url('https://demo.napitwptech.com/creative-blog/'),
 					'text' => esc_html__('View Theme Demo', 'creative-blog'),
 				),
 				'contact' => array(
-					'link' => esc_url('http://napitwptech.com/contact-us/'),
+					'link' => esc_url('https://napitwptech.com/contact-us/'),
 					'text' => esc_html__('Contact Us', 'creative-blog'),
 				),
 				'forum' => array(
-					'link' => esc_url('http://support.napitwptech.com/forums/forum/creative-blog/'),
+					'link' => esc_url('https://support.napitwptech.com/forums/forum/creative-blog/'),
 					'text' => esc_html__('Support Forum', 'creative-blog'),
 				),
 				'rating' => array(
-					'link' => esc_url('http://wordpress.org/support/view/theme-reviews/creative-blog'),
+					'link' => esc_url('https://wordpress.org/support/theme/creative-blog/reviews/'),
 					'text' => esc_html__('Rate This Theme', 'creative-blog'),
 				),
 			);
