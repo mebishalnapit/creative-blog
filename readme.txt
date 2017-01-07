@@ -23,6 +23,8 @@ Resources packed within the theme.
 * JQuery Advanced News Ticker by Valentin Ledrapier(risq) | GPL Licensed
 * Magnific-Popup by Dmitry Semenov | MIT Licensed
 * Stickyjs by Anthony Garand | MIT Licensed
+* Theia Sticky Sidebar by WeCodePixels | MIT Licensed
+* ResizeSensor by Marc J. Schmidt | MIT Licensed
 * Other custom js files are our own creation and is licensed under the same license as this theme.
 
 All other resources and theme elements are licensed under the [GNU GPL](http://www.gnu.org/licenses/gpl-3.0.txt), version 3 or later.
@@ -41,6 +43,9 @@ Contact Page: In this theme, we have added the Contact Page template so that you
 If you would like to contribute to the translations of this theme to your native language, then, you can visit this link: https://translate.wordpress.org/projects/wp-themes/creative-blog/ and then contribute to the translation.
 
 == CHANGELOG ==
+= VERSION 1.0.4 =
+* Added the option to make the content and sidebar area sticky
+
 = VERSION 1.0.3 =
 * Migrated the Custom CSS code added in theme options to Additional CSS section introduced in WordPress 4.7
 

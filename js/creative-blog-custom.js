@@ -67,4 +67,11 @@ jQuery(document).ready(function () {
 		}
 	}
 
+	// setting for sticky sidebar and content area
+	if ((typeof jQuery.fn.theiaStickySidebar !== 'undefined') && (typeof ResizeSensor !== 'undefined')) {
+		jQuery('#primary, #secondary').theiaStickySidebar({
+			additionalMarginTop: 40
+		});
+	}
+
 });
