@@ -45,6 +45,7 @@ If you would like to contribute to the translations of this theme to your native
 ## CHANGELOG
 #### VERSION 1.0.4
 * Added the option to make the content and sidebar area sticky
+* Added support for Yoast Breadcrumbs and Breadcrumb NavXT plugin
 
 #### VERSION 1.0.3
 * Migrated the Custom CSS code added in theme options to Additional CSS section introduced in WordPress 4.7

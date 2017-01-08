@@ -1103,6 +1103,11 @@ li.comments-tab-widget img {
 	color: #3b5998;
 }
 
+/* breadcrumbs CSS code */
+.breadcrumbs-area {
+	padding-top: 20px;
+}
+
 /* media queries */
 @media screen and (max-width: 1200px) {
 	.boxed #page {
