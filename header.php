@@ -123,11 +123,9 @@
 			<?php if (!is_front_page() && function_exists('bcn_display')) : ?>
 				<div class="breadcrumbs-area">
 					<div class="container">
-						<?php if (function_exists('bcn_display')) { ?>
-							<div class="breadcrumbs col-md-12" typeof="BreadcrumbList" vocab="https://schema.org/">
-								<?php bcn_display(); ?>
-							</div>
-						<?php } ?>
+						<div class="breadcrumbs col-md-12" typeof="BreadcrumbList" vocab="https://schema.org/">
+							<?php bcn_display(); ?>
+						</div>
 					</div>
 				</div>
 			<?php endif; ?>
