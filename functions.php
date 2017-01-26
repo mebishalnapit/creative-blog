@@ -94,6 +94,9 @@ if (!function_exists('creative_blog_setup')) :
 			'flex-width' => true,
 			'flex-height' => true,
 		));
+
+		// Add theme support for WooCommerce plugin
+		add_theme_support('woocommerce');
 	}
 
 endif; // creative_blog_setup

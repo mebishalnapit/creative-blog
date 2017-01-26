@@ -44,6 +44,7 @@ If you would like to contribute to the translations of this theme to your native
 
 == CHANGELOG ==
 = VERSION 1.0.5 =
+* Theme is now WooCommerce plugin compatible
 
 = VERSION 1.0.4 =
 * Added the option to make the content and sidebar area sticky
