@@ -13,7 +13,10 @@ Tags: one-column, two-columns, right-sidebar, left-sidebar, custom-header, flexi
 Creative Blog is based on Underscores http://underscores.me/, (C) 2012-2015 Automattic, Inc.
 Underscores is distributed under the terms of the GNU GPL v2 or later.
 */
-/* global settings */
+
+/*--------------------------------------------------------------
+# Global Settings
+--------------------------------------------------------------*/
 body {
 	font-family: 'Open Sans', Arial;
 	background: #ccc;
@@ -44,7 +47,9 @@ embed, iframe, object {
 	max-width: 100%;
 }
 
-/* site-wide setting */
+/*--------------------------------------------------------------
+# Site Wide Setting
+--------------------------------------------------------------*/
 #primary img, #secondary img {
 	max-width: 100%;
 	height: auto;
@@ -54,7 +59,9 @@ embed, iframe, object {
 	padding-bottom: 40px;
 }
 
-/* infinite scroll support CSS */
+/*--------------------------------------------------------------
+# Jetpack Infinite Scroll Support CSS
+--------------------------------------------------------------*/
 /* Globally hidden elements when Infinite Scroll is supported and in use. */
 .infinite-scroll .post-nav, /* Older / Newer Posts Navigation (always hidden) */
 .infinite-scroll.neverending .site-footer { /* Theme Footer (when set to scrolling) */
@@ -65,17 +72,23 @@ embed, iframe, object {
 	display: block;
 }
 
-/* setting background color for page */
+/*--------------------------------------------------------------
+# Setting Background Color For Page
+--------------------------------------------------------------*/
 #page {
 	background-color: #fff;
 }
 
-/* font family */
+/*--------------------------------------------------------------
+# Font Family
+--------------------------------------------------------------*/
 .site-title, .site-description, .widget-title, p, blockquote, h1, h2, h3, h4, h5, h6, .comments-title {
 	font-family: 'Open Sans', Arial;
 }
 
-/* layout setting */
+/*--------------------------------------------------------------
+# Layout Setting
+--------------------------------------------------------------*/
 .boxed #page {
 	max-width: 1200px;
 	margin: 2% auto;
@@ -94,7 +107,9 @@ embed, iframe, object {
 	float: right;
 }
 
-/* header settings */
+/*--------------------------------------------------------------
+# Header Settings
+--------------------------------------------------------------*/
 .site-title a {
 	font-size: 48px;
 }
@@ -186,7 +201,9 @@ ul.newsticker {
 	visibility: hidden;
 }
 
-/* pagination */
+/*--------------------------------------------------------------
+# Pagination
+--------------------------------------------------------------*/
 .single-post-navigations .previous .fa {
 	margin-right: 5px;
 }
@@ -194,7 +211,9 @@ ul.newsticker {
 	margin-left: 5px;
 }
 
-/* search box */
+/*--------------------------------------------------------------
+# Search Box
+--------------------------------------------------------------*/
 .search-field {
 	border: 1px solid #0099ff;
 	padding: 9px;
@@ -209,7 +228,9 @@ ul.newsticker {
 	border: none;
 }
 
-/* social links settings */
+/*--------------------------------------------------------------
+# Social Links Settings
+--------------------------------------------------------------*/
 #menu-social li a:before {
 	display: inline-block;
 	padding: 0 10px;
@@ -339,7 +360,9 @@ ul#menu-social {
 	color: #2a96ff;
 }
 
-/* content */
+/*--------------------------------------------------------------
+# Content
+--------------------------------------------------------------*/
 .post .entry-content, .search .entry-content {
 	padding-bottom: 30px;
 }
@@ -399,7 +422,9 @@ ul#menu-social {
 	padding: 0;
 }
 
-/* sticky post */
+/*--------------------------------------------------------------
+# Sticky Post
+--------------------------------------------------------------*/
 .sticky .entry-title:after {
 	font-family: "fontawesome";
 	float: right;
@@ -451,7 +476,9 @@ ul#menu-social {
 	border: 1px solid #fff;
 }
 
-/* meta */
+/*--------------------------------------------------------------
+# Post Meta
+--------------------------------------------------------------*/
 .entry-meta span {
 	padding-left: 10px;
 }
@@ -490,7 +517,9 @@ ul#menu-social {
 	color: #0099ff;
 }
 
-/* input types styling and textarea setting */
+/*--------------------------------------------------------------
+# Input Types Styling And Textarea Setting
+--------------------------------------------------------------*/
 input[type="text"], input[type="email"], input[type="url"], input[type="password"] {
 	width: 100%;
 	padding: 10px;
@@ -547,7 +576,9 @@ textarea {
 	color: #222;
 }
 
-/* hiding updated date */
+/*--------------------------------------------------------------
+# Hiding Updated Date
+--------------------------------------------------------------*/
 .entry-meta .updated {
 	display: none;
 }
@@ -555,7 +586,9 @@ textarea {
 	display: inline-block;
 }
 
-/* comments */
+/*--------------------------------------------------------------
+# Comments CSS
+--------------------------------------------------------------*/
 .comment-form label {
 	display: block;
 }
@@ -636,7 +669,9 @@ ol.children {
 	margin: 30px 0 30px;
 }
 
-/* author bio */
+/*--------------------------------------------------------------
+# Author Bio Box CSS
+--------------------------------------------------------------*/
 .author-box {
 	border: 1px dotted #0099ff;
 	padding: 10px;
@@ -659,7 +694,9 @@ ol.children {
 	font-style: italic;
 }
 
-/* featured image */
+/*--------------------------------------------------------------
+# Featured Image CSS
+--------------------------------------------------------------*/
 .featured-image {
 	float: left;
 	margin-bottom: 20px;
@@ -675,7 +712,9 @@ ol.children {
 	margin-right: 0;
 }
 
-/* post format */
+/*--------------------------------------------------------------
+# Post Format CSS
+--------------------------------------------------------------*/
 .format-gallery #gallery-carousel {
 	margin-bottom: 20px;
 }
@@ -767,7 +806,9 @@ ol.children {
 	margin-right: -18px;
 }
 
-/* Scroll Up */
+/*--------------------------------------------------------------
+# Scroll Up Button CSS
+--------------------------------------------------------------*/
 a#scroll-up {
 	bottom: 20px;
 	position: fixed;
@@ -788,7 +829,9 @@ a#scroll-up:hover {
 	filter: alpha(opacity=100); /* For IE8 and earlier */
 }
 
-/* footer styling */
+/*--------------------------------------------------------------
+# Footer Styling
+--------------------------------------------------------------*/
 footer .site-info {
 	background-color: #222;
 }
@@ -803,7 +846,9 @@ footer .site-info {
 	padding-bottom: 20px;
 }
 
-/* widgets */
+/*--------------------------------------------------------------
+# Widgets CSS
+--------------------------------------------------------------*/
 .widget {
 	padding-bottom: 20px;
 }
@@ -975,7 +1020,9 @@ li.comments-tab-widget img {
 	border-top: 1px solid #0099ff;
 }
 
-/* JetPack subscription form */
+/*--------------------------------------------------------------
+# JetPack Subscription Form CSS
+--------------------------------------------------------------*/
 #subscribe-email input {
 	width: 100% !important;
 	padding: 10px !important;
@@ -984,12 +1031,16 @@ li.comments-tab-widget img {
 	color: #000;
 }
 
-/* GitHub Gist table */
+/*--------------------------------------------------------------
+# GitHub Gist Table CSS
+--------------------------------------------------------------*/
 .gist tr, .gist td, .gist th {
 	border: none;
 }
 
-/* Accessibility */
+/*--------------------------------------------------------------
+# Accessibility CSS
+--------------------------------------------------------------*/
 .screen-reader-text {
 	clip: rect(1px, 1px, 1px, 1px);
 	position: absolute !important;
@@ -1016,7 +1067,9 @@ li.comments-tab-widget img {
 	z-index: 100000; /* Above WP toolbar. */
 }
 
-/* WordPress default classess */
+/*--------------------------------------------------------------
+# WordPress Default Classess
+--------------------------------------------------------------*/
 .alignleft {
 	display: inline;
 	float: left;
@@ -1054,7 +1107,9 @@ li.comments-tab-widget img {
 	font-style: italic;
 }
 
-/* default gallery styling */
+/*--------------------------------------------------------------
+# WordPress Default Gallery CSS
+--------------------------------------------------------------*/
 .gallery-item {
 	padding: 1%;
 	text-align: center;
@@ -1087,7 +1142,9 @@ li.comments-tab-widget img {
 	width: 11.11%;
 }
 
-/* author bio social links */
+/*--------------------------------------------------------------
+# Author Bio Social Links CSS
+--------------------------------------------------------------*/
 .author-box .fa {
 	font-size: 22px;
 	vertical-align: middle;
@@ -1103,12 +1160,16 @@ li.comments-tab-widget img {
 	color: #3b5998;
 }
 
-/* breadcrumbs CSS code */
+/*--------------------------------------------------------------
+# Breadcrumbs CSS
+--------------------------------------------------------------*/
 .breadcrumbs-area {
 	padding-top: 20px;
 }
 
-/* media queries */
+/*--------------------------------------------------------------
+# Media Queries
+--------------------------------------------------------------*/
 @media screen and (max-width: 1200px) {
 	.boxed #page {
 		max-width: 96%;

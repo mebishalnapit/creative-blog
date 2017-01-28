@@ -738,6 +738,8 @@ add_action('after_setup_theme', 'creative_blog_custom_css_migrate');
 // Remove WooCommerce default wrapper
 remove_action('woocommerce_before_main_content', 'woocommerce_output_content_wrapper', 10);
 remove_action('woocommerce_after_main_content', 'woocommerce_output_content_wrapper_end', 10);
+// Remove WooCommerce default sidebar
+remove_action('woocommerce_sidebar', 'woocommerce_get_sidebar', 10);
 
 // Add theme wrapper for WooCommerce pages
 add_action('woocommerce_before_main_content', 'creative_blog_wrapper_start', 10);
@@ -748,5 +750,6 @@ function creative_blog_wrapper_start() {
 }
 
 function creative_blog_wrapper_end() {
-	echo '</main></div>';
+	echo '</main></div><!-- #primary -->';
+	creative_blog_sidebar_select();
 }
