@@ -40,3 +40,14 @@ function creative_blog_infinite_scroll_render() {
 }
 
 // end function creative_blog_infinite_scroll_render
+
+/**
+ * Enables Jetpack's Infinite Scroll in search pages, archive pages and blog pages and disables it in WooCommerce product as well as WooCommerce archive pages
+ *
+ * @return bool
+ */
+function creative_blog_jetpack_infinite_scroll_supported() {
+	return current_theme_supports('infinite-scroll') && (is_home() || is_archive() || is_search()) && !(is_post_type_archive('product') || is_tax('product_cat') || is_tax('product_tag'));
+}
+
+add_filter('infinite_scroll_archive_supported', 'creative_blog_jetpack_infinite_scroll_supported');
