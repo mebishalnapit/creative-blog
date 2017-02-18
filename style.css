@@ -200,7 +200,7 @@ h6,
 }
 
 .header-left-area .newsticker {
-	display: inline-block;
+	display: none;
 	list-style: none outside none;
 	margin-bottom: 0;
 }

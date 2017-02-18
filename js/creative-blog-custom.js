@@ -43,6 +43,7 @@ jQuery(document).ready(function () {
 			pauseOnHover: 1,
 			start: function () {
 				jQuery('.newsticker').css('visibility', 'visible');
+				jQuery('.newsticker').css('display', 'inline-block');
 			}
 		});
 	}
