@@ -100,6 +100,24 @@ function creative_blog_customize_register($wp_customize) {
 		'settings' => 'creative_blog_date_display'
 	));
 
+	// date in header display type
+	$wp_customize->add_setting('creative_blog_date_display_type', array(
+		'default' => 'theme_default',
+		'capability' => 'edit_theme_options',
+		'sanitize_callback' => 'creative_blog_radio_select_sanitize'
+	));
+
+	$wp_customize->add_control('creative_blog_date_display_type', array(
+		'type' => 'radio',
+		'label' => esc_html__('Date in header display type:', 'creative-blog'),
+		'choices' => array(
+			'theme_default' => esc_html__('Theme Default Setting', 'creative-blog'),
+			'wordpress_date_setting' => esc_html__('WordPress General Date Setting', 'creative-blog'),
+		),
+		'section' => 'creative_blog_date_display_section',
+		'settings' => 'creative_blog_date_display_type'
+	));
+
 	// breaking news enable/disable
 	$wp_customize->add_section('creative_blog_breaking_news_section', array(
 		'priority' => 3,
