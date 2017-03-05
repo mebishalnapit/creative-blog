@@ -112,9 +112,14 @@
 				<div class="creative-blog-header-image">
 					<?php if (get_theme_mod('creative_blog_header_image_link', 0) == 1) { ?>
 						<a href="<?php echo esc_url(home_url('/')); ?>" rel="home">
-						<?php } ?>
-						<img src="<?php header_image(); ?>" width="<?php echo esc_attr(get_custom_header()->width); ?>" height="<?php echo esc_attr(get_custom_header()->height); ?>" alt="<?php echo esc_attr(get_bloginfo('name', 'display')); ?>">
-						<?php if (get_theme_mod('creative_blog_header_image_link', 0) == 1) { ?>
+							<?php
+						}
+
+						// display the header image
+						the_header_image_tag();
+
+						if (get_theme_mod('creative_blog_header_image_link', 0) == 1) {
+							?>
 						</a>
 					<?php } ?>
 				</div>
