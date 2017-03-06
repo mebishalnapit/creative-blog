@@ -75,7 +75,7 @@
 
 						<div class="navbar-header">
 							<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-								<span class="sr-only"><?php esc_html__('Toggle navigation', 'creative-blog'); ?></span>
+								<span class="sr-only"><?php esc_html_e('Toggle navigation', 'creative-blog'); ?></span>
 								<span class="icon-bar"></span>
 								<span class="icon-bar"></span>
 								<span class="icon-bar"></span>
