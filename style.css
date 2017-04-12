@@ -97,6 +97,10 @@ object {
 	border: 0;
 }
 
+.woocommerce .flex-viewport figure {
+	max-width: none;
+}
+
 /*--------------------------------------------------------------
 # Setting Background Color For Page
 --------------------------------------------------------------*/
