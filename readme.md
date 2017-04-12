@@ -45,6 +45,7 @@ If you would like to contribute to the translations of this theme to your native
 ## CHANGELOG
 #### VERSION TBD
 * Remove use of deprecated constant HEADER_TEXTCOLOR
+* Add support for WooCommerce 2.7's new gallery feature
 
 #### VERSION 1.0.6
 * Option added to display the date in header from WordPress date setting
