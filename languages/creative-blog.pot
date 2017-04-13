@@ -3,8 +3,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Creative Blog\n"
-"POT-Creation-Date: 2017-02-26 08:19+0545\n"
-"PO-Revision-Date: 2017-02-26 08:20+0545\n"
+"POT-Creation-Date: 2017-04-13 06:26+0545\n"
+"PO-Revision-Date: 2017-04-13 06:27+0545\n"
 "Last-Translator: \n"
 "Language-Team: Bishal Napit <mebishalnapit@gmail.com>\n"
 "Language: en\n"
@@ -61,100 +61,100 @@ msgstr ""
 msgid "Social Menu"
 msgstr ""
 
-#: functions.php:172 inc/meta-boxes.php:32
+#: functions.php:175 inc/meta-boxes.php:32
 msgid "Right Sidebar"
 msgstr ""
 
-#: functions.php:174
+#: functions.php:177
 msgid "Display your widgets in the Right Sidebar Area"
 msgstr ""
 
-#: functions.php:182 inc/meta-boxes.php:37
+#: functions.php:185 inc/meta-boxes.php:37
 msgid "Left Sidebar"
 msgstr ""
 
-#: functions.php:184
+#: functions.php:187
 msgid "Display your widgets in the Left Sidebar Area"
 msgstr ""
 
-#: functions.php:192
+#: functions.php:195
 msgid "Header Sidebar"
 msgstr ""
 
-#: functions.php:194
+#: functions.php:197
 msgid "Display your widgets in the Header Sidebar Area"
 msgstr ""
 
-#: functions.php:202
+#: functions.php:205
 msgid "Content Top Sidebar"
 msgstr ""
 
-#: functions.php:204
+#: functions.php:207
 msgid "Display your widgets in the Content Top Sidebar Area"
 msgstr ""
 
-#: functions.php:212
+#: functions.php:215
 msgid "Content Bottom Sidebar"
 msgstr ""
 
-#: functions.php:214
+#: functions.php:217
 msgid "Display your widgets in the Content Bottom Sidebar Area"
 msgstr ""
 
-#: functions.php:222
+#: functions.php:225
 msgid "404 Sidebar"
 msgstr ""
 
-#: functions.php:224
+#: functions.php:227
 msgid "Display your widgets in the 404 Error Page Sidebar Area"
 msgstr ""
 
-#: functions.php:232
+#: functions.php:235
 msgid "Contact Sidebar"
 msgstr ""
 
-#: functions.php:234
+#: functions.php:237
 msgid "Display your widgets in the Contact Page Sidebar Area"
 msgstr ""
 
-#: functions.php:242
+#: functions.php:245
 msgid "Footer Sidebar One"
 msgstr ""
 
-#: functions.php:244
+#: functions.php:247
 msgid "Display your widgets in the footer sidebar area one."
 msgstr ""
 
-#: functions.php:252
+#: functions.php:255
 msgid "Footer Sidebar Two"
 msgstr ""
 
-#: functions.php:254
+#: functions.php:257
 msgid "Display your widgets in the footer sidebar area two."
 msgstr ""
 
-#: functions.php:262
+#: functions.php:265
 msgid "Footer Sidebar Three"
 msgstr ""
 
-#: functions.php:264
+#: functions.php:267
 msgid "Display your widgets in the footer sidebar area three."
 msgstr ""
 
-#: functions.php:272
+#: functions.php:275
 msgid "Footer Sidebar Four"
 msgstr ""
 
-#: functions.php:274
+#: functions.php:277
 msgid "Display your widgets in the footer sidebar area four."
 msgstr ""
 
-#: functions.php:305
+#: functions.php:308
 msgctxt "Open Sans font: on or off"
 msgid "on"
 msgstr ""
 
-#: functions.php:313
+#: functions.php:316
 msgctxt "Add new subset ( cyrillic, greek, vietnamese )"
 msgid "no-subset"
 msgstr ""

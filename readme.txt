@@ -43,7 +43,7 @@ Contact Page: In this theme, we have added the Contact Page template so that you
 If you would like to contribute to the translations of this theme to your native language, then, you can visit this link: https://translate.wordpress.org/projects/wp-themes/creative-blog/ and then contribute to the translation.
 
 == CHANGELOG ==
-= VERSION TBD =
+= VERSION 1.0.7 =
 * Remove use of deprecated constant HEADER_TEXTCOLOR
 * Add support for WooCommerce 2.7's new gallery feature
 
