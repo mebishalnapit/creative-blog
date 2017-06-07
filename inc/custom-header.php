@@ -18,6 +18,8 @@ function creative_blog_custom_header_setup() {
 		'default-text-color' => '0099ff',
 		'width' => 1500,
 		'height' => 500,
+		'video' => true,
+		'flex-width' => true,
 		'flex-height' => true,
 		'wp-head-callback' => 'creative_blog_header_style',
 	)));

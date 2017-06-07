@@ -1440,6 +1440,26 @@ li.comments-tab-widget img {
 }
 
 /*--------------------------------------------------------------
+# Header Video CSS
+--------------------------------------------------------------*/
+.wp-custom-header {
+	position: relative;
+}
+
+.wp-custom-header-video-button {
+	position: absolute;
+	left: 2%;
+	top: 85%;
+	background-color: #0099ff;
+	border: 1px solid #0099ff;
+	color: #fff;
+	max-width: 100%;
+	padding: 10px 15px;
+	border-radius: 5px;
+	font-size: 14px;
+}
+
+/*--------------------------------------------------------------
 # Media Queries
 --------------------------------------------------------------*/
 @media screen and (max-width: 1200px) {
