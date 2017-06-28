@@ -272,7 +272,7 @@ if (!function_exists('creative_blog_footer_copyright')) :
 
 endif;
 
-add_action('wp_head', 'creative_blog_custom_css');
+add_action('wp_head', 'creative_blog_custom_css', 100);
 
 /**
  * Hooks the Custom Internal CSS to head section
