@@ -1,24 +1,27 @@
 # Copyright (C) 2015/16 Bishal Napit
 # This file is distributed under the GNU General Public License v3 or later.
+#, fuzzy
 msgid ""
 msgstr ""
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
 "Project-Id-Version: Creative Blog\n"
-"POT-Creation-Date: 2017-04-13 06:26+0545\n"
-"PO-Revision-Date: 2017-04-13 06:27+0545\n"
-"Last-Translator: \n"
+"POT-Creation-Date: 2018-03-19 06:04+0545\n"
+"PO-Revision-Date: 2018-03-19 06:03+0545\n"
+"Last-Translator: Bishal Napit <mebishalnapit@gmail.com>\n"
 "Language-Team: Bishal Napit <mebishalnapit@gmail.com>\n"
-"Language: en\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.7\n"
+"X-Generator: Poedit 2.0.3\n"
 "X-Poedit-Basepath: ..\n"
+"X-Poedit-Flags-xgettext: --add-comments=translators:\n"
+"X-Poedit-WPHeader: style.css\n"
 "X-Poedit-SourceCharset: UTF-8\n"
 "X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
 "esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
 "_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
 
 #: 404.php:20 404.php:28
 msgid "404 Error!"
@@ -61,100 +64,100 @@ msgstr ""
 msgid "Social Menu"
 msgstr ""
 
-#: functions.php:175 inc/meta-boxes.php:32
+#: functions.php:178 inc/meta-boxes.php:32
 msgid "Right Sidebar"
 msgstr ""
 
-#: functions.php:177
+#: functions.php:180
 msgid "Display your widgets in the Right Sidebar Area"
 msgstr ""
 
-#: functions.php:185 inc/meta-boxes.php:37
+#: functions.php:188 inc/meta-boxes.php:37
 msgid "Left Sidebar"
 msgstr ""
 
-#: functions.php:187
+#: functions.php:190
 msgid "Display your widgets in the Left Sidebar Area"
 msgstr ""
 
-#: functions.php:195
+#: functions.php:198
 msgid "Header Sidebar"
 msgstr ""
 
-#: functions.php:197
+#: functions.php:200
 msgid "Display your widgets in the Header Sidebar Area"
 msgstr ""
 
-#: functions.php:205
+#: functions.php:208
 msgid "Content Top Sidebar"
 msgstr ""
 
-#: functions.php:207
+#: functions.php:210
 msgid "Display your widgets in the Content Top Sidebar Area"
 msgstr ""
 
-#: functions.php:215
+#: functions.php:218
 msgid "Content Bottom Sidebar"
 msgstr ""
 
-#: functions.php:217
+#: functions.php:220
 msgid "Display your widgets in the Content Bottom Sidebar Area"
 msgstr ""
 
-#: functions.php:225
+#: functions.php:228
 msgid "404 Sidebar"
 msgstr ""
 
-#: functions.php:227
+#: functions.php:230
 msgid "Display your widgets in the 404 Error Page Sidebar Area"
 msgstr ""
 
-#: functions.php:235
+#: functions.php:238
 msgid "Contact Sidebar"
 msgstr ""
 
-#: functions.php:237
+#: functions.php:240
 msgid "Display your widgets in the Contact Page Sidebar Area"
 msgstr ""
 
-#: functions.php:245
+#: functions.php:248
 msgid "Footer Sidebar One"
 msgstr ""
 
-#: functions.php:247
+#: functions.php:250
 msgid "Display your widgets in the footer sidebar area one."
 msgstr ""
 
-#: functions.php:255
+#: functions.php:258
 msgid "Footer Sidebar Two"
 msgstr ""
 
-#: functions.php:257
+#: functions.php:260
 msgid "Display your widgets in the footer sidebar area two."
 msgstr ""
 
-#: functions.php:265
+#: functions.php:268
 msgid "Footer Sidebar Three"
 msgstr ""
 
-#: functions.php:267
+#: functions.php:270
 msgid "Display your widgets in the footer sidebar area three."
 msgstr ""
 
-#: functions.php:275
+#: functions.php:278
 msgid "Footer Sidebar Four"
 msgstr ""
 
-#: functions.php:277
+#: functions.php:280
 msgid "Display your widgets in the footer sidebar area four."
 msgstr ""
 
-#: functions.php:308
+#: functions.php:311
 msgctxt "Open Sans font: on or off"
 msgid "on"
 msgstr ""
 
-#: functions.php:316
+#: functions.php:319
 msgctxt "Add new subset ( cyrillic, greek, vietnamese )"
 msgid "no-subset"
 msgstr ""
@@ -422,6 +425,7 @@ msgstr ""
 msgid "WordPress"
 msgstr ""
 
+#. Author of the plugin/theme
 #: inc/extras.php:265
 msgid "Bishal Napit"
 msgstr ""
@@ -436,6 +440,7 @@ msgstr ""
 msgid "Theme: %1$s by %2$s."
 msgstr ""
 
+#. Theme Name of the plugin/theme
 #: inc/extras.php:267
 msgid "Creative Blog"
 msgstr ""
@@ -445,78 +450,78 @@ msgstr ""
 msgid "Powered by %s."
 msgstr ""
 
-#: inc/extras.php:387
+#: inc/extras.php:377
 msgid "Post navigation"
 msgstr ""
 
-#: inc/extras.php:390
+#: inc/extras.php:380
 msgctxt "Previous post link"
 msgid ""
 "<span class=\"meta-nav\"><i class=\"fa fa-arrow-circle-o-left\"></i></span>"
 "%title"
 msgstr ""
 
-#: inc/extras.php:391
+#: inc/extras.php:381
 msgctxt "Next post link"
 msgid ""
 "%title<span class=\"meta-nav\"><i class=\"fa fa-arrow-circle-o-right\"></i></"
 "span>"
 msgstr ""
 
-#: inc/extras.php:545 inc/template-tags.php:25
+#: inc/extras.php:535 inc/template-tags.php:25
 #, php-format
 msgctxt "post date"
 msgid "%s"
 msgstr ""
 
-#: inc/extras.php:549 inc/template-tags.php:29
+#: inc/extras.php:539 inc/template-tags.php:29
 #, php-format
 msgctxt "post author"
 msgid "%s"
 msgstr ""
 
-#: inc/extras.php:555 inc/template-tags.php:36
+#: inc/extras.php:545 inc/template-tags.php:36
 msgid "<i class=\"fa fa-comment\"></i>Leave a reply"
 msgstr ""
 
-#: inc/extras.php:555 inc/template-tags.php:36
+#: inc/extras.php:545 inc/template-tags.php:36
 msgid "<i class=\"fa fa-comment\"></i>1 Comment"
 msgstr ""
 
-#: inc/extras.php:555 inc/template-tags.php:36
+#: inc/extras.php:545 inc/template-tags.php:36
 msgid "<i class=\"fa fa-comment\"></i>% Comments"
 msgstr ""
 
-#: inc/extras.php:555 inc/template-tags.php:36
+#: inc/extras.php:545 inc/template-tags.php:36
 msgid "<i class=\"fa fa-comment\"></i>Comments Disabled"
 msgstr ""
 
-#: inc/extras.php:576
+#: inc/extras.php:566
 #, php-format
 msgid "Follow %s on:"
 msgstr ""
 
-#: inc/extras.php:578
+#: inc/extras.php:568
 msgid "Facebook"
 msgstr ""
 
-#: inc/extras.php:581
+#: inc/extras.php:571
 msgid "Twitter"
 msgstr ""
 
-#: inc/extras.php:584
+#: inc/extras.php:574
 msgid "Google Plus"
 msgstr ""
 
-#: inc/extras.php:695
+#: inc/extras.php:685
 msgid "<i class=\"glyphicon glyphicon-chevron-left\"></i>"
 msgstr ""
 
-#: inc/extras.php:696
+#: inc/extras.php:686
 msgid "<i class=\"glyphicon glyphicon-chevron-right\"></i>"
 msgstr ""
 
-#: inc/extras.php:701
+#: inc/extras.php:691
 msgid "Posts navigation"
 msgstr ""
 
@@ -550,49 +555,49 @@ msgstr ""
 msgid "CB: Tabbed Widget"
 msgstr ""
 
-#: inc/widgets.php:16
+#: inc/widgets.php:17
 msgid ""
 "Displays the popular posts, recents posts and the recent comments in the "
 "tabs."
 msgstr ""
 
-#: inc/widgets.php:31
+#: inc/widgets.php:34
 msgid "Number of popular posts, recent posts and comments to display:"
 msgstr ""
 
-#: inc/widgets.php:69
+#: inc/widgets.php:73
 msgid "Popular"
 msgstr ""
 
-#: inc/widgets.php:70
+#: inc/widgets.php:76
 msgid "Recent"
 msgstr ""
 
-#: inc/widgets.php:71
+#: inc/widgets.php:79
 msgid "Comment"
 msgstr ""
 
-#: inc/widgets.php:152
+#: inc/widgets.php:161
 msgid "says:"
 msgstr ""
 
-#: inc/widgets.php:156
+#: inc/widgets.php:165
 msgid "No Comments"
 msgstr ""
 
-#: inc/widgets.php:175
+#: inc/widgets.php:184
 msgid "CB: Random Posts Widget"
 msgstr ""
 
-#: inc/widgets.php:176
+#: inc/widgets.php:186
 msgid "Displays the random posts from your site."
 msgstr ""
 
-#: inc/widgets.php:185
+#: inc/widgets.php:197
 msgid "Title:"
 msgstr ""
 
-#: inc/widgets.php:189
+#: inc/widgets.php:201
 msgid "Number of random posts to display:"
 msgstr ""
 
@@ -702,4 +707,28 @@ msgstr ""
 #. translators: %s: Name of current post.
 #: template-parts/content.php:53
 msgid "Read More <i class=\"fa fa-arrow-circle-o-right\"></i>"
+msgstr ""
+
+#. Theme URI of the plugin/theme
+msgid "https://napitwptech.com/themes/creative-blog/"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid ""
+"Creative Blog is an extremely creative WordPress theme to create your own "
+"personal blog site very easily. This theme totally focuses on the features "
+"which you may require for blogging sites. Some of the features of this theme "
+"are as logo upload option, custom header and custom background(in boxed "
+"layout) can be kept as requirement. Also, this theme features custom social "
+"menu and also you have the ability to display the five latest post in the "
+"header top section as well as you can have the layout option for each of the "
+"different pages/posts individually. This theme also supports 10 post formats "
+"so that you can show the contents uniquely according to the post formats "
+"used in your site. You can see the demo of this theme through this link: "
+"https://demo.napitwptech.com/creative-blog/ and get free theme support from "
+"this link: https://support.napitwptech.com/forums/forum/creative-blog/."
+msgstr ""
+
+#. Author URI of the plugin/theme
+msgid "https://napitwptech.com/themes/"
 msgstr ""
