@@ -43,6 +43,9 @@ Contact Page: In this theme, we have added the Contact Page template so that you
 If you would like to contribute to the translations of this theme to your native language, then, you can visit this link: https://translate.wordpress.org/projects/wp-themes/creative-blog/ and then contribute to the translation.
 
 == CHANGELOG ==
++ VERSION TBD =
+* Modify pingback url autodiscovery for single posts, pages, or attachments.
+
 = VERSION 1.1.1 =
 * Stickyjs updated to 1.0.4
 
