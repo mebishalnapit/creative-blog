@@ -20,9 +20,25 @@
 
 <body <?php body_class(); ?>>
 <?php do_action( 'creative_blog_before' ); ?>
+
+<?php
+/**
+ * WordPress function to load custom scripts after body.
+ *
+ * Introduced in WordPress 5.2.0
+ */
+if ( function_exists( 'wp_body_open' ) ) {
+	wp_body_open();
+} else {
+	do_action( 'wp_body_open' );
+}
+?>
+
 <div id="page" class="hfeed site">
 	<?php do_action( 'creative_blog_before_header' ); ?>
-	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'creative-blog' ); ?></a>
+	<a class="skip-link screen-reader-text" href="#content">
+		<?php esc_html_e( 'Skip to content', 'creative-blog' ); ?>
+	</a>
 
 	<header id="masthead" class="site-header" role="banner">
 
@@ -73,13 +89,20 @@
 			<div class="container">
 
 				<div class="navbar-header">
-					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+					<button type="button"
+					        class="navbar-toggle collapsed"
+					        data-toggle="collapse"
+					        data-target="#navbar"
+					        aria-expanded="false"
+					        aria-controls="navbar"
+					>
 						<span class="sr-only"><?php esc_html_e( 'Toggle navigation', 'creative-blog' ); ?></span>
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
 					</button>
 				</div>
+
 				<?php
 				wp_nav_menu(
 					array(
@@ -112,21 +135,21 @@
 	<?php if ( get_header_image() || ( function_exists( 'the_custom_header_markup' ) ) ) : ?>
 		<div class="creative-blog-header-image">
 			<?php if ( ( get_theme_mod( 'creative_blog_header_image_link', 0 ) == 1 ) && ( ( function_exists( 'the_custom_header_markup' ) && ( ! is_header_video_active() || ! has_header_video() ) ) || ( ! function_exists( 'the_custom_header_markup' ) ) ) ) { ?>
-			<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
-				<?php
-				}
+				<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
+					<?php
+					}
 
-				// Display the header video and header image
-				if ( function_exists( 'the_custom_header_markup' ) ) :
-					the_custom_header_markup();
-				else :
-					the_header_image_tag();
-				endif;
+					// Display the header video and header image
+					if ( function_exists( 'the_custom_header_markup' ) ) :
+						the_custom_header_markup();
+					else :
+						the_header_image_tag();
+					endif;
 
-				if ( ( get_theme_mod( 'creative_blog_header_image_link', 0 ) == 1 ) && ( ( function_exists( 'the_custom_header_markup' ) && ( ! is_header_video_active() || ! has_header_video() ) ) || ( ! function_exists( 'the_custom_header_markup' ) ) ) ) {
-				?>
-			</a>
-		<?php } ?>
+					if ( ( get_theme_mod( 'creative_blog_header_image_link', 0 ) == 1 ) && ( ( function_exists( 'the_custom_header_markup' ) && ( ! is_header_video_active() || ! has_header_video() ) ) || ( ! function_exists( 'the_custom_header_markup' ) ) ) ) {
+					?>
+				</a>
+			<?php } ?>
 		</div>
 	<?php endif; // End header image check.   ?>
 
