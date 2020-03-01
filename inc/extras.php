@@ -65,7 +65,9 @@ if ( ! function_exists( 'creative_blog_breaking_news' ) ) :
 			<ul class="newsticker">
 				<?php while ( $get_featured_posts->have_posts() ):$get_featured_posts->the_post(); ?>
 					<li>
-						<a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a>
+						<a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>">
+							<?php the_title(); ?>
+						</a>
 					</li>
 				<?php endwhile; ?>
 			</ul>
@@ -301,14 +303,6 @@ function creative_blog_custom_css() {
 		?>
 		<style type="text/css"><?php echo esc_html( $creative_blog_custom_options_color ); ?></style>
 		<?php
-	}
-
-	// custom CSS codes goes here
-	$creative_blog_custom_css = get_theme_mod( 'creative_blog_custom_css', '' );
-	if ( ! empty( $creative_blog_custom_css ) && ! function_exists( 'wp_update_custom_css_post' ) ) {
-		echo '<!-- ' . get_bloginfo( 'name' ) . ' Custom Styles -->';
-		?>
-		<style type="text/css"><?php echo esc_html( $creative_blog_custom_css ); ?></style><?php
 	}
 }
 
