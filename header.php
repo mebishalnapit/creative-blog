@@ -35,7 +35,7 @@ if ( function_exists( 'wp_body_open' ) ) {
 }
 ?>
 
-<div id="page" class="hfeed site">
+<div id="page" class="site">
 	<?php do_action( 'creative_blog_before_header' ); ?>
 	<a class="skip-link screen-reader-text" href="#content">
 		<?php esc_html_e( 'Skip to content', 'creative-blog' ); ?>
