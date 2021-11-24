@@ -8,6 +8,7 @@
  *
  * @package Creative Blog
  */
+
 ?><!DOCTYPE html>
 <html <?php language_attributes(); ?>>
 <head>
@@ -45,15 +46,15 @@ if ( function_exists( 'wp_body_open' ) ) {
 		<?php if ( ( get_theme_mod( 'creative_blog_date_display', 0 ) == 1 ) || ( get_theme_mod( 'creative_blog_breaking_news', 0 ) == 1 ) || has_nav_menu( 'social' ) ) : ?>
 			<div class="header-top-area">
 				<div class="container">
-					<?php if ( ( get_theme_mod( 'creative_blog_date_display', 0 ) == 1 ) || ( get_theme_mod( 'creative_blog_breaking_news', 0 ) == 1 ) ) {
-						?>
+					<?php if ( ( get_theme_mod( 'creative_blog_date_display', 0 ) == 1 ) || ( get_theme_mod( 'creative_blog_breaking_news', 0 ) == 1 ) ) { ?>
 						<div id="date-latest" class="header-left-area col-md-8">
 							<?php
-							// date display option
+							// Date display option.
 							if ( get_theme_mod( 'creative_blog_date_display', 0 ) == 1 ) {
 								creative_blog_date_display();
 							}
-							// breaking news display section
+
+							// Breaking news display section.
 							if ( get_theme_mod( 'creative_blog_breaking_news', 0 ) == 1 ) {
 								creative_blog_breaking_news();
 							}
@@ -71,7 +72,7 @@ if ( function_exists( 'wp_body_open' ) ) {
 		<div class="site-branding">
 			<div class="container">
 				<?php
-				// function to display the header text/logo
+				// Function to display the header text/logo.
 				creative_blog_header_text_logo();
 				?>
 
@@ -89,13 +90,7 @@ if ( function_exists( 'wp_body_open' ) ) {
 			<div class="container">
 
 				<div class="navbar-header">
-					<button type="button"
-					        class="navbar-toggle collapsed"
-					        data-toggle="collapse"
-					        data-target="#navbar"
-					        aria-expanded="false"
-					        aria-controls="navbar"
-					>
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
 						<span class="sr-only"><?php esc_html_e( 'Toggle navigation', 'creative-blog' ); ?></span>
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
@@ -136,22 +131,22 @@ if ( function_exists( 'wp_body_open' ) ) {
 		<div class="creative-blog-header-image">
 			<?php if ( ( get_theme_mod( 'creative_blog_header_image_link', 0 ) == 1 ) && ( ( function_exists( 'the_custom_header_markup' ) && ( ! is_header_video_active() || ! has_header_video() ) ) || ( ! function_exists( 'the_custom_header_markup' ) ) ) ) { ?>
 				<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
-					<?php
-					}
+				<?php
+			}
 
-					// Display the header video and header image
-					if ( function_exists( 'the_custom_header_markup' ) ) :
-						the_custom_header_markup();
-					else :
-						the_header_image_tag();
-					endif;
+			// Display the header video and header image.
+			if ( function_exists( 'the_custom_header_markup' ) ) :
+				the_custom_header_markup();
+			else :
+				the_header_image_tag();
+			endif;
 
-					if ( ( get_theme_mod( 'creative_blog_header_image_link', 0 ) == 1 ) && ( ( function_exists( 'the_custom_header_markup' ) && ( ! is_header_video_active() || ! has_header_video() ) ) || ( ! function_exists( 'the_custom_header_markup' ) ) ) ) {
-					?>
+			if ( ( get_theme_mod( 'creative_blog_header_image_link', 0 ) == 1 ) && ( ( function_exists( 'the_custom_header_markup' ) && ( ! is_header_video_active() || ! has_header_video() ) ) || ( ! function_exists( 'the_custom_header_markup' ) ) ) ) {
+			?>
 				</a>
 			<?php } ?>
 		</div>
-	<?php endif; // End header image check.   ?>
+	<?php endif; // End header image check. ?>
 
 	<?php if ( ! is_front_page() && function_exists( 'bcn_display' ) ) : ?>
 		<div class="breadcrumbs-area">
